@@ -1,0 +1,46 @@
+.list {
+    gap: var(--gaps-main-gap);
+
+    &-title{
+        color: var(--active-primary);
+        text-transform: Capitalize;
+        width: 12%;
+        text-align: right;
+    }
+
+    &-listing {
+        width: 64%;
+
+        &-hold {
+            padding-block: var(--paddings-padding-card);
+            border-bottom: 1px solid var(--active-neutrals-black-blur);
+
+            &:first-child {
+                padding-top: var(--paddings-padding-parent-box);
+            }
+
+            &:last-child {
+                padding-bottom: var(--paddings-padding-none);
+                border-bottom: none;
+            }
+
+            &-event {
+                width: 20%
+            }
+
+            &-topic {
+                width: 40%
+            }
+
+            &-year {
+                width: 6%
+            }
+
+            &.articles{
+                & .list-listing-hold-topic{
+                    width: 64%;
+                }
+            }
+        }
+    }
+}

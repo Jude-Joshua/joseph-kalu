@@ -1,0 +1,33 @@
+.header{
+    padding: var(--paddings-padding-body) var(--paddings-page-padding) var(--paddings-padding-none);
+    gap: var(--gaps-title-gap);
+
+    &-content{
+        padding-top: var(--paddings-padding-block);
+        gap: var(--gaps-section-parent-gap);
+
+        &-hero-text{
+            gap: var(--gaps-has-button-gap);
+        }
+    }
+}
+
+section{
+    gap: var(--gaps-main-gap);
+
+    & article{
+        padding-inline: var(--paddings-page-padding);
+        width: 100%;
+    }
+}
+
+#highlight{
+    color: var(--active-secondary);
+}
+
+.liner{
+    width: 100%;
+    background-color: var(--active-neutrals-black-blur);
+    height: 1px;
+    align-self: stretch;
+}

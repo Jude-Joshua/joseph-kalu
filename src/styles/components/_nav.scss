@@ -1,0 +1,46 @@
+.nav {
+    position: fixed;
+    z-index: 10000;
+    background: var(--active-neutral-blur);
+    backdrop-filter: blur(40px);
+    padding: 0 var(--paddings-page-padding);
+    gap: var(--gaps-button-inner-gap);
+    width: var(--responsiveness-container_width);
+    top: 0;
+
+    &bar {
+        border-bottom: 1px solid var(--active-neutrals-black-blur);
+        padding: var(--paddings-padding-card) 0;
+
+        &-right {
+            gap: var(--gaps-card-gap);
+
+            & .menu {
+                gap: var(--gaps-has-button-gap);
+
+                &Link {
+                    text-transform: capitalize;
+
+                    & .link {
+                        color: var(--active-neutrals-black);
+                    }
+
+                    &.active {
+                        & .link {
+                            color: var(--active-primary-blur);
+                        }
+                    }
+
+                }
+
+                &-social {
+                    gap: var(--gaps-paragraph-gap);
+
+                    & .link {
+                        color: var(--active-neutrals-black);
+                    }
+                }
+            }
+        }
+    }
+}

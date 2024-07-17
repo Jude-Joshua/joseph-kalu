@@ -1,0 +1,35 @@
+.footer {
+    gap: var(--gaps-main-gap);
+    bottom: 0;
+
+    &-contact{
+        gap: var(--gaps-paragraph-gap);
+
+        &-background{
+            position: absolute;
+            color: var(--active-primary-blur);
+            opacity: 0.16;
+            left: -14%;
+        }
+    }
+
+    &-info{
+        padding: var(--paddings-padding-none) var(--paddings-page-padding) var(--paddings-padding-parent-box);
+
+        &-holder{
+            padding: var(--paddings-padding-card) var(--paddings-padding-block);
+            gap: var(--gaps-section-parent-gap);
+            background-color: var(--active-neutrals-black);
+            border-radius: var(--border-radi-section-groups);
+            overflow: hidden;
+
+            &-data{
+                color: var(--active-neutral);
+
+                &.link {
+                    color: var(--active-neutral);
+                }
+            }
+        }
+    }
+}

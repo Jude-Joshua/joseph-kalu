@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "variables/type", "variables/breakPoints", "variables/colors", "variables/spacings", "variables/general", "components/nav", "components/footer", "components/links", "components/lists";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+     //cursor: none !important;
+}
+
+
+video,
+img,
+svg,
+canvas {
+    pointer-events: none;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--active-neutral);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--active-secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--active-secondary);
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: var(--active-neutral);
+    background: var(--active-primary);
+}
+
+::selection {
+    color: var(--active-neutral);
+    background: var(--active-primary);
+}
+
+/*
+    T y p o g r a p h y
+*/
+
+.s1 {
+    @include s1;
+}
+
+.h1 {
+    @include h1;
+}
+
+.h2 {
+    @include h2;
+}
+
+.h3 {
+    @include h3;
+}
+
+.h4 {
+    @include h4;
+}
+
+.h5 {
+    @include h5;
+}
+
+.h6 {
+    @include h6;
+}
+
+.p1 {
+    @include p1;
+}
+
+.p2 {
+    @include p2;
+}
+
+.c1 {
+    @include c1;
+}
+
+.b1 {
+    @include b1;
+}
+
+.l1 {
+    @include l1;
+}
+
+html, body {
+    font-size: var(--font-size);
+    font-family: var(--font-family), sans-serif;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    background-color: var(--html-bg);
+    color: var(--active-neutrals-black);
+    max-width: var(--responsiveness-container_width);
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+
+.site-body {
+    gap: var(--gaps-main-gap);
+    background: var(--active-neutral);
+    overflow: hidden;
+}

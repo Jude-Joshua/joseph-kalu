@@ -1,0 +1,353 @@
+@font-face {
+    font-family: "Copy";
+    src: local("texgyreadventor-regular"),
+    url("/src/assets/fonts/texgyreadventor-regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Copy";
+    src: local("texgyreadventor-bold"),
+    url("/src/assets/fonts/texgyreadventor-bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Title";
+    src: url("/src/assets/fonts/Biko_Regular.otf") format("opentype");
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --font-size: 20px;
+    --font-family: "Copy", sans-serif;
+
+    --spacing-heading-1: -7px;
+    --spacing-heading-2: -4px;
+    --spacing-heading-3: -3px;
+    --spacing-subheading: -3px;
+    --spacing-heading-4: -2px;
+    --spacing-heading-5: -2px;
+    --spacing-heading-6: -1px;
+    --spacing-copy: 0px;
+}
+
+$steps: 4;
+
+@function calculate-font-size($baseFontSize, $steps) {
+    $fontSize: $baseFontSize;
+    @for $i from 1 through $steps {
+        $fontSize: calc($fontSize / 1.21);
+    }
+    @return $fontSize;
+}
+
+/*
+    H E A D I N G S
+*/
+@mixin s1($baseFontSize: 296px) {
+    font-family: "Title", serif;
+    line-height: 1.1;
+    font-weight: normal;
+    font-size: $baseFontSize;
+    letter-spacing: -20px;
+
+    @include devices(desktop) {
+        font-size: calculate-font-size($baseFontSize, $steps - 3);
+    }
+
+    @include devices(laptop) {
+        font-size: calculate-font-size($baseFontSize, $steps - 2);
+    }
+
+    @include devices(sm-laptop) {
+        font-size: calculate-font-size($baseFontSize, $steps - 1);
+    }
+
+    @include devices(phone) {
+        font-size: calculate-font-size($baseFontSize, $steps);
+        letter-spacing: -3.2px;
+    }
+
+}
+
+@mixin h1($baseFontSize: 97px) {
+    font-family: "Title", serif;
+    line-height: 1.1;
+    font-weight: normal;
+    font-size: $baseFontSize;
+    letter-spacing: var(--spacing-heading-1);
+
+    @include devices(desktop) {
+        font-size: calculate-font-size($baseFontSize, $steps - 3);
+    }
+
+    @include devices(laptop) {
+        font-size: calculate-font-size($baseFontSize, $steps - 2);
+    }
+
+    @include devices(sm-laptop) {
+        font-size: calculate-font-size($baseFontSize, $steps - 1);
+    }
+
+    @include devices(phone) {
+        font-size: calculate-font-size($baseFontSize, $steps);
+        letter-spacing: -3.2px;
+    }
+
+}
+
+@mixin h2($baseFontSize: 80.149px) {
+    font-family: "Title", serif;
+    line-height: 1.1;
+    font-weight: normal;
+    font-size: $baseFontSize;
+    letter-spacing: var(--spacing-heading-2);
+
+    @include devices(desktop) {
+        font-size: $baseFontSize;
+    }
+
+    @include devices(laptop) {
+        font-size: calculate-font-size($baseFontSize, $steps - 3);
+    }
+
+    @include devices(sm-laptop) {
+        font-size: calculate-font-size($baseFontSize, $steps - 2);
+    }
+
+    @include devices(phone) {
+        font-size: calculate-font-size($baseFontSize, $steps);
+        letter-spacing: -2.8px;
+    }
+}
+
+@mixin h3($baseFontSize: 60.719px) {
+    font-family: "Title", serif;
+    line-height: 1.15;
+    font-weight: normal;
+    font-size: $baseFontSize;
+    letter-spacing: var(--spacing-heading-3);
+
+    @include devices(desktop) {
+        font-size: $baseFontSize;
+    }
+
+    @include devices(laptop) {
+        font-size: calculate-font-size($baseFontSize, $steps - 3);
+    }
+
+    @include devices(sm-laptop) {
+        font-size: calculate-font-size($baseFontSize, $steps - 2);
+    }
+
+    @include devices(phone) {
+        font-size: calculate-font-size($baseFontSize, $steps - 1);
+        letter-spacing: -2.3px;
+    }
+}
+
+@mixin h4($baseFontSize: 45.999px) {
+    font-family: "Title", serif;
+    line-height: 1.4;
+    font-weight: normal;
+    font-size: $baseFontSize;
+    letter-spacing: var(--spacing-heading-4);
+
+    @include devices(desktop) {
+        font-size: $baseFontSize;
+    }
+
+    @include devices(laptop) {
+        font-size: calculate-font-size($baseFontSize, $steps - 3);
+    }
+
+    @include devices(sm-laptop) {
+        font-size: calculate-font-size($baseFontSize, $steps - 2);
+    }
+
+    @include devices(phone) {
+        font-size: calculate-font-size($baseFontSize, $steps - 1);
+        letter-spacing: -1.2px;
+    }
+}
+
+@mixin h5($baseFontSize: 34.848px) {
+    font-family: "Title", serif;
+    line-height: 1.2;
+    font-weight: normal;
+    font-size: $baseFontSize;
+    letter-spacing: var(--spacing-heading-5);
+
+    @include devices(desktop) {
+        font-size: $baseFontSize;
+    }
+
+    @include devices(laptop) {
+        font-size: calculate-font-size($baseFontSize, $steps - 3);
+    }
+
+    @include devices(sm-laptop) {
+        font-size: calculate-font-size($baseFontSize, $steps - 2);
+    }
+
+    @include devices(phone) {
+        font-size: calculate-font-size($baseFontSize, $steps - 1);
+        letter-spacing: -0.8px;
+    }
+}
+
+@mixin h6($baseFontSize: 26.4px) {
+    font-family: "Title", serif;
+    line-height: 1.2;
+    font-weight: normal;
+    font-size: $baseFontSize;
+    letter-spacing: var(--spacing-heading-6);
+
+    @include devices(desktop) {
+        font-size: $baseFontSize;
+    }
+
+    @include devices(laptop) {
+        font-size: calculate-font-size($baseFontSize, $steps - 3);
+    }
+
+    @include devices(sm-laptop) {
+        font-size: calculate-font-size($baseFontSize, $steps - 2);
+    }
+
+    @include devices(phone) {
+        font-size: calculate-font-size($baseFontSize, $steps - 1);
+    }
+}
+/*
+    C O P Y
+*/
+
+@mixin p1($baseFontSize: 20px) {
+    font-family: "Copy", sans-serif;
+    font-weight: normal;
+    line-height: 1.8;
+    white-space: pre-line;
+    font-size: $baseFontSize;
+    letter-spacing: var(--spacing-copy);
+
+    @include devices(desktop) {
+        font-size: $baseFontSize;
+    }
+
+    @include devices(laptop) {
+        font-size: $baseFontSize;
+    }
+
+    @include devices(sm-laptop) {
+        font-size: calculate-font-size($baseFontSize, $steps - 3);
+    }
+
+    @include devices(phone) {
+        font-size: calculate-font-size($baseFontSize, $steps - 2);
+    }
+}
+
+@mixin p2($baseFontSize: 17px) {
+    font-family: "Copy", sans-serif;
+    font-weight: normal;
+    line-height: 1.8;
+    white-space: pre-line;
+    font-size: $baseFontSize;
+    letter-spacing: var(--spacing-copy);
+
+    @include devices(desktop) {
+        font-size: $baseFontSize;
+    }
+
+    @include devices(laptop) {
+        font-size: $baseFontSize;
+    }
+
+    @include devices(sm-laptop) {
+        font-size: calculate-font-size($baseFontSize, $steps - 3);
+    }
+
+    @include devices(phone) {
+        font-size: calculate-font-size($baseFontSize, $steps - 2);
+    }
+}
+
+@mixin c1($baseFontSize: 15.152px) {
+    font-family: "Copy", sans-serif;
+    font-weight: normal;
+    line-height: 1.7;
+    white-space: pre-line;
+    font-size: $baseFontSize;
+    letter-spacing: var(--spacing-copy);
+
+    @include devices(desktop) {
+        font-size: $baseFontSize;
+    }
+
+    @include devices(laptop) {
+        font-size: $baseFontSize;
+    }
+
+    @include devices(sm-laptop) {
+        font-size: $baseFontSize;
+    }
+
+    @include devices(phone) {
+        font-size: calculate-font-size($baseFontSize, $steps - 3);
+    }
+}
+
+@mixin b1($baseFontSize: 17px) {
+    font-family: "Copy", sans-serif;
+    font-weight: bold;
+    line-height: 0.75;
+    font-size: $baseFontSize;
+    letter-spacing: var(--spacing-copy);
+
+    @include devices(desktop) {
+        font-size: $baseFontSize;
+    }
+
+    @include devices(laptop) {
+        font-size: $baseFontSize;
+    }
+
+    @include devices(sm-laptop) {
+        font-size: calculate-font-size($baseFontSize, $steps - 3);
+    }
+
+    @include devices(phone) {
+        font-size: calculate-font-size($baseFontSize, $steps - 2);
+    }
+}
+
+@mixin l1($baseFontSize: 17px) {
+    font-family: "Copy", sans-serif;
+    font-weight: normal;
+    line-height: 0.75;
+    font-size: $baseFontSize;
+    letter-spacing: var(--spacing-copy);
+
+    @include devices(desktop) {
+        font-size: $baseFontSize;
+    }
+
+    @include devices(laptop) {
+        font-size: $baseFontSize;
+    }
+
+    @include devices(sm-laptop) {
+        font-size: calculate-font-size($baseFontSize, $steps - 3);
+    }
+
+    @include devices(phone) {
+        font-size: calculate-font-size($baseFontSize, $steps - 2);
+    }
+}

@@ -1,0 +1,11 @@
+.link{
+    gap: var(--gaps-card-gap);
+    color: var(--active-primary);
+
+    &-icon{
+        padding: var(--paddings-padding-parent-box);
+        background-color: var(--active-primary);
+        color: var(--active-neutral);
+        border-radius: var(--border-radi-section);
+    }
+}
