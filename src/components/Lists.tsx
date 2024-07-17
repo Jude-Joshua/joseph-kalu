@@ -1,11 +1,10 @@
 import React from "react";
 
 interface ListProps {
-    type: string
+    type: 'talks' | 'articles';
 }
 
-const Lists: React.FC<ListProps> = ({type}) => {
-
+const Lists: React.FC<ListProps> = ({ type }) => {
     const listings = [
         {
             "talks": [
@@ -32,26 +31,32 @@ const Lists: React.FC<ListProps> = ({type}) => {
             ],
             "articles": [
                 {
+                    event: '',
                     topic: 'The Business Value of Good Design',
                     year: "2023"
                 },
                 {
+                    event: '',
                     topic: 'The Power of User-Centred Design in Healthcare: A UI/UX Perspective',
                     year: "2023"
                 },
                 {
+                    event: '',
                     topic: 'Leadership in Design: A Roadmap to Success',
                     year: "2023"
                 },
                 {
+                    event: '',
                     topic: 'Beginners Guide to UI/UX: Scaling Up in Design',
                     year: "2023"
                 },
                 {
+                    event: '',
                     topic: 'Effective Design Strategies for Business Growth',
                     year: "2023"
                 },
                 {
+                    event: '',
                     topic: 'Designing for Different Screen Sizes and Resolutions',
                     year: "2023"
                 }
@@ -74,7 +79,7 @@ const Lists: React.FC<ListProps> = ({type}) => {
                 ))}
             </div>
         </article>
-    )
+    );
 }
 
-export default Lists
+export default Lists;
