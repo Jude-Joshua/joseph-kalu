@@ -9,8 +9,8 @@
     top: 0;
 
     &bar {
-        border-bottom: 1px solid var(--active-neutrals-black-blur);
-        padding: var(--paddings-padding-card) 0;
+        border-bottom: var(--border-width) solid var(--active-neutrals-black-blur);
+        padding: var(--paddings-nav-block) 0;
 
         &-right {
             gap: var(--gaps-card-gap);

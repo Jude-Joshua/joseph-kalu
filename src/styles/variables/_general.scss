@@ -3,7 +3,7 @@
     gap: var(--gaps-title-gap);
 
     &-content{
-        padding-top: var(--paddings-padding-block);
+        padding-top: var(--paddings-padding-card);
         gap: var(--gaps-section-parent-gap);
 
         &-hero-text{
@@ -27,7 +27,7 @@ section{
 
 .liner{
     width: 100%;
-    background-color: var(--active-neutrals-black-blur);
+    border-bottom: var(--border-width) solid var(--active-neutrals-black-blur);
     height: 1px;
     align-self: stretch;
 }
