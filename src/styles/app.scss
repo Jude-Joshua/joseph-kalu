@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "variables/type", "variables/breakPoints", "variables/colors", "variables/spacings", "variables/general", "components/nav", "components/footer", "components/links", "components/lists";
+@import "variables/type", "variables/breakPoints", "variables/colors", "variables/spacings", "variables/general", "components/nav", "components/footer", "components/links", "components/lists", "pages/about";
 
 *,
 *::before,
@@ -130,5 +130,6 @@ html, body {
 
 
 :root{
-    --border-width: 0.5px
+    --border-width: 0.5px;
+    --border-width-bold: 2px
 }

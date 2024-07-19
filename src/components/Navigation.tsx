@@ -41,8 +41,8 @@ const Navigation: React.FC<NavigationProps> = ({currentPage}) => {
                         ))}
                     </ul>
                     <div className={"menu-social flex flex-row justify-center items-center"}>
-                        <Links to={'https://www.linkedin.com/in/josephkalu/'} classes={''} target={'_blank'}><LinkedinLogo size={32} weight={'light'}/></Links>
-                        <Links to={'mailto:mrjosephkalu@gmail.com'} classes={''} target={'_blank'}><Envelope size={38} weight={'light'}/></Links>
+                        <Links to={'https://www.linkedin.com/in/josephkalu/'} classes={''} target={'_blank'} border={false}><LinkedinLogo size={32} weight={'light'}/></Links>
+                        <Links to={'mailto:mrjosephkalu@gmail.com'} classes={''} target={'_blank'} border={false}><Envelope size={38} weight={'light'}/></Links>
                     </div>
                 </div>
             </div>

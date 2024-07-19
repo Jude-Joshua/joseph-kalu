@@ -1,6 +1,6 @@
 const PageDivider: React.FC = () => {
     return (
-        <article className={'page-divider'}>
+        <article className={'pages-divider flex flex-row'}>
             <div className={'liner'}/>
         </article>
     )

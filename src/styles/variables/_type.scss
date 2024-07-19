@@ -204,7 +204,7 @@ $steps: 4;
 
 @mixin h6($baseFontSize: 26.4px) {
     font-family: "Title", serif;
-    line-height: 1.2;
+    line-height: 1.1;
     font-weight: normal;
     font-size: $baseFontSize;
     letter-spacing: var(--spacing-heading-6);

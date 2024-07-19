@@ -7,6 +7,7 @@
     gap: var(--gaps-button-inner-gap);
     width: var(--responsiveness-container_width);
     top: 0;
+    left: 0;
 
     &bar {
         border-bottom: var(--border-width) solid var(--active-neutrals-black-blur);

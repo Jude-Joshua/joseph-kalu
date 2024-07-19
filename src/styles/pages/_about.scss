@@ -1,0 +1,21 @@
+.about {
+    & .header {
+        gap: var(--gaps-card-gap);
+
+        &-content {
+            padding-inline: var(--gaps-section-parent-gap);
+            gap: var(--gaps-group-parent-gap);
+            width: 96%;
+
+            &-hero {
+                &-text {
+                    gap: var(--gaps-card-gap);
+                    width: 65%;
+                }
+                &-image{
+                    width: 35%;
+                }
+            }
+        }
+    }
+}

@@ -8,4 +8,8 @@
         color: var(--active-neutral);
         border-radius: var(--border-radi-section);
     }
+
+    &.border-bottom{
+        border-bottom: var(--border-width-bold) solid var(--active-primary);
+    }
 }
