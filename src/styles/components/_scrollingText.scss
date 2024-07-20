@@ -1,0 +1,36 @@
+.scrolling-container {
+    width: 100%;
+    border: var(--border-width) solid var(--active-primary);
+    overflow: hidden;
+    white-space: nowrap;
+
+    &.small {
+        padding: var(--gaps-button-inner-gap) var(--paddings-padding-parent-box);
+    }
+
+    &.full {
+
+    }
+
+    .scrolling {
+        &-text {
+            animation: animate_text 20s linear infinite;
+            gap: var(--gaps-paragraph-gap);
+
+            &-item{
+                white-space: nowrap;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+
+@keyframes animate_text {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

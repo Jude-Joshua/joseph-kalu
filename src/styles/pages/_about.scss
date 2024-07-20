@@ -11,9 +11,33 @@
                 &-text {
                     gap: var(--gaps-card-gap);
                     width: 65%;
+
+                    &-contain {
+                        gap: var(--gaps-button-inner-gap);
+                        & .h6 {
+                            color: var(--active-neutrals-black-blur);
+                        }
+                    }
                 }
-                &-image{
+
+                &-image {
                     width: 35%;
+
+                    & img{
+                        border-radius: var(--border-radi-cards-sm) var(--border-radi-section) var(--border-radi-section) var(--border-radi-section);
+                        border: var(--border-width) solid var(--active-primary);
+                        height: 368px;
+                    }
+
+                    & .scrolling-container{
+                        position: absolute;
+                        width: 166%;
+                        left: -24%;
+                        transform: rotateZ(-11deg);
+                        bottom: 8%;
+                        top: unset;
+                        background: var(--active-neutral);
+                    }
                 }
             }
         }

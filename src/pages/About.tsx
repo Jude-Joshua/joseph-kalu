@@ -1,12 +1,16 @@
 import PageDivider from "../components/PageDivider.tsx";
 import Lists from "../components/Lists.tsx";
 import Links from "../components/Links.tsx";
+import ImageComponent from "../components/ImageComponent.tsx";
+
+import ProfileImage from "../assets/images/profile.webp"
+import ScrollingText from "../components/ScrollingText.tsx";
 
 const About: React.FC = () => {
     return (
         <>
             <header className={'header flex flex-col justify-center items-center'}>
-                <div className={"header-content flex flex-row items-start justify-center"}>
+                <div className={"header-content flex flex-row items-center justify-center"}>
                     <div className={"header-content-hero-text flex flex-col items-start"}>
                         <div className={'header-content-hero-text-contain flex flex-col'}>
                             <p className={'h6 text-left'}>
@@ -24,15 +28,8 @@ const About: React.FC = () => {
                         </Links>
                     </div>
                     <div className={'header-content-hero-image'}>
-                        <img alt={''} className="Picture" style={{
-                            width: 316.69,
-                            height: 368.94,
-                            borderTopLeftRadius: 16,
-                            borderTopRightRadius: 256,
-                            borderBottomRightRadius: 256,
-                            borderBottomLeftRadius: 256,
-                            border: '1px #105B57 solid'
-                        }} src="https://via.placeholder.com/317x369"/>
+                        <ImageComponent source={ProfileImage} altText={'A portrait of Jospeh Kalu in Green stripped shirt smiling'} className={'header-content-hero-image-img'}/>
+                        <ScrollingText txt={'Currently leading impact for the team at Kenvue from Estonia'} size={'small'} emoji={'💼'}/>
                     </div>
                 </div>
             </header>

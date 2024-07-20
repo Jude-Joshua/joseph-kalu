@@ -1,33 +1,39 @@
-.header{
+.header {
     padding: var(--paddings-padding-body) var(--paddings-page-padding) var(--paddings-padding-none);
     gap: var(--gaps-title-gap);
 
-    &-content{
+    &-content {
         padding-top: var(--paddings-padding-card);
         gap: var(--gaps-section-parent-gap);
 
-        &-hero-text{
+        &-hero-text {
             gap: var(--gaps-has-button-gap);
         }
     }
 }
 
-section{
+section {
     gap: var(--gaps-main-gap);
+    width: 100%;
 
-    & article{
+    & article {
         padding-inline: var(--paddings-page-padding);
         width: 100%;
     }
 }
 
-#highlight{
+#highlight {
     color: var(--active-secondary);
 }
 
-.liner{
+.liner {
     width: 100%;
     border-bottom: var(--border-width) solid var(--active-neutrals-black-blur);
     height: 1px;
     align-self: stretch;
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
 }

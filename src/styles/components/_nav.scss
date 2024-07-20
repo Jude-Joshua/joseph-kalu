@@ -2,12 +2,11 @@
     position: fixed;
     z-index: 10000;
     background: var(--active-neutral-blur);
-    backdrop-filter: blur(40px);
+    backdrop-filter: blur(28px);
     padding: 0 var(--paddings-page-padding);
     gap: var(--gaps-button-inner-gap);
     width: var(--responsiveness-container_width);
     top: 0;
-    left: 0;
 
     &bar {
         border-bottom: var(--border-width) solid var(--active-neutrals-black-blur);

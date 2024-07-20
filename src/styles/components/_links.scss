@@ -11,5 +11,6 @@
 
     &.border-bottom{
         border-bottom: var(--border-width-bold) solid var(--active-primary);
+        line-height: 160%;
     }
 }

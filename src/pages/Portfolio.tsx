@@ -1,5 +1,6 @@
 import PageDivider from "../components/PageDivider.tsx";
 import Lists from "../components/Lists.tsx";
+import ScrollingText from "../components/ScrollingText.tsx";
 
 const Portfolio: React.FC = () => {
     return (
@@ -10,9 +11,7 @@ const Portfolio: React.FC = () => {
                         <h2 className={"h2 text-center"}>
                             Selected <span id={"highlight"}>Work</span>
                         </h2>
-                        <p className={'p1 text-center'}>
-                            Because Design is a dish best served hot 🔥
-                        </p>
+                        <ScrollingText txt={'Because Design is a dish best served hot'} size={'small'} emoji={'🔥'}/>
                     </div>
                 </div>
             </header>

@@ -1,0 +1,16 @@
+.work {
+    & .header {
+        &-content {
+            &-hero {
+                &-text {
+                    gap: var(--gaps-paragraph-gap);
+
+                    & .scrolling-container {
+                        width: 53.5%;
+                        background: var(--active-neutral);
+                    }
+                }
+            }
+        }
+    }
+}

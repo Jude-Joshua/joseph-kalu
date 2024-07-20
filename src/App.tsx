@@ -21,7 +21,7 @@ function App() {
     }, [currentPage]);
 
     return (
-        <main className={`site-body flex w-full flex-col min-h-screen ${pageClass}`}>
+        <main className={`site-body flex w-full flex-col justify-center items-center min-h-screen ${pageClass}`}>
             <Nav currentPage={pageClass} />
             <Routing/>
             <Footer/>
