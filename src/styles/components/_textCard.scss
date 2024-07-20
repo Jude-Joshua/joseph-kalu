@@ -3,7 +3,7 @@
     padding:  var(--paddings-padding-card-block) var(--paddings-padding-card);
     gap: var(--gaps-card-gap);
     border-radius: var(--border-radi-cards);
-    border: var(--border-width) solid var(--active-neutrals-black);
+    border: var(--border-width) solid var(--active-neutrals-black-blur);
     background: var(--active-neutrals-white);
     box-shadow: 8px 10px 120px 3px rgba(17, 26, 25, 0.07);
 
@@ -23,7 +23,16 @@
         }
     }
 
+    &:nth-child(1){
+        margin-top: 80px
+    }
+
     &:nth-child(2){
-        //left: ;
+        transform: rotate(10deg);
+    }
+
+    &:nth-child(3){
+        transform: rotate(-8deg);
+        top: -64px;
     }
 }

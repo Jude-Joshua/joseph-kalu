@@ -5,6 +5,8 @@ import Routing from "./routing.tsx";
 
 import Nav from "./components/Navigation.tsx";
 import Footer from "./components/Footer.tsx";
+import ScrollToTop from "./hooks/ScrollToTop.tsx";
+
 
 function App() {
 
@@ -21,11 +23,15 @@ function App() {
     }, [currentPage]);
 
     return (
-        <main className={`site-body flex w-full flex-col justify-center items-center min-h-screen ${pageClass}`}>
-            <Nav currentPage={pageClass} />
-            <Routing/>
-            <Footer/>
-        </main>
+        <>
+            <ScrollToTop/>
+
+            <main className={`site-body flex w-full flex-col justify-center items-center min-h-screen ${pageClass}`}>
+                <Nav currentPage={pageClass}/>
+                <Routing/>
+                <Footer/>
+            </main>
+        </>
     );
 }
 

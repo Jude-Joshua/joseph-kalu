@@ -4,6 +4,8 @@ import PageDivider from "../components/PageDivider.tsx";
 import TextCard from "../components/TextCard.tsx";
 
 import {Circle} from "@phosphor-icons/react";
+import ImageComponent from "../components/ImageComponent.tsx";
+import HomeGlobe from "../assets/images/home-globe.webp";
 
 const roles = ["Design leader", "Design Strategist", "Community Builder"]
 const textCards = {
@@ -64,6 +66,7 @@ const Home: React.FC = () => {
                         </div>
                     </div>
                 </div>
+                <ImageComponent source={HomeGlobe} altText={'background-globe-image'} className={'header-background-image'}/>
             </header>
             <section className={'flex flex-col items-start justify-start'}>
                 <PageDivider/>

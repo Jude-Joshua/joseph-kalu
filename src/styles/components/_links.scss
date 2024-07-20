@@ -1,17 +1,18 @@
-.link{
+.link {
     gap: var(--gaps-card-gap);
     color: var(--active-primary);
-    @include l1;
 
-    &-icon{
+    &-icon {
         padding: var(--paddings-padding-parent-box);
         background-color: var(--active-primary);
         color: var(--active-neutral);
         border-radius: var(--border-radi-section);
     }
 
-    &.border-bottom{
+    &.border-bottom {
+        @include b1;
         border-bottom: var(--border-width-bold) solid var(--active-primary);
         line-height: 160%;
+        text-align: left;
     }
 }

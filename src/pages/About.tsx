@@ -23,7 +23,7 @@ const About: React.FC = () => {
                                 for businesses.
                             </h2>
                         </div>
-                        <Links to={'mailto:mrjosephkalu@gmail.com'} classes={'b1 text-left'} border={true}>
+                        <Links to={'mailto:mrjosephkalu@gmail.com'} classes={''} border={true}>
                             Discuss a project
                         </Links>
                     </div>

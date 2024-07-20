@@ -1,8 +1,10 @@
 .home {
     & .header {
         &-content {
+            z-index: 2;
             &-hero {
                 &-text {
+                    gap: var(--gaps-section-parent-gap);
 
                     &-contain {
                         gap: var(--gaps-paragraph-gap);
@@ -13,11 +15,19 @@
                         }
                     }
 
-                    & .text-cards-row{
-                        gap: var(--gaps-paragraph-gap);
+                    & .text-cards-row {
+                        gap: var(--gaps-siblings-gap);
                     }
                 }
             }
+        }
+
+        &-background-image {
+            position: absolute;
+            z-index: 1;
+            right: -39%;
+            top: -3%;
+            width: 80%;
         }
     }
 }
