@@ -4,7 +4,7 @@ import Links from "../components/Links.tsx";
 import ImageComponent from "../components/ImageComponent.tsx";
 
 import ProfileImage from "../assets/images/profile.webp"
-import ScrollingText from "../components/ScrollingText.tsx";
+import {ScrollingText} from "../components/ScrollingText.tsx";
 
 const About: React.FC = () => {
     return (

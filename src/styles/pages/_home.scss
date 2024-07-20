@@ -2,6 +2,7 @@
     & .header {
         &-content {
             z-index: 2;
+
             &-hero {
                 &-text {
                     gap: var(--gaps-section-parent-gap);
@@ -12,6 +13,10 @@
 
                         &-roles {
                             gap: var(--gaps-siblings-gap);
+
+                            & .text-card-area-icon {
+                                color: var(--active-neutrals-black);
+                            }
                         }
                     }
 
@@ -28,6 +33,36 @@
             right: -39%;
             top: -3%;
             width: 80%;
+        }
+    }
+
+    article{
+        &.clients{
+            padding: var(--paddings-padding-none);
+
+            & .scrolling-container{
+                z-index: 2;
+
+                &:first-child{
+                    position: absolute;
+                    z-index: 1;
+                    background-color: var(--active-neutrals-black);
+                    transform: rotate(-8.5deg);
+                    width: 102%;
+                    left: -1%;
+
+                    & svg{
+                        color: var(--active-primary);
+                        fill: var(--active-primary);
+
+                        & g{
+                            & path{
+                                fill: var(--active-primary);
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

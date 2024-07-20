@@ -1,6 +1,6 @@
 import PageDivider from "../components/PageDivider.tsx";
 import Lists from "../components/Lists.tsx";
-import ScrollingText from "../components/ScrollingText.tsx";
+import {ScrollingText} from "../components/ScrollingText.tsx";
 
 const Portfolio: React.FC = () => {
     return (
