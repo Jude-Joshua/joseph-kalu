@@ -27,7 +27,7 @@
     --font-size: 20px;
     --font-family: "Copy", sans-serif;
 
-    --spacing-heading-1: -7px;
+    --spacing-heading-1: -6px;
     --spacing-heading-2: -4px;
     --spacing-heading-3: -3px;
     --spacing-subheading: -3px;
@@ -305,7 +305,7 @@ $steps: 4;
 }
 
 @mixin b1($baseFontSize: 17px) {
-    font-family: "Copy", sans-serif;
+    font-family: "Title", sans-serif;
     font-weight: bold;
     line-height: 0.75;
     font-size: $baseFontSize;

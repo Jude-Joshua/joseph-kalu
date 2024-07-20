@@ -1,6 +1,7 @@
 .link{
     gap: var(--gaps-card-gap);
     color: var(--active-primary);
+    @include l1;
 
     &-icon{
         padding: var(--paddings-padding-parent-box);

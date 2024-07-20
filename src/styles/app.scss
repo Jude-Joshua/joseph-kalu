@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "variables/type", "variables/breakPoints", "variables/colors", "variables/spacings", "variables/general", "components/nav", "components/footer", "components/links", "components/lists", "components/scrollingText", "pages/about", "pages/portfolio";
+@import "variables/type", "variables/breakPoints", "variables/colors", "variables/spacings", "variables/general", "components/nav", "components/textCard", "components/footer", "components/links", "components/lists", "components/scrollingText", "pages/about", "pages/portfolio", "pages/home";
 
 *,
 *::before,

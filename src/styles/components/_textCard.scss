@@ -1,0 +1,29 @@
+.text-card{
+    width: 33%;
+    padding:  var(--paddings-padding-card-block) var(--paddings-padding-card);
+    gap: var(--gaps-card-gap);
+    border-radius: var(--border-radi-cards);
+    border: var(--border-width) solid var(--active-neutrals-black);
+    background: var(--active-neutrals-white);
+    box-shadow: 8px 10px 120px 3px rgba(17, 26, 25, 0.07);
+
+    &-area{
+        gap: var(--gaps-paragraph-gap);
+
+        &-icon{
+            color: var(--active-neutrals-black-blur);
+        }
+
+        &-content{
+            gap: var(--gaps-paragraph-gap);
+
+            &-copy{
+                gap: var(--gaps-paragraph-gap);
+            }
+        }
+    }
+
+    &:nth-child(2){
+        //left: ;
+    }
+}

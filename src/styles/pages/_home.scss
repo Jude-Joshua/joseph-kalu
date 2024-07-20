@@ -1,0 +1,23 @@
+.home {
+    & .header {
+        &-content {
+            &-hero {
+                &-text {
+
+                    &-contain {
+                        gap: var(--gaps-paragraph-gap);
+                        width: 85%;
+
+                        &-roles {
+                            gap: var(--gaps-siblings-gap);
+                        }
+                    }
+
+                    & .text-cards-row{
+                        gap: var(--gaps-paragraph-gap);
+                    }
+                }
+            }
+        }
+    }
+}
