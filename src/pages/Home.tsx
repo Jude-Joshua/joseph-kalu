@@ -8,11 +8,11 @@ import iconMapping from "../components/Icons.tsx";
 
 import HomeGlobe from "../assets/images/home-globe.webp";
 
-import Client01 from "../assets/images/clients/JNJ.svg?react";
-import Client02 from "../assets/images/clients/meaningfulGigs.svg?react";
-import Client03 from "../assets/images/clients/Designlab.svg?react";
-import Client04 from "../assets/images/clients/KENVUE.svg?react";
-import Client05 from "../assets/images/clients/adplist.svg?react";
+import Client01 from "../assets/images/clients/JNJ.svg";
+import Client02 from "../assets/images/clients/meaningfulGigs.svg";
+import Client03 from "../assets/images/clients/Designlab.svg";
+import Client04 from "../assets/images/clients/KENVUE.svg";
+import Client05 from "../assets/images/clients/adplist.svg";
 
 const roles = ["Design leader", "Design Strategist", "Community Builder"]
 const textCards = {

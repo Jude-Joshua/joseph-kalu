@@ -8,7 +8,7 @@ interface ScrollingTextProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 interface ScrollingImagesProps extends React.HTMLAttributes<HTMLDivElement> {
-    images: Array<React.FC<React.SVGProps<SVGSVGElement>>>;
+    images: string[];
     size: string;
 }
 
