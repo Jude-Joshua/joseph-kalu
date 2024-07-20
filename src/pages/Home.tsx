@@ -8,10 +8,20 @@ import iconMapping from "../components/Icons.tsx";
 
 import HomeGlobe from "../assets/images/home-globe.webp";
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import {ReactComponent as Client01} from "../assets/images/clients/JNJ.svg";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import {ReactComponent as Client02} from "../assets/images/clients/meaningfulGigs.svg";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import {ReactComponent as Client03} from "../assets/images/clients/Designlab.svg";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import {ReactComponent as Client04} from "../assets/images/clients/KENVUE.svg";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import {ReactComponent as Client05} from "../assets/images/clients/adplist.svg";
 
 const roles = ["Design leader", "Design Strategist", "Community Builder"]
