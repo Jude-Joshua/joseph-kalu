@@ -13,13 +13,11 @@
         background-color: var(--active-primary);
 
         .scrolling {
-            gap: var(--gaps-group-parent-gap);
-
             &-text {
-                gap: var(--gaps-group-parent-gap);
+                gap: var(--gaps-title-gap);
 
                 &-item {
-                    gap: var(--gaps-group-parent-gap);
+                    gap: var(--gaps-title-gap);
                     animation: animate_text 20s linear infinite;
                 }
 
@@ -30,7 +28,6 @@
 
                 & .text-card-area-icon {
                     color: var(--active-neutral);
-                    width: 104px;
                 }
             }
         }
