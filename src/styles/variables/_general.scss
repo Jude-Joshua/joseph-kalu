@@ -19,6 +19,57 @@ section {
     & article {
         padding-inline: var(--paddings-page-padding);
         width: 100%;
+        gap: var(--gaps-group-parent-gap);
+
+        & .article-title {
+            width: 100%;
+
+            &-text {
+                width: 55%;
+            }
+        }
+
+        & .facts-container {
+
+            &-fact {
+                padding-block: var(--paddings-padding-card);
+
+                &:first-child{
+                    padding-top: var(--paddings-padding-none);
+                }
+
+                &:last-child{
+                    padding-bottom: var(--paddings-padding-none);
+                }
+
+                & p {
+                    &:first-child {
+                        width: 40%;
+                    }
+
+                    &:last-child {
+                        width: 40%;
+                    }
+
+                    & a {
+                        display: inline-block;
+                        @include p1;
+                        font: var(--font-family) !important;
+                        border-bottom: var(--border-width) solid;
+                        line-height: 120% !important;
+
+                        &:hover{
+                            border-bottom: none;
+                            color: var(--active-secondary);
+                        }
+                    }
+                }
+            }
+        }
+
+        & .pages-divider {
+            padding-inline: var(--paddings-padding-none);
+        }
     }
 }
 

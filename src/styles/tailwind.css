@@ -554,8 +554,16 @@ video {
   --tw-contain-style:  ;
 }
 
+.relative {
+  position: relative;
+}
+
 .flex {
   display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
 }
 
 .min-h-screen {
@@ -564,6 +572,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .flex-row {
@@ -582,6 +594,10 @@ video {
   align-items: flex-start;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -590,12 +606,24 @@ video {
   justify-content: flex-start;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
 
 .justify-between {
   justify-content: space-between;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -627,6 +655,8 @@ img,
 svg,
 canvas {
   pointer-events: none;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 ::-webkit-scrollbar {
@@ -729,6 +759,7 @@ html, body {
 }
 
 :root{
-  --border-width: 0.5px
+  --border-width: 0.5px;
+  --border-width-bold: 2px
 
 }

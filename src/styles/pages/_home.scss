@@ -36,14 +36,14 @@
         }
     }
 
-    article{
-        &.clients{
+    article {
+        &.clients {
             padding: var(--paddings-padding-none);
 
-            & .scrolling-container{
+            & .scrolling-container {
                 z-index: 2;
 
-                &:first-child{
+                &:first-child {
                     position: absolute;
                     z-index: 1;
                     background-color: var(--active-neutrals-black);
@@ -51,14 +51,118 @@
                     width: 102%;
                     left: -1%;
 
-                    & svg{
+                    & svg {
                         color: var(--active-primary);
                         fill: var(--active-primary);
 
-                        & g{
-                            & path{
+                        & g {
+                            & path {
                                 fill: var(--active-primary);
                                 stroke: var(--active-primary);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.testimonials {
+            & .review {
+                &-testimonial {
+                    gap: var(--gaps-group-parent-gap);
+
+                    &-person {
+                        gap: var(--gaps-has-button-gap);
+                        color: var(--active-primary);
+
+                        & img{
+                            border-radius: var(--border-radi-section);
+                            width: 200px;
+                        }
+
+                        &-details{
+                            gap: var(--gaps-button-inner-gap);
+                        }
+                    }
+
+                    &-review {
+                        border-radius: var(--border-radi-cards);
+                        border: var(--border-width) solid var(--active-secondary-blur);
+                        background: var(--active-neutral);
+                        padding: var(--paddings-padding-inline);
+                        width: 56%;
+                    }
+
+                    & .button-icon{
+                        border: var(--border-width) solid var(--active-primary);
+                        color: var(--active-primary);
+                        background-color: unset;
+                        position: absolute;
+                        left: 0;
+
+                        &.right{
+                            right: 0;
+                            left: unset;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.brief {
+            & .article-title {
+                &-text {
+                    width: 70%;
+
+                    &:last-child {
+                        align-self: flex-end;
+                    }
+                }
+            }
+
+            & .facts-container {
+                &-fact {
+                    transition: 0.8s;
+
+                    //&:hover {
+                    //    padding-inline: var(--paddings-padding-parent-box);
+                    //}
+
+                    & p {
+                        &:first-child {
+                            width: 50%;
+                        }
+
+                        &:last-child {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.explorations {
+            padding-inline: var(--paddings-padding-none);
+
+            & .scrolling-container {
+                background-color: unset;
+                border: none;
+                height: auto;
+
+                &.full {
+                    & .scrolling {
+                        &-text {
+                            gap: var(--gaps-paragraph-gap);
+
+                            &-item {
+                                gap: var(--gaps-paragraph-gap);
+
+                                & img {
+                                    height: 616px;
+                                    width: 640px;
+                                    border-radius: var(--border-radi-cards);
+                                    border: var(--border-width) solid var(--active-neutrals-black-blur);
+                                }
                             }
                         }
                     }

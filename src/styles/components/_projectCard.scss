@@ -1,6 +1,6 @@
 .caseStudies {
     &-holder {
-        padding-top: var(--paddings-padding-inline);
+        padding-top: var(--paddings-padding-card);
         gap: var(--gaps-body-section-gap);
 
         .ProjectCaard {
@@ -42,8 +42,6 @@
         }
 
         .pages-divider{
-            padding-inline: var(--paddings-padding-none);
-
             &:last-of-type{
                 display: none;
             }
