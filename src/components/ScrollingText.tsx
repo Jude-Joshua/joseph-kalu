@@ -16,8 +16,8 @@ const ScrollingText: React.FC<ScrollingTextProps> = ({txt, size, emoji, ...rest}
     return (
         <div className={`scrolling-container ${size}`}>
             <div className={'scrolling-text flex items-center'} {...rest}>
-                <div className={'c1 scrolling-text-item'}>{txt}{emoji}</div>
-                <div className={'c1 scrolling-text-item'}>{txt}{emoji}</div>
+                <div className={'c1 scrolling-text-item'}><span>{txt}</span><span>{emoji}</span></div>
+                <div className={'c1 scrolling-text-item'}><span>{txt}</span><span>{emoji}</span></div>
             </div>
         </div>
     );

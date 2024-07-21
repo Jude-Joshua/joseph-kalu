@@ -1,0 +1,52 @@
+.caseStudies {
+    &-holder {
+        padding-top: var(--paddings-padding-inline);
+        gap: var(--gaps-body-section-gap);
+
+        .ProjectCaard {
+            padding-block: var(--paddings-padding-parent-small);
+            gap: var(--gaps-group-parent-gap);
+
+            &-image {
+                width: 53%;
+                border-radius: var(--border-radi-cards);
+                overflow: hidden;
+
+                & img {
+                    width: 100%;
+                }
+            }
+
+            &-info {
+                gap: var(--gaps-card-gap);
+                width: 46%;
+
+                &-data {
+                    gap: var(--gaps-paragraph-gap);
+
+                    &-title {
+                        &-name {
+                            color: var(--active-secondary);
+                        }
+                    }
+                }
+
+                &-tags {
+                    gap: var(--gaps-siblings-gap);
+
+                    & .tag {
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+
+        .pages-divider{
+            padding-inline: var(--paddings-padding-none);
+
+            &:last-of-type{
+                display: none;
+            }
+        }
+    }
+}

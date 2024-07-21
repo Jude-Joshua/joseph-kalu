@@ -38,9 +38,12 @@
             gap: var(--gaps-paragraph-gap);
             white-space: nowrap;
             display: inline-flex;
+            width: max-content;
 
             &-item {
                 animation: animate_text 10s linear infinite;
+                display: inline-flex;
+                gap: var(--gaps-paragraph-gap);
             }
         }
     }

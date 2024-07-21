@@ -4,10 +4,10 @@ import PageDivider from "../components/PageDivider.tsx";
 import TextCard from "../components/TextCard.tsx";
 import ImageComponent from "../components/ImageComponent.tsx";
 import {ScrollingImages} from "../components/ScrollingText.tsx";
+import ProjectCard from "../components/ProjectCard.tsx";
 import iconMapping from "../components/Icons.tsx";
 
 import HomeGlobe from "../assets/images/home-globe.webp";
-
 import Client01 from "../assets/images/clients/JNJ.svg";
 import Client02 from "../assets/images/clients/meaningfulGigs.svg";
 import Client03 from "../assets/images/clients/Designlab.svg";
@@ -42,6 +42,29 @@ const textCards = {
     },
 }
 const clientLogos = [Client01, Client02, Client03, Client04, Client05]
+const sampleProject = {
+    1: {
+        "title": "Helping smokers combat cigarette cravings",
+        "projectName": "Smoking Cessation App",
+        "description": "Redesigning features and designing new features to enhance brand consistency and overall user engagement.",
+        "tags": "mobile app design, product strategy, ux design",
+        "presentationImage": 'https://via.placeholder.com/692x528'
+    },
+    2: {
+        "title": "Promoting responsible and efficient scooter usage in Tallinn",
+        "projectName": "Scooter Scatter",
+        "description": "Conducted user research and product strategy to fix scooter parking related problems.",
+        "tags": "user research, product strategy",
+        "presentationImage": 'https://via.placeholder.com/692x528'
+    },
+    3: {
+        "title": "Turbocharging financing for SMES",
+        "projectName": "Tamarind",
+        "description": "Conducted user research and implemented streamlined workflows to simplified the loan application process for SMEs.",
+        "tags": "mobile app design, user research, product strategy, ux design",
+        "presentationImage": 'https://via.placeholder.com/692x528'
+    }
+}
 
 const Home: React.FC = () => {
     const IconComponent = iconMapping['Circle']
@@ -86,6 +109,18 @@ const Home: React.FC = () => {
                 <article className={'clients'}>
                     <ScrollingImages images={clientLogos} size={'full'}/>
                     <ScrollingImages images={clientLogos} size={'full'}/>
+                </article>
+                <article className={'caseStudies'}>
+                    <div className={'caseStudies-holder flex flex-col'}>
+                        {Object.values(sampleProject).map((project, index) => (
+                            <React.Fragment key={index}>
+                                <ProjectCard title={project.title} projectName={project.projectName}
+                                             description={project.description} tags={project.tags}
+                                             presentationImage={project.presentationImage}/>
+                                <PageDivider/>
+                            </React.Fragment>
+                        ))}
+                    </div>
                 </article>
 
 
