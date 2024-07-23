@@ -59,7 +59,7 @@ const sampleProject = {
         "projectName": "Smoking Cessation App",
         "description": "Redesigning features and designing new features to enhance brand consistency and overall user engagement.",
         "tags": "mobile app design, product strategy, ux design",
-        "presentationImage": 'https://via.placeholder.com/692x528'
+        "presentationImage": 'cover-image.webp'
     },
     2: {
         "title": "Promoting responsible and efficient scooter usage in Tallinn",
@@ -127,7 +127,7 @@ const Home: React.FC = () => {
                             <React.Fragment key={index}>
                                 <ProjectCard title={project.title} projectName={project.projectName}
                                              description={project.description} tags={project.tags}
-                                             presentationImage={project.presentationImage}/>
+                                             presentationImage={`/projects/${(project.projectName).toLowerCase()}/${project.presentationImage}`}/>
                                 <PageDivider/>
                             </React.Fragment>
                         ))}
@@ -158,8 +158,8 @@ const Home: React.FC = () => {
                             </p>
                             <p className="p1">
                                 <span>With a worldwide collage of impactful mentorship, I’ve guided designers from clueless to experts in their crafts. I mentor designers from <Links
-                                    classes={'p1'} to={'https://designlab.com/'}
-                                    border={true}>Designlab</Links> to <Links classes={''} to={'https://adplist.com/'}
+                                    classes={'p1'} to={'https://app.designlab.com/josephkalu/'} target={'_blank'}
+                                    border={true}>Designlab</Links> to <Links classes={''} to={'https://adplist.org/mentors/joseph-kalu/'} target={'_blank'}
                                                                               border={true}>ADPList</Links>.</span>
                             </p>
                         </div>
@@ -238,10 +238,10 @@ const Home: React.FC = () => {
                                 Participating in design panels and talks
                             </p>
                             <p className="p1">
-                                <Links to={'#'} classes={''} border={true}>GOMYCODE</Links> | <Links to={'#'}
+                                <Links to={'https://files.fm/u/qk6uf5t34k'} target={'_blank'} classes={''} border={true}>GOMYCODE</Links> | <Links to={'https://youtu.be/2esLBt4GpXU?si=x6_IUegQAVbyLZfG'} target={'_blank'}
                                                                                                      classes={''}
                                                                                                      border={true}>KOM</Links> | <Links
-                                to={'#'} classes={''} border={true}>Abia Tech Flock</Links>
+                                to={'#'} target={'_blank'} classes={''} border={true}>Abia Tech Flock</Links>
                             </p>
                         </div>
                         <PageDivider/>
@@ -250,7 +250,7 @@ const Home: React.FC = () => {
                                 Writing think pieces
                             </p>
                             <p className="p1">
-                                <Links to={'#'} classes={''} border={true}>The Nation Newspaper</Links>
+                                <Links to={'https://thenationonlineng.net/developing-nigeria-into-africas-tech-hub'} target={'_blank'} classes={''} border={true}>The Nation Newspaper</Links>
                             </p>
                         </div>
                         <PageDivider/>
@@ -259,7 +259,7 @@ const Home: React.FC = () => {
                                 Collaborating on open-source community projects
                             </p>
                             <p className="p1">
-                                <Links to={'#'} classes={''} border={true}>Memoji</Links> | <Links to={'#'} classes={''}
+                                <Links to={'#'} classes={'https://www.figma.com/community/file/1385981291431580402/memoji-emoji-illustrations'} target={'_blank'} border={true}>Memoji</Links> | <Links to={'#'} target={'_blank'} classes={''}
                                                                                                    border={true}>Nebulon</Links>
                             </p>
                         </div>
@@ -269,7 +269,7 @@ const Home: React.FC = () => {
                                 Mentoring new and aspiring designers
                             </p>
                             <p className="p1">
-                                <Links to={'#'} classes={''} border={true}>Designlab</Links> | <Links to={'#'}
+                                <Links to={'https://app.designlab.com/josephkalu/'} target={'_blank'} classes={''} border={true}>Designlab</Links> | <Links to={'https://adplist.org/mentors/joseph-kalu'} target={'_blank'}
                                                                                                       classes={''}
                                                                                                       border={true}>ADPList</Links>
                             </p>
@@ -280,7 +280,7 @@ const Home: React.FC = () => {
                                 Hosting design workshops
                             </p>
                             <p className="p1">
-                                <Links to={'#'} classes={''} border={true}>WCAG 2.0 and UX</Links>
+                                <Links to={'#'} target={'_blank'} classes={''} border={true}>WCAG 2.0 and UX</Links>
                             </p>
                         </div>
                     </div>
