@@ -1,6 +1,10 @@
+import React from 'react';
+
 import PageDivider from "../components/PageDivider.tsx";
-import Lists from "../components/Lists.tsx";
 import {ScrollingText} from "../components/ScrollingText.tsx";
+import {ProjectCardCol} from "../components/ProjectCard.tsx";
+
+import Db from "../data/db.tsx";
 
 const Portfolio: React.FC = () => {
     return (
@@ -18,11 +22,14 @@ const Portfolio: React.FC = () => {
             <section className={'flex flex-col items-start justify-start'}>
                 <PageDivider/>
 
-                <Lists type={'talks'}/>
-
-                <PageDivider/>
-
-                <Lists type={'articles'}/>
+                <article className={'caseStudies'}>
+                    <div className={'caseStudies-holder flex flex-row'}>
+                        {Object.values(Db).map((project, index) => (
+                                <ProjectCardCol title={project.title} projectName={project.projectName}
+                                             presentationImage={`/projects/${(project.projectName).toLowerCase()}/${project.presentationImage}`} key={index}/>
+                        ))}
+                    </div>
+                </article>
 
                 <PageDivider/>
             </section>

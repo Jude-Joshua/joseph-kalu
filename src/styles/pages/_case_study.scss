@@ -1,0 +1,27 @@
+.case-study {
+    .header {
+        &-content {
+            &-hero {
+                &-text-contain {
+                    padding-inline: var(--paddings-page-padding);
+                }
+                &-image {
+                    border-radius: var(--border-radi-cards);
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+
+    &-intro-details-row {
+        padding-inline: var(--paddings-page-padding);
+
+        &-section{
+            gap: var(--gaps-button-inner-gap);
+
+            span{
+                display: block;
+            }
+        }
+    }
+}

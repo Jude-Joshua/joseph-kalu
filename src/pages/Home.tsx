@@ -4,7 +4,7 @@ import PageDivider from "../components/PageDivider.tsx";
 import TextCard from "../components/TextCard.tsx";
 import ImageComponent from "../components/ImageComponent.tsx";
 import {ScrollingImages} from "../components/ScrollingText.tsx";
-import ProjectCard from "../components/ProjectCard.tsx";
+import {ProjectCardRow} from "../components/ProjectCard.tsx";
 import Links from "../components/Links.tsx";
 import iconMapping from "../components/Icons.tsx";
 
@@ -14,15 +14,13 @@ import Client02 from "../assets/images/clients/meaningfulGigs.svg";
 import Client03 from "../assets/images/clients/Designlab.svg";
 import Client04 from "../assets/images/clients/KENVUE.svg";
 import Client05 from "../assets/images/clients/adplist.svg";
-// import Exploration01 from "../assets/images/exploration01.webp";
-import Exploration02 from "../assets/images/exploration02.webp";
-import Exploration03 from "../assets/images/exploration03.webp";
-import Exploration04 from "../assets/images/exploration04.webp";
-import Exploration05 from "../assets/images/exploration05.webp";
-import Exploration06 from "../assets/images/exploration06.webp";
-import Exploration07 from "../assets/images/exploration07.webp";
+
 import {ArrowLeft, ArrowRight} from "@phosphor-icons/react";
 import Reviewer01 from "../assets/images/erin.webp";
+
+import Db from "../data/db.tsx";
+const projects = Db.filter(project => project.featured)
+
 
 const roles = ["Design leader", "Design Strategist", "Community Builder"]
 const textCards = {
@@ -52,30 +50,6 @@ const textCards = {
     },
 }
 const clientLogos = [Client01, Client02, Client03, Client04, Client05]
-const designExplorations = [Exploration02, Exploration03, Exploration04, Exploration05, Exploration06, Exploration07]
-const sampleProject = {
-    1: {
-        "title": "Helping smokers combat cigarette cravings",
-        "projectName": "Smoking Cessation App",
-        "description": "Redesigning features and designing new features to enhance brand consistency and overall user engagement.",
-        "tags": "mobile app design, product strategy, ux design",
-        "presentationImage": 'cover-image.webp'
-    },
-    2: {
-        "title": "Promoting responsible and efficient scooter usage in Tallinn",
-        "projectName": "Scooter Scatter",
-        "description": "Conducted user research and product strategy to fix scooter parking related problems.",
-        "tags": "user research, product strategy",
-        "presentationImage": 'https://via.placeholder.com/692x528'
-    },
-    3: {
-        "title": "Turbocharging financing for SMES",
-        "projectName": "Tamarind",
-        "description": "Conducted user research and implemented streamlined workflows to simplified the loan application process for SMEs.",
-        "tags": "mobile app design, user research, product strategy, ux design",
-        "presentationImage": 'https://via.placeholder.com/692x528'
-    }
-}
 
 const Home: React.FC = () => {
     const IconComponent = iconMapping['Circle']
@@ -123,9 +97,9 @@ const Home: React.FC = () => {
                 </article>
                 <article className={'caseStudies'}>
                     <div className={'caseStudies-holder flex flex-col'}>
-                        {Object.values(sampleProject).map((project, index) => (
+                        {Object.values(projects).map((project, index) => (
                             <React.Fragment key={index}>
-                                <ProjectCard title={project.title} projectName={project.projectName}
+                                <ProjectCardRow title={project.title} projectName={project.projectName}
                                              description={project.description} tags={project.tags}
                                              presentationImage={`/projects/${(project.projectName).toLowerCase()}/${project.presentationImage}`}/>
                                 <PageDivider/>
@@ -159,7 +133,9 @@ const Home: React.FC = () => {
                             <p className="p1">
                                 <span>With a worldwide collage of impactful mentorship, I’ve guided designers from clueless to experts in their crafts. I mentor designers from <Links
                                     classes={'p1'} to={'https://app.designlab.com/josephkalu/'} target={'_blank'}
-                                    border={true}>Designlab</Links> to <Links classes={''} to={'https://adplist.org/mentors/joseph-kalu/'} target={'_blank'}
+                                    border={true}>Designlab</Links> to <Links classes={''}
+                                                                              to={'https://adplist.org/mentors/joseph-kalu/'}
+                                                                              target={'_blank'}
                                                                               border={true}>ADPList</Links>.</span>
                             </p>
                         </div>
@@ -238,9 +214,11 @@ const Home: React.FC = () => {
                                 Participating in design panels and talks
                             </p>
                             <p className="p1">
-                                <Links to={'https://files.fm/u/qk6uf5t34k'} target={'_blank'} classes={''} border={true}>GOMYCODE</Links> | <Links to={'https://youtu.be/2esLBt4GpXU?si=x6_IUegQAVbyLZfG'} target={'_blank'}
-                                                                                                     classes={''}
-                                                                                                     border={true}>KOM</Links> | <Links
+                                <Links to={'https://files.fm/u/qk6uf5t34k'} target={'_blank'} classes={''}
+                                       border={true}>GOMYCODE</Links> | <Links
+                                to={'https://youtu.be/2esLBt4GpXU?si=x6_IUegQAVbyLZfG'} target={'_blank'}
+                                classes={''}
+                                border={true}>KOM</Links> | <Links
                                 to={'#'} target={'_blank'} classes={''} border={true}>Abia Tech Flock</Links>
                             </p>
                         </div>
@@ -250,7 +228,8 @@ const Home: React.FC = () => {
                                 Writing think pieces
                             </p>
                             <p className="p1">
-                                <Links to={'https://thenationonlineng.net/developing-nigeria-into-africas-tech-hub'} target={'_blank'} classes={''} border={true}>The Nation Newspaper</Links>
+                                <Links to={'https://thenationonlineng.net/developing-nigeria-into-africas-tech-hub'}
+                                       target={'_blank'} classes={''} border={true}>The Nation Newspaper</Links>
                             </p>
                         </div>
                         <PageDivider/>
@@ -259,8 +238,12 @@ const Home: React.FC = () => {
                                 Collaborating on open-source community projects
                             </p>
                             <p className="p1">
-                                <Links to={'#'} classes={'https://www.figma.com/community/file/1385981291431580402/memoji-emoji-illustrations'} target={'_blank'} border={true}>Memoji</Links> | <Links to={'#'} target={'_blank'} classes={''}
-                                                                                                   border={true}>Nebulon</Links>
+                                <Links to={'#'}
+                                       classes={'https://www.figma.com/community/file/1385981291431580402/memoji-emoji-illustrations'}
+                                       target={'_blank'} border={true}>Memoji</Links> | <Links to={'#'}
+                                                                                               target={'_blank'}
+                                                                                               classes={''}
+                                                                                               border={true}>Nebulon</Links>
                             </p>
                         </div>
                         <PageDivider/>
@@ -269,9 +252,11 @@ const Home: React.FC = () => {
                                 Mentoring new and aspiring designers
                             </p>
                             <p className="p1">
-                                <Links to={'https://app.designlab.com/josephkalu/'} target={'_blank'} classes={''} border={true}>Designlab</Links> | <Links to={'https://adplist.org/mentors/joseph-kalu'} target={'_blank'}
-                                                                                                      classes={''}
-                                                                                                      border={true}>ADPList</Links>
+                                <Links to={'https://app.designlab.com/josephkalu/'} target={'_blank'} classes={''}
+                                       border={true}>Designlab</Links> | <Links
+                                to={'https://adplist.org/mentors/joseph-kalu'} target={'_blank'}
+                                classes={''}
+                                border={true}>ADPList</Links>
                             </p>
                         </div>
                         <PageDivider/>
@@ -280,13 +265,11 @@ const Home: React.FC = () => {
                                 Hosting design workshops
                             </p>
                             <p className="p1">
-                                <Links to={'#'} target={'_blank'} classes={''} border={true}>WCAG 2.0 and UX</Links>
+                                <Links to={'https://youtu.be/bJvbAZ_seP8?si=O76um6aM0fxBxwMj'} target={'_blank'}
+                                       classes={''} border={true}>WCAG 2.0 and UX</Links>
                             </p>
                         </div>
                     </div>
-                </article>
-                <article className={'explorations'}>
-                    <ScrollingImages images={designExplorations} size={'full'} type={'image'}/>
                 </article>
                 <PageDivider/>
             </section>

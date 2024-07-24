@@ -16,8 +16,8 @@ function App() {
     const pageClass = useMemo(() => {
         if (currentPage === '/')
             return 'home';
-        else if (currentPage.startsWith('/portfolio'))
-            return currentPage.split('/').length > 2 ? 'portfolio case-study' : 'portfolio';
+        else if (currentPage.startsWith('/work'))
+            return currentPage.split('/').length > 2 ? 'case-study' : 'work';
         else
             return currentPage.slice(1);
     }, [currentPage]);

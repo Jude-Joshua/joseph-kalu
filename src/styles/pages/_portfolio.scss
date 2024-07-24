@@ -13,4 +13,45 @@
             }
         }
     }
+
+    .caseStudies {
+        &-holder {
+            flex-wrap: wrap;
+            padding-block: var(--paddings-padding-none);
+
+            .link {
+                width: 46%;
+                color: var(--active-neutrals-black);
+
+                .ProjectCaard {
+                    padding-block: var(--paddings-padding-none);
+                    gap: var(--gaps-card-gap);
+
+                    &-image {
+                        width: 100%;
+                        border-radius: var(--border-radi-cards);
+                        overflow: hidden;
+                        height: 544px;
+
+                        & img {
+                            height: 100%;
+                        }
+                    }
+
+                    &-info {
+                        width: 100%;
+
+                        &-title {
+                            gap: var(--gaps-button-inner-gap);
+
+                            &-name {
+                                color: var(--active-secondary);
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
 }

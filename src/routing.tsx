@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import About from "./pages/About";
 import Talks from "./pages/Talks";
 import Portfolio from "./pages/Portfolio";
-import CaseStudy from "./pages/CaseStudy";
+import CaseStudy from "./pages/CaseStudy.tsx";
 
 
 const Routing: React.FC = () => {
@@ -14,7 +14,7 @@ const Routing: React.FC = () => {
         <Route path="/about" element={<About/>}/>
         <Route path="/talks" element={<Talks/>}/>
         <Route path="/work" element={<Portfolio/>}/>
-        <Route path="/work/:projectName'" element={<CaseStudy/>}/>
+        <Route path="/work/:projectName" element={<CaseStudy/>}/>
     </Routes>
 )
     ;

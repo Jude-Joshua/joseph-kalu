@@ -4,8 +4,9 @@ import ImageComponent from "./ImageComponent.tsx";
 
 import {ArrowRight} from "@phosphor-icons/react";
 import Button from "./Button.tsx";
+import Links from "./Links.tsx";
 
-interface ProductCardProps extends React.HTMLAttributes<HTMLDivElement> {
+interface ProductCardRowProps extends React.HTMLAttributes<HTMLDivElement> {
     title: string;
     projectName: string;
     tags: string;
@@ -13,7 +14,31 @@ interface ProductCardProps extends React.HTMLAttributes<HTMLDivElement> {
     description: string;
 }
 
-const ProjectCard: React.FC<ProductCardProps> = ({title, projectName, tags, presentationImage, description}) => {
+interface ProductCardColProps extends React.HTMLAttributes<HTMLDivElement> {
+    title: string;
+    projectName: string;
+    presentationImage: string;
+}
+
+const ProjectCardCol: React.FC<ProductCardColProps> = ({title, projectName, presentationImage}) => {
+    return (
+        <Links to={`/work/${projectName}`} classes={''} border={false}>
+            <div className="ProjectCaard flex flex-col items-start justify-start w-full">
+                <div className="ProjectCaard-image">
+                    <ImageComponent source={presentationImage} altText={'case study cover image'}
+                                    className={"presentation-cover"}/>
+                </div>
+                <div className="ProjectCaard-info flex flex-col items-start justify-start">
+                    <div className="ProjectCaard-info-title flex flex-col">
+                        <span className={'h5 ProjectCaard-info-title-name'}>{projectName}</span>
+                        <span className={'p1'}>{title}</span>
+                    </div>
+                </div>
+            </div>
+        </Links>
+    );
+};
+const ProjectCardRow: React.FC<ProductCardRowProps> = ({title, projectName, tags, presentationImage, description}) => {
     const tagsArray = tags.split(',').map(word => word.trim());
 
     return (
@@ -51,4 +76,4 @@ const ProjectCard: React.FC<ProductCardProps> = ({title, projectName, tags, pres
     );
 };
 
-export default ProjectCard;
+export {ProjectCardCol, ProjectCardRow};
