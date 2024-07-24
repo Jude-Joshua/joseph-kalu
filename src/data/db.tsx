@@ -1,7 +1,7 @@
 const Db = [
     {
         "id": 1,
-        "featured": true,
+        "featured": false,
         "title": "Turbocharging financing for SMES",
         "projectName": "Tamarind",
         "description": "Conducted user research and implemented streamlined workflows to simplified the loan application process for SMEs.",
@@ -62,7 +62,7 @@ const Db = [
     },
     {
         "id": 6,
-        "featured": false,
+        "featured": true,
         "title": "Marketplace for enthusiasts to mint, buy and sell NFTs",
         "projectName": "NFT Marketplace Design",
         "description": "Designed an NFT marketplace where users can mint new NFTs, buy and sell NFTs and learn more about cryptocurrency",

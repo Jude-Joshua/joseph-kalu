@@ -7,6 +7,7 @@ import {ScrollingImages} from "../components/ScrollingText.tsx";
 import {ProjectCardRow} from "../components/ProjectCard.tsx";
 import Links from "../components/Links.tsx";
 import iconMapping from "../components/Icons.tsx";
+import Reviews from "../components/Reviews.tsx";
 
 import HomeGlobe from "../assets/images/home-globe.webp";
 import Client01 from "../assets/images/clients/JNJ.svg";
@@ -15,11 +16,8 @@ import Client03 from "../assets/images/clients/Designlab.svg";
 import Client04 from "../assets/images/clients/KENVUE.svg";
 import Client05 from "../assets/images/clients/adplist.svg";
 
-import {ArrowLeft, ArrowRight} from "@phosphor-icons/react";
-import Reviewer01 from "../assets/images/erin.webp";
-
 import Db from "../data/db.tsx";
-const projects = Db.filter(project => project.featured)
+const projects = Db.filter(project => project.featured);
 
 
 const roles = ["Design leader", "Design Strategist", "Community Builder"]
@@ -100,8 +98,8 @@ const Home: React.FC = () => {
                         {Object.values(projects).map((project, index) => (
                             <React.Fragment key={index}>
                                 <ProjectCardRow title={project.title} projectName={project.projectName}
-                                             description={project.description} tags={project.tags}
-                                             presentationImage={`/projects/${(project.projectName).toLowerCase()}/${project.presentationImage}`}/>
+                                                description={project.description} tags={project.tags}
+                                                presentationImage={`/projects/${(project.projectName).toLowerCase()}/${project.presentationImage}`}/>
                                 <PageDivider/>
                             </React.Fragment>
                         ))}
@@ -162,40 +160,9 @@ const Home: React.FC = () => {
                         </div>
                     </div>
                     <PageDivider/>
-                    <div className="review">
-                        <div className="review-testimonial flex flex-row items-center justify-center">
-                            <div className="button-icon">
-                                <ArrowLeft size={'24'} weight={'regular'}/>
-                            </div>
-                            <div className="review-testimonial-person flex flex-col justify-center items-center">
-                                <ImageComponent altText={'first Reviewer, Erin Skurdal'} source={Reviewer01}/>
-                                <div className="review-testimonial-person-details flex flex-col">
-                                    <p className="h6 text-center testimonial-person-details-name">
-                                        Erin Skurdal
-                                    </p>
-                                    <p className="c1 text-center review-testimonial-person-details-position">
-                                        Director, Global UX Design, Kenvue Inc.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="review-testimonial-review">
-                                <p className="p1">
-                                    Joseph was a member of my global UX design team for 18 months. During
-                                    that time, I was grateful for the thoughtfulness he brought to every
-                                    design challenge and his positive attitude which continuously elevated
-                                    the results of the cross functional team he worked with. Joseph brought
-                                    both a consumer and business-savvy mindset to his design decisions. He
-                                    is committed to creating and leveraging design systems to drive
-                                    consistent and efficient digital experiences. I hope I am able to hire
-                                    Joseph again in the future. He will be missed until then.
-                                </p>
-                            </div>
-                            <div className="button-icon right">
-                                <ArrowRight size={'24'} weight={'regular'}/>
-                            </div>
-                        </div>
-                    </div>
+                    <Reviews/>
                 </article>
+
                 <PageDivider/>
                 <article className={'brief flex flex-col'}>
                     <div className="article-title flex flex-col">
@@ -238,8 +205,8 @@ const Home: React.FC = () => {
                                 Collaborating on open-source community projects
                             </p>
                             <p className="p1">
-                                <Links to={'#'}
-                                       classes={'https://www.figma.com/community/file/1385981291431580402/memoji-emoji-illustrations'}
+                                <Links to={'https://www.figma.com/community/file/1385981291431580402/memoji-emoji-illustrations'}
+                                       classes={''}
                                        target={'_blank'} border={true}>Memoji</Links> | <Links to={'#'}
                                                                                                target={'_blank'}
                                                                                                classes={''}

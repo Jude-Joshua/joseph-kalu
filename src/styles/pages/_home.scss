@@ -75,12 +75,12 @@
                         gap: var(--gaps-has-button-gap);
                         color: var(--active-primary);
 
-                        & img{
+                        & img {
                             border-radius: var(--border-radi-section);
                             width: 200px;
                         }
 
-                        &-details{
+                        &-details {
                             gap: var(--gaps-button-inner-gap);
                         }
                     }
@@ -92,18 +92,29 @@
                         padding: var(--paddings-padding-inline);
                         width: 56%;
                     }
+                }
 
-                    & .button-icon{
-                        border: var(--border-width) solid var(--active-primary);
-                        color: var(--active-primary);
-                        background-color: unset;
-                        position: absolute;
-                        left: 0;
+                .swiper-slide{
+                    height: 0;
 
-                        &.right{
-                            right: 0;
-                            left: unset;
-                        }
+                    &-active{
+                        height: auto;
+                    }
+                }
+                & .button-icon {
+                    border: var(--border-width) solid var(--active-primary);
+                    color: var(--active-primary);
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    z-index: 100;
+                    cursor: pointer;
+                    background-color: var(--active-neutral-blur);
+                    backdrop-filter: blur(12px);
+
+                    &.right {
+                        right: 0;
+                        left: unset;
                     }
                 }
             }
