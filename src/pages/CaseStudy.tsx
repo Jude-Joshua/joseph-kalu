@@ -25,6 +25,12 @@ const CaseStudy: React.FC = () => {
         setError("");
     };
 
+    const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+        if (event.key === "Enter") {
+            handlePasswordSubmit();
+        }
+    };
+
     const handlePasswordSubmit = () => {
         if (inputPassword === projectPassword) {
             setIsAuthorized(true);
@@ -56,6 +62,7 @@ const CaseStudy: React.FC = () => {
                                         type="password"
                                         value={inputPassword}
                                         onChange={handlePasswordChange}
+                                        onKeyDown={handleKeyDown}
                                         placeholder="Enter password"
                                         className={`input-group-input p2 password-input ${error ? 'error' : ''}`}
                                     />
