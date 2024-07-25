@@ -43,7 +43,7 @@ const CaseStudy: React.FC = () => {
                 <header className={'header locked flex flex-col justify-center items-center'}>
                     <div className={"header-content flex flex-row items-start justify-center"}>
                         <div className={"header-content-hero-text flex flex-col items-center"}>
-                            <FolderSimpleLock size={200} weight={'thin'} className={'locked-icon'}/>
+                            <FolderSimpleLock size={160} weight={'thin'} className={'locked-icon'}/>
 
                             <p className={'p1 text-center'}>
                                 This case study requires a password. Please enter it below to view this project or reach
