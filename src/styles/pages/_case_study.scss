@@ -11,6 +11,17 @@
                 }
             }
         }
+
+        &.locked{
+
+            & .locked-icon{
+                color: var(--active-primary);
+            }
+
+            & .header-content{
+                width: 56%;
+            }
+        }
     }
 
     &-intro-details-row {

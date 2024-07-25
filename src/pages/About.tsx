@@ -123,7 +123,7 @@ const features = {
             },
             3: {
                 "place": "HNG Internship",
-                "url": ""
+                "url": "https://hng.tech/"
             }
         },
     }

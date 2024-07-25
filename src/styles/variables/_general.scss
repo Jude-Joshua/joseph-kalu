@@ -88,3 +88,43 @@ img {
     object-fit: cover;
     object-position: center;
 }
+
+.form-group{
+    gap: var(--gaps-card-gap);
+    width: 72%;
+
+    & .link-icon{
+        cursor: pointer;
+    }
+}
+
+.input-group{
+    gap: var(--gaps-paragraph-gap);
+    width: 100%;
+}
+
+input{
+    border: var(--border-width) solid var(--active-primary);
+    background-color: var(--active-neutral);
+    padding: var(--paddings-padding-parent-small) !important;
+    border-radius: var(--border-radi-section-groups);
+    text-align: center;
+    letter-spacing: 1px !important;
+    width: 100%;
+
+    &:focus{
+        border-color: var(--active-secondary);
+    }
+
+    &.error{
+        border-color: var(--error);
+        color: var(--error);
+    }
+}
+
+.error{
+    &-text{
+        color: var(--error);
+        text-align: center;
+    }
+}
