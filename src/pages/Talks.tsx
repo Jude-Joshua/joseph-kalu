@@ -19,11 +19,11 @@ const Talks: React.FC = () => {
             <section className={'flex flex-col items-start justify-start'}>
                 <PageDivider/>
 
-                <Lists type={'talks'}/>
+                <Lists  type={'talks'}/>
 
                 <PageDivider/>
 
-                <Lists type={'articles'}/>
+                <Lists  type={'articles'}/>
 
                 <PageDivider/>
             </section>

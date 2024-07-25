@@ -127,6 +127,8 @@
 
                     &:last-child {
                         align-self: flex-end;
+                        padding-right: var(--paddings-padding-body);
+                        width: 80%;
                     }
                 }
             }
@@ -134,10 +136,6 @@
             & .facts-container {
                 &-fact {
                     transition: 0.8s;
-
-                    //&:hover {
-                    //    padding-inline: var(--paddings-padding-parent-box);
-                    //}
 
                     & p {
                         &:first-child {
