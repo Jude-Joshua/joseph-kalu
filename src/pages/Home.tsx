@@ -16,8 +16,10 @@ import Client03 from "../assets/images/clients/Designlab.svg";
 import Client04 from "../assets/images/clients/KENVUE.svg";
 import Client05 from "../assets/images/clients/adplist.svg";
 
-import Db from "../data/db.tsx";
-const projects = Db.filter(project => project.featured);
+import Data from "../data/db.tsx";
+
+const projects = Object.values(Data.projects)
+const featuredProjects = projects.filter(project => project.featured);
 
 
 const roles = ["Design leader", "Design Strategist", "Community Builder"]
@@ -95,7 +97,7 @@ const Home: React.FC = () => {
                 </article>
                 <article className={'caseStudies'}>
                     <div className={'caseStudies-holder flex flex-col'}>
-                        {Object.values(projects).map((project, index) => (
+                        {Object.values(featuredProjects).map((project, index) => (
                             <React.Fragment key={index}>
                                 <ProjectCardRow title={project.title} projectName={project.projectName}
                                                 description={project.description} tags={project.tags}

@@ -5,6 +5,7 @@
                 &-text-contain {
                     padding-inline: var(--paddings-page-padding);
                 }
+
                 &-image {
                     border-radius: var(--border-radi-cards);
                     overflow: hidden;
@@ -12,13 +13,13 @@
             }
         }
 
-        &.locked{
+        &.locked {
 
-            & .locked-icon{
+            & .locked-icon {
                 color: var(--active-primary);
             }
 
-            & .header-content{
+            & .header-content {
                 width: 56%;
             }
         }
@@ -27,11 +28,48 @@
     &-intro-details-row {
         padding-inline: var(--paddings-page-padding);
 
-        &-section{
+        &-section {
             gap: var(--gaps-button-inner-gap);
 
-            span{
+            span {
                 display: block;
+            }
+        }
+    }
+
+    &-section {
+        gap: var(--gaps-body-section-gap);
+        padding-inline: var(--paddings-page-padding);
+
+        & .main-div {
+            gap: var(--gaps-paragraph-gap);
+
+            & .h4 {
+                text-transform: capitalize;
+            }
+
+            &-section {
+                &.parts {
+                    padding-top: var(--gaps-title-gap);
+                }
+
+                & .punny {
+                    padding-block: var(--gaps-title-gap);
+                    border-bottom: var(--border-width) solid var(--active-neutrals-black-blur);
+                    gap: var(--gaps-siblings-gap);
+
+                    &:first-child {
+                        border-top: var(--border-width) solid var(--active-neutrals-black-blur);
+                    }
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            &-images {
+                padding-top: var(--gaps-title-gap);
             }
         }
     }
