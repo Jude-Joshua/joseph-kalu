@@ -4,12 +4,56 @@
     gap: var(--gaps-button-inner-gap);
     padding: var(--gaps-button-inner-gap) var(--gaps-button-inner-gap) var(--gaps-button-inner-gap) var(--gaps-paragraph-gap);
     color: var(--active-primary);
+    overflow: hidden;
+    transition: 0.3s linear;
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 102%;
+        height: 0;
+        background-color: var(--active-neutrals-white);
+        left: -1%;
+        border-radius: var(--border-radi-section-groups);
+        top: unset;
+        bottom: 0;
+        transition: 2.8s ease-in-out;
+    }
 
     &-icon {
         background-color: var(--active-primary);
         color: var(--active-neutral);
         border-radius: var(--border-radi-section-groups);
         padding: var(--paddings-padding-parent-small);
+        overflow: hidden;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 102%;
+            height: 0;
+            background-color: var(--active-secondary);
+            left: -1%;
+            border-radius: var(--border-radi-section-groups);
+            top: unset;
+            bottom: 0;
+            transition: 0.5s ease;
+        }
+    }
+
+    &:hover{
+        color: var(--active-secondary);
+        border-color: var(--active-secondary);
+
+        &:before{
+            height: 100%;
+        }
+
+        & .button-icon{
+            &:before{
+                height: 100%;
+            }
+        }
     }
 
 

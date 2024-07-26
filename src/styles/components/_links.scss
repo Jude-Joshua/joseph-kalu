@@ -14,5 +14,12 @@
         border-bottom: var(--border-width-bold) solid var(--active-primary);
         line-height: 160%;
         text-align: left;
+        transition: all 0.3s linear;
+
+        &:hover {
+            border-bottom-color: transparent;
+            color: var(--active-secondary);
+        }
     }
+
 }

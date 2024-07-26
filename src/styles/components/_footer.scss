@@ -11,6 +11,23 @@
             opacity: 0.14;
             left: -14%;
         }
+
+        &-email{
+            transition: all 0.3s linear;
+
+            & .link-icon{
+                transition: all 0.3s linear;
+            }
+
+            &:hover{
+                color: var(--active-secondary);
+
+                & .link-icon{
+                    transform: rotate(45deg);
+                    background-color: var(--active-secondary);
+                }
+            }
+        }
     }
 
     &-info{
@@ -28,6 +45,12 @@
 
                 &.link {
                     color: var(--active-neutral);
+                    transition: all 0.3s linear;
+
+                    &:hover{
+                        color: var(--active-secondary);
+                        text-decoration: underline;
+                    }
                 }
             }
         }

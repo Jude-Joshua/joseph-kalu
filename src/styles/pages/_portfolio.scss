@@ -35,6 +35,7 @@
 
                         & img {
                             height: 100%;
+                            transition: all 0.3s linear;
                         }
                     }
 
@@ -46,9 +47,31 @@
 
                             &-name {
                                 color: var(--active-secondary);
+                                transition: all 0.3s linear;
                             }
                         }
 
+                    }
+                }
+
+                &:hover {
+                    .ProjectCaard {
+                        &-image {
+                            & img {
+                                transform: scale(1.2);
+                                filter: grayscale(1);
+                            }
+                        }
+
+                        &-info {
+
+                            &-title {
+                                &-name {
+                                    color: var(--active-neutrals-black);
+                                }
+                            }
+
+                        }
                     }
                 }
             }
