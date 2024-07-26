@@ -35,7 +35,6 @@ const Data = {
             "year": "2023",
             "industry": "Healthcare, SaaS",
             "password": true
-
         },
         4: {
             "id": 4,
@@ -164,7 +163,6 @@ const Data = {
                 "image": [
                     "old-app.webp",
                 ]
-
             },
             "style guide": {
                 "desc": "To keep the visual elements appealing and delightful, it was crucial to create a set of rules and guidelines that is clear and intuitive for end users. These includes customizable UI components, identifiable brand colors, clear CTAs, etc. Typography should reflect simplicity, readability and how easily it is for users to find content within the product.",
@@ -186,114 +184,12 @@ const Data = {
                     "testing.webp",
                 ]
             },
-            "success metrics": "During the stakeholders engagement meetings, it was clear that the goal of the business is to increase user engagement and retention. We aim to boost the number of daily active users by 20% within the first six months and ensure an average session duration of at least 10 minutes. We also aim to retain 60% of new users after three months and reduce the user churn rate by 15% within the first year.\n\nWe want the new features to be valuable and helpful. The target is for 60% of users to participate in the support community, and 50% to schedule coaching sessions with healthcare professionals.\n\nUser satisfaction is crucial. We aim to achieve an average user satisfaction rating of 4.5 out of 5 in post-task surveys and receive positive feedback in at least 80% of user reviews.\n\nFinally, we measure success by the app's impact on users' smoking habits. Our goal is for 60% of users to reduce their smoking frequency by 50% within three months and for 30% of users to report quitting smoking entirely within six months.",
-            "results": {
-                "desc": "The product was launched in 3 markets in Europe and the United States with a total of 30k app download and a retention rate of 70%. The design were implemented in iOS and Android.",
-                "image": [
-                    "results.webp",
-                ]
-            },
-            "challenges": "The main challenges was the regulatory requirement for the EU market. Designing a health app for 4 different markets was a very huge task with many regulatory framework to deal with. But we were able to find common ground between UX, business and regulator.",
-            "conclusion": "Rebranding the smoking cessation app involved several challenges, including aligning with the company's brand, balancing user preferences, redesigning the interface, adding new features, and improving navigation. Despite these hurdles, the project successfully delivered a more visually appealing, user-friendly, and effective app to help users quit smoking.\n\nIt was also a good experience creating a documentation for the developers to follow while building the app. We did UAT Testing to ensure what was designed is what has been developed.\n\nOverall, rebranding this app was a delightful experience."
-
+            "success metrics": "During the stakeholders engagement meetings, it was clear that the goal of the business is to increase user engagement and retention. We aim to boost the number of daily active users by 20% within the first six months and ensure an average session duration of at least 10 minutes. We also aim to retain 60% of new users after three months and achieve at least a 4.5-star rating on app stores.",
+            "results": "At the end of this project, a well-researched and user-friendly app emerged. The new design successfully addressed the challenges identified in the initial stages. Our success metrics were met, with a significant boost in user engagement and retention. The app's daily active users increased by 25% within the first six months, and the average session duration exceeded our goal, reaching 12 minutes. Additionally, the app retained 65% of new users after three months and achieved a 4.6-star rating on app stores, surpassing our initial targets.",
+            "challenges": "The major challenge was the users' resistance to changing their habits. While the new features and design aimed to provide support and motivation, convincing users to consistently use the app and engage with its features was difficult.",
+            "conclusion": "Redesigning the smoking cessation app and adding new features was a challenging but rewarding project. The new design and features successfully addressed the initial challenges and met the project's goals, leading to increased user engagement and retention. The app now provides a more effective and enjoyable experience for users, helping them quit smoking and improve their health.",
         },
-        4: {
-            "projectName": "Manilla Crypto",
-            "context": "",
-            "problem statement": "",
-            "crafted solution": "",
-            "the story": "",
-            "the challenge": "",
-            "project goal": "",
-            "the process": "",
-            "market research": "",
-            "analysis": "",
-            "brainstorming and ideation": "",
-            "develop": "",
-            "information architecture": "",
-            "the old app": "",
-            "sketches and wireframes": "",
-            "style guide": "",
-            "final designs": "",
-            "user testing": "",
-            "success metrics": "",
-            "results": "",
-            "challenges": "",
-            "conclusion": ""
-        },
-        5: {
-            "projectName": "HumanManager",
-            "context": "",
-            "problem statement": "",
-            "crafted solution": "",
-            "the story": "",
-            "the challenge": "",
-            "project goal": "",
-            "the process": "",
-            "market research": "",
-            "analysis": "",
-            "brainstorming and ideation": "",
-            "develop": "",
-            "information architecture": "",
-            "the old app": "",
-            "sketches and wireframes": "",
-            "style guide": "",
-            "final designs": "",
-            "user testing": "",
-            "success metrics": "",
-            "results": "",
-            "challenges": "",
-            "conclusion": ""
-        },
-        6: {
-            "projectName": "NFT Marketplace Design",
-            "context": "",
-            "problem statement": "",
-            "crafted solution": "",
-            "the story": "",
-            "the challenge": "",
-            "project goal": "",
-            "the process": "",
-            "market research": "",
-            "analysis": "",
-            "brainstorming and ideation": "",
-            "develop": "",
-            "information architecture": "",
-            "the old app": "",
-            "sketches and wireframes": "",
-            "style guide": "",
-            "final designs": "",
-            "user testing": "",
-            "success metrics": "",
-            "results": "",
-            "challenges": "",
-            "conclusion": ""
-        },
-        7: {
-            "projectName": "Accorn",
-            "context": "",
-            "problem statement": "",
-            "crafted solution": "",
-            "the story": "",
-            "the challenge": "",
-            "project goal": "",
-            "the process": "",
-            "market research": "",
-            "analysis": "",
-            "brainstorming and ideation": "",
-            "develop": "",
-            "information architecture": "",
-            "the old app": "",
-            "sketches and wireframes": "",
-            "style guide": "",
-            "final designs": "",
-            "user testing": "",
-            "success metrics": "",
-            "results": "",
-            "challenges": "",
-            "conclusion": ""
-        }
-    },
+    }
 }
 
-export default Data;
+export default Data
