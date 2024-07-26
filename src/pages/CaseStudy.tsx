@@ -6,6 +6,7 @@ import ImageComponent from "../components/ImageComponent.tsx";
 import Data from "../data/db.tsx";
 import PageDivider from "../components/PageDivider.tsx";
 import {ArrowRight, FolderSimpleLock} from "@phosphor-icons/react";
+import Links from "../components/Links.tsx";
 
 interface ProjectDetails {
     [key: string]: string | ProjectDetails | string[];
@@ -101,23 +102,35 @@ const CaseStudy: React.FC = () => {
             const createElement = (key: string, value: string | ProjectDetails | string[], isSubkey: boolean = false): JSX.Element | null => {
 
                 if (typeof value === 'string' && value.trim()) {
-                    const paragraphs = value.split('\n\n').map((paragraph, index) => (
-                        <>
-                            <p key={index}>{paragraph}</p>
-                        </>
-                    ));
+                    if (key === 'url') {
+                        return (
+                            <>
+                                <article key={key} className="main-div-section flex flex-col">
+                                    <h5 className={'h4 text-center'}>View the project <Links to={value} classes={'inline'} border={false}>here</Links></h5>
+                                </article>
+                                <PageDivider/>
+                            </>
+                        )
+                    } else {
+                        const paragraphs = value.split('\n\n').map((paragraph, index) => (
+                            <>
+                                <p key={index}>{paragraph}</p>
+                            </>
+                        ));
 
-                    return (
-                        <>
-                            <article key={key} className="main-div flex flex-col">
-                                {isSubkey ? <h6 className={'h6'}>{key === 'desc' ? '' : key}</h6> :
-                                    <h5 className={'h4'}>{key}</h5>}
-                                {paragraphs}
-                            </article>
-                            <PageDivider/>
-                        </>
-                    );
+                        return (
+                            <>
+                                <article key={key} className="main-div flex flex-col">
+                                    {isSubkey ? <h6 className={'h6'}>{key === 'desc' ? '' : key}</h6> :
+                                        <h5 className={'h4'}>{key}</h5>}
+                                    {paragraphs}
+                                </article>
+                                <PageDivider/>
+                            </>
+                        );
+                    }
                 }
+
 
                 if (typeof value === 'object' && !Array.isArray(value)) {
                     return (
@@ -134,7 +147,7 @@ const CaseStudy: React.FC = () => {
                                                     {Object.keys(subValue).map((innerKey) => {
                                                         const innerValue = subValue[innerKey];
 
-                                                        if (typeof innerValue === 'string'){
+                                                        if (typeof innerValue === 'string') {
                                                             const innerParagraphs = innerValue.split('\n\n').map((innerParagraph, index) => (
                                                                 <>
                                                                     <p key={index}>{innerParagraph}</p>
@@ -171,10 +184,10 @@ const CaseStudy: React.FC = () => {
                                             );
                                         }
 
-                                        if(subValue.trim()){
+                                        if (subValue.trim()) {
                                             const paragraphs = subValue.split('\n\n').map((paragraph, index) => (
                                                 <>
-                                                    <p key={index}>{paragraph}</p><br/>
+                                                    <p key={index} className={`p1 ${subKey}`}>{paragraph}</p><br/>
                                                 </>
                                             ));
                                             return (
@@ -271,7 +284,6 @@ const CaseStudy: React.FC = () => {
                 </header>
 
                 {renderProjectDetails(projectDetails)}
-
             </>
         )
     }

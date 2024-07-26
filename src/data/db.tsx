@@ -89,51 +89,112 @@ const Data = {
     "projects-details": {
         1: {
             "projectName": "Tamarind",
-            "context": "",
-            "problem statement": "",
-            "crafted solution": "",
-            "the story": "",
-            "the challenge": "",
-            "project goal": "",
-            "the process": "",
-            "market research": "",
-            "analysis": "",
-            "brainstorming and ideation": "",
-            "develop": "",
-            "information architecture": "",
-            "the old app": "",
-            "sketches and wireframes": "",
-            "style guide": "",
-            "final designs": "",
-            "user testing": "",
-            "success metrics": "",
-            "results": "",
-            "challenges": "",
-            "conclusion": ""
+            "the threat: An Economic Imperative": "Funding is the most significant issue facing SMEs in Nigeria. SMEs contribute 48 percent of the national GDP and 84 percent of employment. The failure of SMEs would have a catastrophic impact on the economy. This is the threat I set out to address with Tamarind.",
+            "Research insights: Unveiling the Accessibility Barrier": {
+                "desc": "After research, I discovered that the issue wasn't the availability of funds but their accessibility. Key factors limiting access include:",
+                "parts":{
+                    "":"Lack of sufficient collateral and credit information",
+                    " ":"Strict requirements set by financial institutions",
+                    "  ":"High costs of acquiring cash.",
+                }
+            },
+            "How can Tamarind solve this problem?": {
+                "parts":{
+                    "no collateral":"Loans without the need for collateral.",
+                    "5-minute loan disbursement":"Quick and efficient disbursement process.",
+                    "financial education":"Educational content to help SMEs manage their finances better.",
+                },
+                "images":[
+                    "solution01.png",
+                    "solution02.png",
+                ]
+            },
+            "Crafting the User Journey: Personas and Architecture": {
+                "desc":"I developed detailed user personas to guide my design decisions. Understanding the needs, goals, and pain points of my users was crucial. I also created an end-to-end information architecture and a fluid workflow to ensure a seamless user experience.",
+                "images":[
+                    "solution01.png",
+                    "solution02.png",
+                ]
+            },
+            "the challenge": {
+                "desc":"How can we make sure a borrower will pay back their loan when it’s due?",
+                "Feasibility study":"I started by conducting primary research Feasibility studyto get a broad overview of the loan market. This involved looking at a variety of microenterprises, SMEs, organizations, and people who provide loans in order to comprehend how services are managed in the lending industry. Understanding and tying user goals and corporate goals together was the major objective.",
+                "images":[
+                    "solution01.png",
+                    "solution02.png",
+                ]
+            },
+            "Building the Interface for a unique experience": {
+                "desc":"Creating a robust design system with reusable components was essential. This approach saved time and ensured a consistent, clean design across the entire application.",
+                "images":[
+                    "solution01.png",
+                    "solution02.png",
+                ]
+            },
+            "final designs": {
+                "desc":"The onboarding process introduces users to Tamarind's key features and guides them through the initial setup. The homepage provides a clear and concise overview of their loan options, financial resources, and repayment status.",
+                "images":[
+                    "solution01.png",
+                    "solution02.png",
+                ]
+            },
+
+            "lessons learned: reflecting on the journey": " Prioritizing user needs leads to solutions that truly resonate. Streamlining processes saves time and reduces overhead. Financial literacy reduces default rates and fosters sustainable growth.",
+            "conclusion": "Tamarind's innovative approach to SME loans shows that with the right technology and user-centered design, significant barriers can be overcome, driving economic growth. "
         },
         2: {
             "projectName": "Scooter Scatter",
-            "context": "",
-            "problem statement": "",
-            "crafted solution": "",
-            "the story": "",
-            "the challenge": "",
-            "project goal": "",
-            "the process": "",
-            "market research": "",
-            "analysis": "",
-            "brainstorming and ideation": "",
-            "develop": "",
-            "information architecture": "",
-            "the old app": "",
-            "sketches and wireframes": "",
-            "style guide": "",
-            "final designs": "",
-            "user testing": "",
-            "success metrics": "",
-            "results": "",
-            "challenges": "",
-            "conclusion": ""
+            "problem statement": {
+                "desc": "In Tallinn's historic streets, a modern phenomenon has emerged alongside centuries-old architecture - electric scooters. A promising  eco-friendly  and affordable vehicle is now a problem due to  indiscriminate parking, so much so that once in Paris 90% voted to ban its use at a referendum in 2020. A bad news for green transport if one more solution is taken off the already small list of eco-friendly transport. A costly global cost for disorderliness.\n\nIn this study we set out to understand:",
+                "parts": {
+                    "": "Why did this happen?",
+                    " ": "How badly does it affects the city?",
+                    "  ": "How can we fix this?",
+                },
+                "close": "This was achieved by speaking to residents asking them to fill forms and answer our questions in an interview"
+            },
+            "research goals": {
+                "desc": "By the end of this research, we want to:",
+                "parts": {
+                    "": "Find the root causes",
+                    " ": "Access the impacts",
+                    "  ": "Propose strategies for Talinn",
+                },
+                "close": "Through a human-centered approach, we aimed to enhance the urban mobility experience for all stakeholders."
+            },
+            "research and analysis": {
+                "desc": "The team conducted literature research to inform user interview question. Then applied cultural angles to the sets of questions in order to analyze data according to Critical theory. The questions were distributed via google forms which included open ended questions. The following are research questions that guided the team:",
+                "parts": {
+                    "": "What are the underlying factors driving users to park shared scooters indiscriminately in Tallinn?",
+                    " ": "How does the availability and design of scooter-sharing infrastructure influence parking behavior in Tallinn?",
+                    "  ": "What are the safety implications of indiscriminate scooter parking on Tallinn's sidewalks and roadways?",
+                    "   ": "What local regulations exist to mitigate indiscriminate parking of scooters, and what role do they play? What are their limitations?",
+                },
+                "images": [
+                    'research01.png'
+                ]
+            },
+            "Understanding the problem": {
+                "desc": "We collected quantitative data from 111 participants, specifically targeting shared scooter users. Participants were recruited from social media platforms, including Facebook, Telegram, and WhatsApp. Some of the question we asked to understand their motivation, awareness of rules & guidelines of scooter usage and attitude towards the problem were:",
+                "parts": {
+                    "": "Have you ever shared a scooter?",
+                    "  ": "Have you ever parked indiscriminately?",
+                    "   ": "Are you aware of designated parking areas or guidelines for scooter parking in Tallinn?",
+                },
+                "images": [
+                    'research01.png'
+                ]
+            },
+            "insights: The root cause": {
+                "desc": "Based on these responses the major reasons why these have been happening are:",
+                "images": [
+                    'research01.png',
+                    'research01.png'
+                ]
+            },
+            "challenges and learnings": "Throughout the research process, several challenges and learnings emerged. We initially faced difficulties in recruiting participants for user interviews, resulting in a smaller sample size than anticipated. Additionally, some respondents encountered issues with the survey platform, highlighting the importance of thorough testing and user feedback incorporation. Despite these challenges, we gained valuable insights into user behaviors and perceptions surrounding scooter usage and indiscriminate parking, emphasizing the need for adaptable research methodologies and robust participant engagement strategies.",
+            "conclusion": "Our findings illuminate the complex interplay between user behaviors, urban infrastructure, and regulatory frameworks in shaping the phenomenon of scooter loitering. In reimagining Tallinn's urban mobility landscape, we advocate for user-centric interventions that address the root causes of scooter scatter. Clearer regulations, enhanced awareness campaigns, and incentivized parking solutions can foster a culture of responsible scooter usage, ensuring a safer and more accessible city for all.\n\nThrough collaborative efforts between policymakers, urban planners, and scooter-sharing businesses, we envision a future where shared scooters seamlessly integrate into the fabric of urban life, enriching the mobility experience for residents and visitors alike.",
+            "url":"https://docs.google.com/document/d/1TobUef8DSGB8DG_DrSVJYuBm3Gq-xFsYErn0ws_WtV8/edit"
         },
         3: {
             "projectName": "Smoking Cessation App",
@@ -199,51 +260,82 @@ const Data = {
         },
         4: {
             "projectName": "Manilla Crypto",
-            "context": "",
-            "problem statement": "",
-            "crafted solution": "",
-            "the story": "",
-            "the challenge": "",
-            "project goal": "",
-            "the process": "",
-            "market research": "",
-            "analysis": "",
-            "brainstorming and ideation": "",
-            "develop": "",
-            "information architecture": "",
-            "the old app": "",
-            "sketches and wireframes": "",
-            "style guide": "",
-            "final designs": "",
-            "user testing": "",
-            "success metrics": "",
-            "results": "",
-            "challenges": "",
-            "conclusion": ""
+            "introduction": "In a world where cryptocurrency transactions are rampant, users often find themselves grappling with high fees and the hassle of switching between multiple platforms. Manilla Crypto Wallet set out to revolutionize this landscape by offering a one-stop solution for trading, storing, and minting NFTs, all within a single intuitive platform.",
+            "Market insights": {
+                "desc": "Extensive market analysis revealed a glaring gap in the crypto ecosystem - the absence of a unified platform for trading cryptocurrencies and creating NFTs. Through primary research, conversations with crypto traders, and analysis of existing platforms, it became evident that users craved simplicity and convenience above all else.\n\nMost users are relatively new to the crypto and NFT space and find it very difficult to navigate between these platforms to perform an action.",
+                "image": [
+                    "process.webp",
+                ]
+            },
+            "user personas": {
+                "desc": "For this early stage iteration, I had focused on the group that makes up the majority of the user base.",
+                "image": [
+                    "process.webp",
+                ]
+            },
+            "the solution": "COWRIE, BEADS, SHELL — Manilla Coins. Alternative cryptocurrency for the African market. Manilla Coin  is a decentralised protocol on open-source code to transfer digital currency to fiat money domestically and across borders.\n\nManilla Coin (MNC) is an alternative cryptocurrency created in September 2021 by Joseph (God-Body) Kalu. Like Bitcoin, Manilla Coin  is based on an open-source global payment network that is not controlled by any central authority.\n\nManilla Coin  is a decentralized protocol on open-source code to transfer digital currency to fiat money domestically and across borders.",
+            "the currencies": {
+                "image": [
+                    "process.webp",
+                ]
+            },
+            "the platform": {
+                "desc": "Manilla is a mobile wallet that allows users to trade and store digital assets. It also gives the user the freedom to create and store NFTs. This wallet gives users the freedom of trading, buying, storing and minting NFTs all on the same platform.",
+                "parts": {
+                    "segmenting functionality": "To address the diverse needs of users, Manilla introduced a segmented approach, allowing users to seamlessly toggle between wallet and exchange functionalities. This segmentation not only simplifies the user experience but also empowers users with greater control over their assets.",
+                    "simplified onboarding": "Gone are the days of complex passphrase memorization. With Manilla's one-click sign-up feature, users can effortlessly create an account using just their email, eliminating the friction associated with traditional onboarding processes.",
+                    "empowering NFT creation": "Manilla goes beyond traditional wallets by integrating NFT creation capabilities directly into the platform. Users can now transform their cherished artwork into digital assets and securely store them within their wallet, adding a personal touch to their investment portfolios.",
+                    "intuitive dashboard design": "Enhancing user engagement was a top priority for Manilla. By strategically placing relevant information on the dashboard, users can effortlessly track their assets' performance and stay informed about market trends, fostering a more immersive and rewarding user experience.",
+                },
+                "images": [
+                    "process.webp",
+                    "process.webp",
+                    "process.webp",
+                    "process.webp",
+                ]
+            },
+            "lessons learned": {
+                "desc": "Navigating this design journey, I have learnt a few but important things:",
+                "parts": {
+                    "User-Centricity is Key": "Grounding design decisions in user research and feedback is paramount to creating impactful and intuitive experiences.",
+                    "Simplicity Trumps Complexity": "In a complex landscape like cryptocurrency, simplicity reigns supreme. Prioritizing ease of use and accessibility can significantly enhance user adoption and satisfaction.",
+                    "Flexibility Drives Engagement": "Offering users the flexibility to tailor their experience to their unique preferences fosters a sense of ownership and empowerment, driving deeper engagement and loyalty."
+                },
+                "images": [
+                    "process.webp",
+                ]
+            },
+            "conclusion": "In reimagining the user experience for Manilla Crypto Wallet, my journey has been one of innovation, empathy, and relentless dedication to user satisfaction. As I continue to push the boundaries of design in the crypto space, I remain committed to empowering users and transforming the way they engage with digital assets."
         },
         5: {
             "projectName": "HumanManager",
-            "context": "",
-            "problem statement": "",
-            "crafted solution": "",
-            "the story": "",
-            "the challenge": "",
-            "project goal": "",
-            "the process": "",
-            "market research": "",
-            "analysis": "",
-            "brainstorming and ideation": "",
-            "develop": "",
-            "information architecture": "",
-            "the old app": "",
-            "sketches and wireframes": "",
-            "style guide": "",
-            "final designs": "",
+            "overview": "People management has always been localised to the big corporations. Many times to small business owners people management is a luxury. Human manager is a human capital solution to suit businesses of all shapes and sizes.",
+            "why": "As a business HumanManager’s mission is to create a balance between employee satisfaction and workplace efficiency while constantly providing valuable insights that will keep this process progressive and efficient.",
+            "the solution": {
+                "desc":"",
+                "parts":{
+                    "":"HumanManager enterprise",
+                    " ":"HumanManager flex",
+                    "  ":"HumanManager mobile app",
+                }
+            },
+            "final designs": {
+                "desc": "How can people management be affordable for SMEs?",
+                "images":[
+                    "solution01.png",
+                    "solution02.png",
+                    "solution02.png",
+                    "solution02.png",
+                ]
+            },
             "user testing": "",
             "success metrics": "",
-            "results": "",
-            "challenges": "",
-            "conclusion": ""
+            "results": {
+                "desc": "The product was launched in 3 markets in Europe and the United States with a total of 30k app download and a retention rate of 70%. The design were implemented in iOS and Android.",
+                "images":[
+                    "solution01.png",
+                ]
+            },
         },
         6: {
             "projectName": "NFT Marketplace Design",
