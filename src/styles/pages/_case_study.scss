@@ -57,6 +57,9 @@
                     padding-block: var(--gaps-title-gap);
                     border-bottom: var(--border-width) solid var(--active-neutrals-black-blur);
                     gap: var(--gaps-siblings-gap);
+                    list-style: decimal-leading-zero;
+                    padding-left: var(--paddings-padding-parent-box);
+                    display: list-item;
 
                     &:first-child {
                         border-top: var(--border-width) solid var(--active-neutrals-black-blur);
@@ -64,6 +67,12 @@
 
                     &:last-child {
                         border-bottom: none;
+                    }
+
+                    & p{
+                        &:last-child{
+                            padding-top: var(--gaps-button-inner-gap);
+                        }
                     }
                 }
             }

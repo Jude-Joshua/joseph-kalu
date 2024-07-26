@@ -142,7 +142,7 @@ const CaseStudy: React.FC = () => {
                                                             ));
 
                                                             return (
-                                                                <div className={'punny flex flex-col'} key={innerKey}>
+                                                                <div className={'punny'} key={innerKey}>
                                                                     <p className={'h6'}>{innerKey}</p>
                                                                     <p>{innerParagraphs}</p>
                                                                 </div>
