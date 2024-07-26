@@ -95,7 +95,9 @@
 
             &-images {
                 img {
-                    padding-top: var(--paddings-nav-block);
+                    border-radius: var(--border-radi-cards);
+                    margin-top: var(--paddings-nav-block);
+                    object-fit: cover;
                 }
             }
         }

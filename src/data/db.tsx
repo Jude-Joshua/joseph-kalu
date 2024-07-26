@@ -12,18 +12,6 @@ const Data = {
             "industry": "Healthcare, SaaS",
             "password": false
         },
-        2: {
-            "id": 2,
-            "featured": false,
-            "title": "Promoting responsible and efficient scooter usage in Tallinn",
-            "projectName": "Scooter Scatter",
-            "description": "Conducted user research and product strategy to fix scooter parking related problems.",
-            "tags": "user research, product strategy",
-            "presentationImage": "cover-image.webp",
-            "year": "2023",
-            "industry": "Healthcare, SaaS",
-            "password": false
-        },
         3: {
             "id": 3,
             "featured": true,
@@ -49,7 +37,7 @@ const Data = {
             "industry": "Healthcare, SaaS",
             "password": false
         },
-        5: {
+        2: {
             "id": 5,
             "featured": false,
             "title": "Unlocking every SME and BIG Co. potential with the ultimate people management tool!",
@@ -61,7 +49,7 @@ const Data = {
             "industry": "Healthcare, SaaS",
             "password": false
         },
-        6: {
+        5: {
             "id": 6,
             "featured": true,
             "title": "Marketplace for enthusiasts to mint, buy and sell NFTs",
@@ -75,11 +63,23 @@ const Data = {
         },
         7: {
             "id": 7,
-            "featured": true,
+            "featured": false,
             "title": "Empowering a community of merchants to reach the unbanked",
             "projectName": "Accorn",
             "description": "Conducted user research and implemented streamlined workflows to simplified the loan application process for SMEs.",
             "tags": "mobile app design, user research, product strategy, ux design",
+            "presentationImage": "cover-image.webp",
+            "year": "2023",
+            "industry": "Healthcare, SaaS",
+            "password": false
+        },
+        6: {
+            "id": 2,
+            "featured": true,
+            "title": "Promoting responsible and efficient scooter usage in Tallinn",
+            "projectName": "Scooter Scatter",
+            "description": "Conducted user research and product strategy to fix scooter parking related problems.",
+            "tags": "user research, product strategy",
             "presentationImage": "cover-image.webp",
             "year": "2023",
             "industry": "Healthcare, SaaS",
@@ -112,30 +112,29 @@ const Data = {
             "Crafting the User Journey: Personas and Architecture": {
                 "desc":"I developed detailed user personas to guide my design decisions. Understanding the needs, goals, and pain points of my users was crucial. I also created an end-to-end information architecture and a fluid workflow to ensure a seamless user experience.",
                 "images":[
-                    "solution01.png",
-                    "solution02.png",
+                    "persona.png",
+                    "ia.png",
                 ]
             },
             "the challenge": {
                 "desc":"How can we make sure a borrower will pay back their loan when it’s due?",
                 "Feasibility study":"I started by conducting primary research Feasibility studyto get a broad overview of the loan market. This involved looking at a variety of microenterprises, SMEs, organizations, and people who provide loans in order to comprehend how services are managed in the lending industry. Understanding and tying user goals and corporate goals together was the major objective.",
                 "images":[
-                    "solution01.png",
-                    "solution02.png",
+                    "challenge01.png",
+                    "challenge02.png",
                 ]
             },
             "Building the Interface for a unique experience": {
                 "desc":"Creating a robust design system with reusable components was essential. This approach saved time and ensured a consistent, clean design across the entire application.",
                 "images":[
-                    "solution01.png",
-                    "solution02.png",
+                    "style.png",
                 ]
             },
             "final designs": {
                 "desc":"The onboarding process introduces users to Tamarind's key features and guides them through the initial setup. The homepage provides a clear and concise overview of their loan options, financial resources, and repayment status.",
                 "images":[
-                    "solution01.png",
-                    "solution02.png",
+                    "final01.png",
+                    "final02.png",
                 ]
             },
 
@@ -171,7 +170,8 @@ const Data = {
                     "   ": "What local regulations exist to mitigate indiscriminate parking of scooters, and what role do they play? What are their limitations?",
                 },
                 "images": [
-                    'research01.png'
+                    'research01.png',
+                    'research02.png',
                 ]
             },
             "Understanding the problem": {
@@ -182,18 +182,18 @@ const Data = {
                     "   ": "Are you aware of designated parking areas or guidelines for scooter parking in Tallinn?",
                 },
                 "images": [
-                    'research01.png'
+                    'understand.png'
                 ]
             },
             "insights: The root cause": {
                 "desc": "Based on these responses the major reasons why these have been happening are:",
                 "images": [
-                    'research01.png',
-                    'research01.png'
+                    'insight01.png',
+                    'insight02.png'
                 ]
             },
-            "challenges and learnings": "Throughout the research process, several challenges and learnings emerged. We initially faced difficulties in recruiting participants for user interviews, resulting in a smaller sample size than anticipated. Additionally, some respondents encountered issues with the survey platform, highlighting the importance of thorough testing and user feedback incorporation. Despite these challenges, we gained valuable insights into user behaviors and perceptions surrounding scooter usage and indiscriminate parking, emphasizing the need for adaptable research methodologies and robust participant engagement strategies.",
-            "conclusion": "Our findings illuminate the complex interplay between user behaviors, urban infrastructure, and regulatory frameworks in shaping the phenomenon of scooter loitering. In reimagining Tallinn's urban mobility landscape, we advocate for user-centric interventions that address the root causes of scooter scatter. Clearer regulations, enhanced awareness campaigns, and incentivized parking solutions can foster a culture of responsible scooter usage, ensuring a safer and more accessible city for all.\n\nThrough collaborative efforts between policymakers, urban planners, and scooter-sharing businesses, we envision a future where shared scooters seamlessly integrate into the fabric of urban life, enriching the mobility experience for residents and visitors alike.",
+            "challenges and learnings": "Throughout the research process, several challenges and learnings emerged. We initially faced difficulties in recruiting participants for user interviews, resulting in a smaller sample size than anticipated. Additionally, some respondents encountered issues with the survey platform, highlighting the importance of thorough testing and user feedback incorporation.\n\nDespite these challenges, we gained valuable insights into user behaviors and perceptions surrounding scooter usage and indiscriminate parking, emphasizing the need for adaptable research methodologies and robust participant engagement strategies.",
+            "conclusion": "Our findings illuminate the complex interplay between user behaviors, urban infrastructure, and regulatory frameworks in shaping the phenomenon of scooter loitering. In reimagining Tallinn's urban mobility landscape, we advocate for user-centric interventions that address the root causes of scooter scatter.\n\nClearer regulations, enhanced awareness campaigns, and incentivized parking solutions can foster a culture of responsible scooter usage, ensuring a safer and more accessible city for all.\n\nThrough collaborative efforts between policymakers, urban planners, and scooter-sharing businesses, we envision a future where shared scooters seamlessly integrate into the fabric of urban life, enriching the mobility experience for residents and visitors alike.",
             "url":"https://docs.google.com/document/d/1TobUef8DSGB8DG_DrSVJYuBm3Gq-xFsYErn0ws_WtV8/edit"
         },
         3: {
@@ -264,19 +264,19 @@ const Data = {
             "Market insights": {
                 "desc": "Extensive market analysis revealed a glaring gap in the crypto ecosystem - the absence of a unified platform for trading cryptocurrencies and creating NFTs. Through primary research, conversations with crypto traders, and analysis of existing platforms, it became evident that users craved simplicity and convenience above all else.\n\nMost users are relatively new to the crypto and NFT space and find it very difficult to navigate between these platforms to perform an action.",
                 "image": [
-                    "process.webp",
+                    "market.png",
                 ]
             },
             "user personas": {
                 "desc": "For this early stage iteration, I had focused on the group that makes up the majority of the user base.",
                 "image": [
-                    "process.webp",
+                    "persona.png",
                 ]
             },
             "the solution": "COWRIE, BEADS, SHELL — Manilla Coins. Alternative cryptocurrency for the African market. Manilla Coin  is a decentralised protocol on open-source code to transfer digital currency to fiat money domestically and across borders.\n\nManilla Coin (MNC) is an alternative cryptocurrency created in September 2021 by Joseph (God-Body) Kalu. Like Bitcoin, Manilla Coin  is based on an open-source global payment network that is not controlled by any central authority.\n\nManilla Coin  is a decentralized protocol on open-source code to transfer digital currency to fiat money domestically and across borders.",
             "the currencies": {
                 "image": [
-                    "process.webp",
+                    "currency.png",
                 ]
             },
             "the platform": {
@@ -288,10 +288,9 @@ const Data = {
                     "intuitive dashboard design": "Enhancing user engagement was a top priority for Manilla. By strategically placing relevant information on the dashboard, users can effortlessly track their assets' performance and stay informed about market trends, fostering a more immersive and rewarding user experience.",
                 },
                 "images": [
-                    "process.webp",
-                    "process.webp",
-                    "process.webp",
-                    "process.webp",
+                    "platform01.png",
+                    "platform02.png",
+                    "platform03.png",
                 ]
             },
             "lessons learned": {
@@ -300,10 +299,7 @@ const Data = {
                     "User-Centricity is Key": "Grounding design decisions in user research and feedback is paramount to creating impactful and intuitive experiences.",
                     "Simplicity Trumps Complexity": "In a complex landscape like cryptocurrency, simplicity reigns supreme. Prioritizing ease of use and accessibility can significantly enhance user adoption and satisfaction.",
                     "Flexibility Drives Engagement": "Offering users the flexibility to tailor their experience to their unique preferences fosters a sense of ownership and empowerment, driving deeper engagement and loyalty."
-                },
-                "images": [
-                    "process.webp",
-                ]
+                }
             },
             "conclusion": "In reimagining the user experience for Manilla Crypto Wallet, my journey has been one of innovation, empathy, and relentless dedication to user satisfaction. As I continue to push the boundaries of design in the crypto space, I remain committed to empowering users and transforming the way they engage with digital assets."
         },
@@ -324,8 +320,8 @@ const Data = {
                 "images":[
                     "solution01.png",
                     "solution02.png",
-                    "solution02.png",
-                    "solution02.png",
+                    "solution03.png",
+                    "solution04.png",
                 ]
             },
             "user testing": "",
@@ -333,7 +329,7 @@ const Data = {
             "results": {
                 "desc": "The product was launched in 3 markets in Europe and the United States with a total of 30k app download and a retention rate of 70%. The design were implemented in iOS and Android.",
                 "images":[
-                    "solution01.png",
+                    "result01.png",
                 ]
             },
         },
@@ -344,70 +340,69 @@ const Data = {
             "crafted solution": {
                 "desc": "After thorough research and multiple iterations, we arrived at the final design for our NFT platform. Our primary focus was on simplicity and ease of use.",
                 "image": [
-                    "solution.webp",
+                    "solution.png",
                 ]
             },
             "the story": {
                 "image": [
-                    "story01.webp",
+                    "story01.png",
                 ]
             },
             "project goal": "Our goal for this project is to create an easy-to-use NFT platform where people can mint and trade NFTs. We aim to make the process simple and intuitive for categories of users, whether they are new to NFTs or have a ton of experience. We want our platform to be secure, reliable, and user-friendly, standing out from other platforms in the market.",
             "market research": {
                 "desc": "To get things started, I conducted a preliminary market research to gain a comprehensive understanding of the NFT and crypto currency landscape. This research encompasses market size, user demographic, competitor analysis, market trends, technological landscape and  regulations.",
                 "image": [
-                    "styleguide.webp",
-                    "styleguide.webp",
-                    "styleguide.webp",
+                    "research01.png",
+                    "research02.png",
+                    "research03.png",
                 ]
             },
             "analysis": {
                 "desc": "We analysed all the collected insights from the user interview and survey and arranged into an affinity map so we can come up with some valuable information that could lead to a possible solution.\n\nBased on the affinity map, we were able to come up with six pain points that our user persona was experiencing and needed a solution to.\n\nWe understood that addressing these pain points will not only make our product stand out, it’ll also attract users to be fully engaged in using the product and in-turn increase referrals.",
                 "image": [
-                    "solution.webp",
+                    "analysis.png",
                 ]
             },
             "brainstorming and ideation": {
                 "image": [
-                    "solution.webp",
-                    "solution.webp",
+                    "brain.png",
+                    "brain02.png",
                 ]
             },
             "develop": {
                 "image": [
-                    "solution.webp",
-                    "solution.webp",
+                    "develop01.png",
+                    "develop02.png",
                 ]
             },
             "sketches and wireframes": {
                 "desc": "We used wireframe to quickly test the ideas and iterate without much effort and finance. We started by sketching out the wireframe, tested it in house, iterated and tested it with potential users. At the end of the iterative process, we adjusted our designs and came with a better product design. ",
                 "image": [
-                    "solution.webp",
+                    "wire.png",
                 ]
             },
             "style guide": {
                 "desc": "We created a style guide to enable us have a consistent design with the crypto exchange and make design and development efforts less stressful.",
                 "image": [
-                    "styleguide.webp",
+                    "style.png",
                 ]
             },
             "final designs": {
                 "image": [
-                    "final01.webp",
+                    "final.png",
                 ]
-            }
-            ,
+            },
             "user testing": {
                 "desc": "To check how easy and effective the NFT platform we’ve designed is to use. We conducted a user testing before going into development and further release into the market.",
                 "image": [
-                    "testing.webp",
+                    "testing.png",
                 ]
             },
             "success metrics": "We wanted to measure the success of the NFT platform over time to make sure it meets user needs and also profitable for the business. To validate this, we focused on key metrics that are important success indicators.\n\nOne of the metrics we tracked was the percentage of users who complete onboarding, mint an NFT and list it for sale. We also tracked the time it took to mint an NFT. The goal is to know if the issue is a design or technical problem.\n\nWe tracked net promoter score which is the willingness of a user to recommend the platform. Since we have a referral program, it was easy to input who referred who. Finally, we tracked user retention rate and new user growth rate. One of  the success of a product is on how many people return to use it and how fast new users get to discover the platform.",
             "results": {
                 "desc": "The results are a landing page, a web app (Web, iPad and Mobile) and an academy where people learn about NFT",
                 "image": [
-                    "results.webp",
+                    "results.png",
                 ]
             },
             "challenges": {
@@ -426,32 +421,28 @@ const Data = {
             "problem statement": {
                 "desc": "Before delving into design solutions, it was crucial to grasp the nuances of the Nigerian banking ecosystem. Through  market research, I uncovered startling statistics.\n\nAccording to the Business Day financial inclusion  report  of December 2021, 36% of Nigeria’s 106 million adults (18 years and older) are still entirely financially excluded, or 38.1 million people remained financially excluded.\n\nTraditional banking institutions, largely concentrated in urban areas, failed to reach the majority of the population, especially in rural regions.\n\nPeople are unbanked for a variety of reasons.",
                 "image": [
-                    "testing.webp",
+                    "problem.png",
                 ],
-                "parts": "Main reasons for being unbanked\n\nPoor credit history\n\n Lack of trust in mainstream banking\n\nProblems with language and literacy\n\nUnemployed or lack steady income\n\nMajor causes include"
+                "close": "Main reasons for being unbanked\n- Poor credit history\n- Lack of trust in mainstream banking\n- Problems with language and literacy\n- Unemployed or lack steady income\n- Major causes include"
             },
             "Identifying Problems": "The core challenge lay in accessibility. How could we empower individuals in remote areas to access basic financial services conveniently and securely? Traditional brick-and-mortar banks have been impractical, leaving a segment of the population without viable options.\n\nThe task is clear: design a solution that bridged the gap between underserved communities and essential banking services.",
             "user flows": {
                 "image": [
-                    "solution.webp",
-                    "solution.webp",
+                    "userflow.png",
                 ]
             },
             "wireframes": {
                 "desc": "Creating a wireframe for this project was necessary so that I can better understand the structure of the application and how to place information so users do not have to think before using it.",
                 "image": [
-                    "solution.webp",
-                    "solution.webp",
+                    "wireframes.png",
                 ]
             },
             "crafted solution": {
                 "desc": "To guide my design process, I developed personas representing both agents and customers. Understanding their needs, challenges, and aspirations was pivotal in shaping our user-centered approach.\n\nI had concentrated on the two sorts of Product Users, who make up the majority of the user base, for this early iteration. I combined the user profiles I built into a single persona, however, because the product is a single offering that is distinguished by responsibilities and permissions. Based on the UX research, the following persona exemplifies those roles and aids in keeping the design process user-centred:",
                 "image": [
-                    "testing.webp",
-                    "testing.webp",
-                    "testing.webp",
-                    "testing.webp",
-                    "testing.webp",
+                    "solution01.png",
+                    "solution02.png",
+                    "solution03.png",
                 ],
             },
             "lessons learned": {
