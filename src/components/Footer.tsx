@@ -35,7 +35,7 @@ const Footer: React.FC<FooterProps> = () => {
                     <span className="p2 footer-info-holder-data">
                         Tallinn, Estonia
                     </span>
-                    <Links to={'https://www.linkedin.com/in/josephkalu/'} classes="p2 footer-info-holder-data" border={false}>
+                    <Links to={'https://www.linkedin.com/in/josephkalu/'} target={'_blank'} classes="p2 footer-info-holder-data" border={false}>
                         Connect on LinkedIn
                     </Links>
                 </div>
