@@ -18,9 +18,10 @@
         &-holder {
             flex-wrap: wrap;
             padding-block: var(--paddings-padding-none);
+            justify-content: space-between;
 
             .link {
-                width: 46%;
+                width: 45%;
                 color: var(--active-neutrals-black);
 
                 .ProjectCaard {

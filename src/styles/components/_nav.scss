@@ -5,7 +5,8 @@
     backdrop-filter: blur(28px);
     padding: 0 var(--paddings-page-padding);
     gap: var(--gaps-button-inner-gap);
-    width: var(--responsiveness-container_width);
+    max-width: var(--responsiveness-container_width);
+    width: 100%;
     top: 0;
 
     &bar {

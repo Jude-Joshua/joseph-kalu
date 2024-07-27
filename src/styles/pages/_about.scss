@@ -3,7 +3,7 @@
         gap: var(--gaps-card-gap);
 
         &-content {
-            padding-inline: var(--gaps-section-parent-gap);
+            padding-inline: var(--paddings-padding-card-block);
             gap: var(--gaps-group-parent-gap);
             width: 96%;
 
@@ -33,10 +33,10 @@
 
                     & .scrolling-container {
                         position: absolute;
-                        width: 166%;
-                        left: -24%;
+                        width: 112%;
+                        left: -1%;
                         transform: rotateZ(-11deg);
-                        bottom: 8%;
+                        bottom: 12%;
                         top: unset;
                         background: var(--active-neutral);
                     }

@@ -59,7 +59,7 @@ const Data = {
             "presentationImage": "cover-image.webp",
             "year": "2023",
             "industry": "Healthcare, SaaS",
-            "password": true
+            "password": false
         },
         7: {
             "id": 7,

@@ -2,14 +2,12 @@ import React from 'react';
 
 import PageDivider from "../components/PageDivider.tsx";
 import TextCard from "../components/TextCard.tsx";
-import ImageComponent from "../components/ImageComponent.tsx";
 import {ScrollingImages} from "../components/ScrollingText.tsx";
 import {ProjectCardRow} from "../components/ProjectCard.tsx";
 import Links from "../components/Links.tsx";
 import iconMapping from "../components/Icons.tsx";
 import Reviews from "../components/Reviews.tsx";
 
-import HomeGlobe from "../assets/images/home-globe.webp";
 import Client01 from "../assets/images/clients/JNJ.svg";
 import Client02 from "../assets/images/clients/meaningfulGigs.svg";
 import Client03 from "../assets/images/clients/Designlab.svg";
@@ -87,8 +85,6 @@ const Home: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <ImageComponent source={HomeGlobe} altText={'background-globe-image'}
-                                className={'header-background-image'}/>
             </header>
             <section className={'flex flex-col items-start justify-start'}>
                 <article className={'clients'}>
