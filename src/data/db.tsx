@@ -6,10 +6,10 @@ const Data = {
             "title": "Turbocharging financing for SMES",
             "projectName": "Tamarind",
             "description": "Conducted user research and implemented streamlined workflows to simplified the loan application process for SMEs.",
-            "tags": "mobile app design, user research, product strategy, ux design",
+            "tags": "mobile app design, user research, style guide, ui components, UX/UI design",
             "presentationImage": "cover-image.webp",
             "year": "2023",
-            "industry": "Healthcare, SaaS",
+            "industry": "Fintech",
             "password": false
         },
         3: {
@@ -20,8 +20,8 @@ const Data = {
             "description": "Redesigning features and designing new features to enhance brand consistency and overall user engagement.",
             "tags": "mobile app design, product strategy, UX design, interaction design",
             "presentationImage": "cover-image.webp",
-            "year": "2023",
-            "industry": "Healthcare, SaaS",
+            "year": "2023/2024",
+            "industry": "Healthcare",
             "password": true
 
         },
@@ -31,10 +31,10 @@ const Data = {
             "title": "The Future of Money in Africa",
             "projectName": "Manilla Crypto",
             "description": "Conducted user research and implemented streamlined workflows to simplified the loan application process for SMEs.",
-            "tags": "mobile app design, user research, product strategy, ux design",
+            "tags": "UI/UX design, UX research, Style Guide, UI components, interactive prototypes",
             "presentationImage": "cover-image.webp",
-            "year": "2023",
-            "industry": "Healthcare, SaaS",
+            "year": "2022",
+            "industry": "Fintech, Crypto",
             "password": false
         },
         2: {
@@ -43,10 +43,10 @@ const Data = {
             "title": "Unlocking every SME and BIG Co. potential with the ultimate people management tool!",
             "projectName": "HumanManager",
             "description": "Conducted user research and implemented streamlined workflows to simplified the loan application process for SMEs.",
-            "tags": "mobile app design, user research, product strategy, ux design",
+            "tags": "Web app, mobile app design",
             "presentationImage": "cover-image.webp",
-            "year": "2023",
-            "industry": "Healthcare, SaaS",
+            "year": "2021/2022",
+            "industry": "Human resources",
             "password": false
         },
         5: {
@@ -58,7 +58,7 @@ const Data = {
             "tags": "mobile app design, user research, product strategy, ux design",
             "presentationImage": "cover-image.webp",
             "year": "2023",
-            "industry": "Healthcare, SaaS",
+            "industry": "Crypto, Digital assets",
             "password": false
         },
         7: {
@@ -69,8 +69,8 @@ const Data = {
             "description": "Conducted user research and implemented streamlined workflows to simplified the loan application process for SMEs.",
             "tags": "mobile app design, user research, product strategy, ux design",
             "presentationImage": "cover-image.webp",
-            "year": "2023",
-            "industry": "Healthcare, SaaS",
+            "year": "2021",
+            "industry": "Fintech",
             "password": false
         },
         6: {
@@ -81,8 +81,8 @@ const Data = {
             "description": "Conducted user research and product strategy to fix scooter parking related problems.",
             "tags": "user research, product strategy",
             "presentationImage": "cover-image.webp",
-            "year": "2023",
-            "industry": "Healthcare, SaaS",
+            "year": "2024",
+            "industry": "Transportation",
             "password": false
         }
     },
@@ -171,7 +171,6 @@ const Data = {
                 },
                 "images": [
                     'research01.png',
-                    'research02.png',
                 ]
             },
             "Understanding the problem": {
