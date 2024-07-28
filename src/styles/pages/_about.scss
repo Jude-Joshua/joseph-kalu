@@ -43,6 +43,10 @@
                 }
             }
         }
+
+        &-action{
+            gap: var(--gaps-has-button-gap);
+        }
     }
 
     & .list {

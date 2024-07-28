@@ -146,9 +146,14 @@ const About: React.FC = () => {
                                 for businesses.
                             </h2>
                         </div>
-                        <Links to={'mailto:mrjosephkalu@gmail.com'} classes={''} border={true}>
-                            Discuss a project
-                        </Links>
+                        <div className={'header-action flex flex-row justify-center items-start'}>
+                            <Links to={'mailto:mrjosephkalu@gmail.com'} classes={''} border={true}>
+                                Discuss a project
+                            </Links>
+                            <Links to={'https://drive.google.com/file/d/1uxHU2dae8TKFGgKkN3up8_fGtBNN0asO/view'} classes={''} border={true}>
+                               View my CV
+                            </Links>
+                        </div>
                     </div>
                     <div className={'header-content-hero-image'}>
                         <ImageComponent source={ProfileImage}
