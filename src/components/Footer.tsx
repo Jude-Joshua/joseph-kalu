@@ -19,7 +19,7 @@ const Footer: React.FC<FooterProps> = () => {
                     </h4>
                 </div>
                 <Links target={'_blank'} to={'mailto:mrjosephkalu@gmail.com'} classes="footer-contact-email" border={false}>
-                    <span className="h1">
+                    <span className="">
                           mrjosephkalu@gmail.com
                     </span>
                     <div className="link-icon flex justify-center items-center">
@@ -29,15 +29,16 @@ const Footer: React.FC<FooterProps> = () => {
             </div>
             <div className="footer-info w-full flex flex-row items-center justify-center">
                 <div className="footer-info-holder flex flex-row items-center justify-center w-full">
-                    <span className="p2 footer-info-holder-data copyright">
-                        &copy; 2024 Joseph Kalu. All rights reserved.
-                    </span>
+                    <Links to={'https://www.linkedin.com/in/josephkalu/'} target={'_blank'}
+                           classes="p2 footer-info-holder-data" border={false}>
+                        Connect on LinkedIn
+                    </Links>
                     <span className="p2 footer-info-holder-data">
                         Tallinn, Estonia
                     </span>
-                    <Links to={'https://www.linkedin.com/in/josephkalu/'} target={'_blank'} classes="p2 footer-info-holder-data" border={false}>
-                        Connect on LinkedIn
-                    </Links>
+                    <span className="p2 footer-info-holder-data copyright">
+                        &copy; 2024 Joseph Kalu. All rights reserved.
+                    </span>
                 </div>
             </div>
         </footer>

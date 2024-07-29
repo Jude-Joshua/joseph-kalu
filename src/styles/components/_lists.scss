@@ -1,22 +1,44 @@
 .list {
-    gap: var(--gaps-main-gap);
+    gap: var(--gaps-section-parent-gap);
+
+    @include devices(phone){
+        gap: var(--gaps-group-parent-gap);
+    }
 
     &-title{
         color: var(--active-primary);
         text-transform: Capitalize;
         width: 12%;
         text-align: right;
+
+        @include devices(phone){
+            width: 100%;
+            text-align: left;
+        }
     }
 
     &-listing {
         width: 64%;
 
+        @include devices(phone){
+            width: 100%;
+        }
+
         &-hold {
             padding-block: var(--paddings-padding-card);
             border-bottom: var(--border-width) solid var(--active-neutrals-black-blur);
 
+            @include devices(phone){
+                flex-direction: column !important;
+                gap: var(--gaps-paragraph-gap);
+            }
+
             &:first-child {
                 padding-top: var(--paddings-padding-parent-box);
+
+                @include devices(phone){
+                    padding-top: var(--paddings-padding-none);
+                }
             }
 
             &:last-child {
@@ -25,20 +47,36 @@
             }
 
             &-event {
-                width: 32%
+                width: 32%;
+                @include devices(phone){
+                    width: 100%;
+                }
             }
 
             &-topic {
-                width: 40%
+                width: 40%;
+                @include devices(phone){
+                    width: 100%;
+                }
             }
 
             &-year {
-                width: 6%
+                width: 6%;
+                @include devices(phone){
+                    width: 100%;
+                    text-align: left !important;
+                }
             }
 
             &.articles{
                 & .list-listing-hold-topic{
                     width: 64%;
+
+                    @include devices(phone){
+                        width: 100%;
+                        display: block;
+                        margin-left: 0;
+                    }
                 }
             }
         }

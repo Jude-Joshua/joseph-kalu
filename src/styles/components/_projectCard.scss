@@ -3,15 +3,29 @@
         padding-top: var(--paddings-padding-card);
         gap: var(--gaps-body-section-gap);
 
+        @include devices(phone){
+            gap: var(--gaps-title-gap);
+        }
+
         .ProjectCaard {
             padding-block: var(--paddings-padding-parent-small);
             gap: var(--gaps-group-parent-gap);
+
+            @include devices(phone){
+                flex-direction: column !important;
+                gap: var(--gaps-card-gap);
+            }
 
             &-image {
                 width: 53%;
                 border-radius: var(--border-radi-cards);
                 overflow: hidden;
                 height: 528px;
+
+                @include devices(phone){
+                    width: 100%;
+                    height: 263px;
+                }
 
                 & img {
                     height: 100%;
@@ -21,6 +35,10 @@
             &-info {
                 gap: var(--gaps-card-gap);
                 width: 46%;
+
+                @include devices(phone){
+                    width: 100%;
+                }
 
                 &-data {
                     gap: var(--gaps-paragraph-gap);
@@ -35,8 +53,13 @@
                 &-tags {
                     gap: var(--gaps-siblings-gap);
 
+                    @include devices(phone){
+                        flex-wrap: wrap;
+                    }
+
                     & .tag {
                         text-transform: capitalize;
+                        color: var(--active-primary-blur);
                     }
                 }
             }

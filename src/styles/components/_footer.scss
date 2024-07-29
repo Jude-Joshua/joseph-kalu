@@ -2,27 +2,52 @@
     gap: var(--gaps-main-gap);
     bottom: 0;
 
-    &-contact{
+    &-contact {
         gap: var(--gaps-paragraph-gap);
 
-        &-background{
+        @include devices(phone) {
+            padding-inline: var(--paddings-page-padding);
+        }
+
+        &-background {
             position: absolute;
             color: var(--active-primary-blur);
             opacity: 0.14;
             left: -14%;
         }
 
-        &-email{
+        &-email {
             transition: all 0.3s linear;
+            @include h1;
 
-            & .link-icon{
-                transition: all 0.3s linear;
+            @include devices(phone) {
+                @include h5;
+                gap: var(--gaps-siblings-gap);
+                border-bottom: var(--border-width-bold) solid;
+                display: inline;
+                width: auto;
             }
 
-            &:hover{
+
+            & .link-icon {
+                transition: all 0.3s linear;
+
+                @include devices(phone){
+                    display: none;
+                }
+
+                svg {
+                    @include devices(phone) {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+
+            &:hover {
                 color: var(--active-secondary);
 
-                & .link-icon{
+                & .link-icon {
                     transform: rotate(45deg);
                     background-color: var(--active-secondary);
                 }
@@ -30,24 +55,34 @@
         }
     }
 
-    &-info{
+    &-info {
         padding: var(--paddings-padding-none) var(--paddings-page-padding) var(--paddings-padding-parent-box);
 
-        &-holder{
+        @include devices(phone) {
+            padding-inline: var(--paddings-padding-card-block);
+        }
+
+        &-holder {
             padding: var(--paddings-padding-card) var(--paddings-padding-block);
             gap: var(--gaps-section-parent-gap);
             background-color: var(--active-neutrals-black);
             border-radius: var(--border-radi-section-groups);
             overflow: hidden;
 
-            &-data{
+            @include devices(phone) {
+                flex-wrap: wrap;
+                gap: var(--gaps-paragraph-gap) var(--gaps-title-gap);
+                padding-inline: var(--paddings-padding-inline);
+            }
+
+            &-data {
                 color: var(--active-neutral);
 
                 &.link {
                     color: var(--active-neutral);
                     transition: all 0.3s linear;
 
-                    &:hover{
+                    &:hover {
                         color: var(--active-secondary);
                         text-decoration: underline;
                     }
@@ -55,4 +90,5 @@
             }
         }
     }
+
 }

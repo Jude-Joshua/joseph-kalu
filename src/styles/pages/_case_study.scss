@@ -4,6 +4,10 @@
             &-hero {
                 &-text-contain {
                     padding-inline: var(--paddings-page-padding);
+
+                    @include devices(phone) {
+                        padding-inline: var(--paddings-padding-none);
+                    }
                 }
 
                 &-image {
@@ -21,12 +25,26 @@
 
             & .header-content {
                 width: 56%;
+
+                @include devices(phone) {
+                    width: 100%;
+                }
+
+                & p {
+                    @include devices(phone) {
+                        text-align: center;
+                    }
+                }
             }
         }
     }
 
     &-intro-details-row {
         padding-inline: var(--paddings-page-padding);
+
+        @include devices(phone) {
+            padding-inline: var(--paddings-padding-none);
+        }
 
         &-section {
             gap: var(--gaps-button-inner-gap);
@@ -41,6 +59,10 @@
     &-section {
         gap: var(--gaps-body-section-gap);
         padding-inline: var(--paddings-page-padding);
+
+        @include devices(phone) {
+            padding-inline: var(--paddings-padding-none);
+        }
 
         & .main-div {
             gap: var(--gaps-paragraph-gap);
@@ -86,7 +108,7 @@
                     padding-top: var(--paddings-nav-block);
                 }
 
-                & a{
+                & a {
                     display: inline-block;
                     border-bottom: var(--border-width-bold) solid var(--active-primary);
                     line-height: 88% !important;

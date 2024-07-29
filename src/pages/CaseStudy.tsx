@@ -114,7 +114,7 @@ const CaseStudy: React.FC = () => {
                     } else {
                         const paragraphs = value.split('\n\n').map((paragraph, index) => (
                             <>
-                                <p key={index}>{paragraph}</p>
+                                <p key={index} className={'p1'}>{paragraph}</p>
                             </>
                         ));
 
@@ -150,14 +150,14 @@ const CaseStudy: React.FC = () => {
                                                         if (typeof innerValue === 'string') {
                                                             const innerParagraphs = innerValue.split('\n\n').map((innerParagraph, index) => (
                                                                 <>
-                                                                    <p key={index}>{innerParagraph}</p>
+                                                                    <p className={'p1'} key={index}>{innerParagraph}</p>
                                                                 </>
                                                             ));
 
                                                             return (
                                                                 <div className={'punny'} key={innerKey}>
                                                                     <p className={'h6'}>{innerKey}</p>
-                                                                    <p>{innerParagraphs}</p>
+                                                                    <p className={'p1'}>{innerParagraphs}</p>
                                                                 </div>
                                                             );
                                                         }
@@ -191,9 +191,9 @@ const CaseStudy: React.FC = () => {
                                                 </>
                                             ));
                                             return (
-                                                <>
+                                                <p className={'p1'}>
                                                     {paragraphs}
-                                                </>
+                                                </p>
                                             );
                                         }
 

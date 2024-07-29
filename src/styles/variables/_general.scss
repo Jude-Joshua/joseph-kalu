@@ -8,6 +8,12 @@
 
         &-hero-text {
             gap: var(--gaps-has-button-gap);
+
+            h2, p {
+                @include devices(phone) {
+                    text-align: left;
+                }
+            }
         }
     }
 }
@@ -21,11 +27,19 @@ section {
         width: 100%;
         gap: var(--gaps-group-parent-gap);
 
+        @include devices(phone) {
+            flex-direction: column !important;
+        }
+
         & .article-title {
             width: 100%;
 
             &-text {
                 width: 55%;
+
+                @include devices(phone) {
+                    width: 100%;
+                }
             }
         }
 
@@ -34,21 +48,34 @@ section {
             &-fact {
                 padding-block: var(--paddings-padding-card);
 
-                &:first-child{
+                @include devices(phone) {
+                    flex-direction: column !important;
+                    gap: var(--gaps-siblings-gap);
+                }
+
+                &:first-child {
                     padding-top: var(--paddings-padding-none);
                 }
 
-                &:last-child{
+                &:last-child {
                     padding-bottom: var(--paddings-padding-none);
                 }
 
                 & p {
                     &:first-child {
                         width: 40%;
+
+                        @include devices(phone) {
+                            width: 100%;
+                        }
                     }
 
                     &:last-child {
                         width: 40%;
+
+                        @include devices(phone) {
+                            width: 100%;
+                        }
                     }
 
                     & a {
@@ -58,7 +85,7 @@ section {
                         border-bottom: var(--border-width) solid;
                         line-height: 120% !important;
 
-                        &:hover{
+                        &:hover {
                             border-bottom: none;
                             color: var(--active-secondary);
                         }
@@ -89,21 +116,21 @@ img {
     object-position: center;
 }
 
-.form-group{
+.form-group {
     gap: var(--gaps-card-gap);
     width: 72%;
 
-    & .link-icon{
+    & .link-icon {
         cursor: pointer;
     }
 }
 
-.input-group{
+.input-group {
     gap: var(--gaps-paragraph-gap);
     width: 100%;
 }
 
-input{
+input {
     border: var(--border-width) solid var(--active-primary);
     background-color: var(--active-neutral);
     padding: var(--paddings-padding-parent-small) !important;
@@ -112,18 +139,18 @@ input{
     letter-spacing: 1px !important;
     width: 100%;
 
-    &:focus{
+    &:focus {
         border-color: var(--active-secondary);
     }
 
-    &.error{
+    &.error {
         border-color: var(--error);
         color: var(--error);
     }
 }
 
-.error{
-    &-text{
+.error {
+    &-text {
         color: var(--error);
         text-align: center;
     }

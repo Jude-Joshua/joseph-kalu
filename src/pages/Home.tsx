@@ -62,7 +62,7 @@ const Home: React.FC = () => {
                                 className={'header-content-hero-text-contain-roles flex flex-row justify-start items-center'}>
                                 {roles.map((role, index) => (
                                     <React.Fragment key={index}>
-                                        <p className={'h6 text-left'}>
+                                        <p className={'text-left'}>
                                             {role}
                                         </p>
                                         {index < roles.length - 1 && (

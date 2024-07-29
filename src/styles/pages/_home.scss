@@ -7,33 +7,56 @@
                 &-text {
                     gap: var(--gaps-section-parent-gap);
 
+
                     &-contain {
                         gap: var(--gaps-paragraph-gap);
                         width: 85%;
 
+                        @include devices(phone) {
+                            width: 100%;
+                        }
+
                         &-roles {
                             gap: var(--gaps-siblings-gap);
 
+                            @include devices(phone) {
+                                width: 132%;
+                                left: 0;
+                                color: var(--active-neutrals-black-blur);
+                            }
+
+                            & p {
+                                @include h6;
+
+                                @include devices(phone) {
+                                    word-break: keep-all;
+                                    @include b1;
+                                }
+
+                            }
+
                             & .text-card-area-icon {
                                 color: var(--active-neutrals-black);
+
+                                @include devices(phone) {
+                                    color: var(--active-primary-blur);
+                                    width: 6px;
+                                }
                             }
                         }
                     }
 
                     & .text-cards-row {
                         gap: var(--gaps-siblings-gap);
+
+                        @include devices(phone) {
+                            flex-direction: column !important;
+                        }
                     }
                 }
             }
         }
 
-        &-background-image {
-            position: absolute;
-            z-index: 1;
-            right: -39%;
-            top: -3%;
-            width: 80%;
-        }
     }
 
     article {
@@ -50,6 +73,12 @@
                     transform: rotate(-8.5deg);
                     width: 102%;
                     left: -1%;
+
+                    @include devices(phone) {
+                        width: 106%;
+                        left: -3%;
+                        transform: rotate(-14.5deg);
+                    }
 
                     & svg {
                         color: var(--active-primary);
@@ -71,6 +100,10 @@
                 &-testimonial {
                     gap: var(--gaps-group-parent-gap);
 
+                    @include devices(phone) {
+                        flex-direction: column !important;
+                    }
+
                     &-person {
                         gap: var(--gaps-has-button-gap);
                         color: var(--active-primary);
@@ -79,6 +112,11 @@
                             border-radius: var(--border-radi-section);
                             width: 200px;
                             height: 200px;
+
+                            @include devices(phone) {
+                                width: 80px;
+                                height: 80px;
+                            }
                         }
 
                         &-details {
@@ -92,16 +130,25 @@
                         background: var(--active-neutral);
                         padding: var(--paddings-padding-inline);
                         width: 56%;
+
+                        @include devices(phone) {
+                            width: 100%;
+                        }
                     }
                 }
 
-                .swiper-slide{
-                    height: 0;
+                .swiper {
+                    overflow: visible !important;
 
-                    &-active{
-                        height: auto;
+                    &-slide {
+                        height: 0;
+
+                        &-active {
+                            height: auto;
+                        }
                     }
                 }
+
                 & .button-icon {
                     border: var(--border-width) solid var(--active-primary);
                     color: var(--active-primary);
@@ -113,9 +160,17 @@
                     background-color: var(--active-neutral-blur);
                     backdrop-filter: blur(12px);
 
+                    @include devices(phone) {
+                        left: -10%;
+                    }
+
                     &.right {
                         right: 0;
                         left: unset;
+
+                        @include devices(phone) {
+                            right: -10%;
+                        }
                     }
                 }
             }
@@ -126,10 +181,24 @@
                 &-text {
                     width: 70%;
 
+                    @include devices(phone) {
+                        width: 100%;
+                    }
+
                     &:last-child {
                         align-self: flex-end;
                         padding-right: var(--paddings-padding-body);
                         width: 90%;
+
+                        @include devices(phone) {
+                            width: 100%;
+                            align-self: flex-start;
+                            padding-right: var(--paddings-padding-none);
+                        }
+
+                        & h3 {
+                            text-align: left !important;
+                        }
                     }
                 }
             }
@@ -141,10 +210,18 @@
                     & p {
                         &:first-child {
                             width: 50%;
+
+                            @include devices(phone) {
+                                width: 100%;
+                            }
                         }
 
                         &:last-child {
                             text-align: right;
+
+                            @include devices(phone) {
+                                text-align: left;
+                            }
                         }
                     }
                 }

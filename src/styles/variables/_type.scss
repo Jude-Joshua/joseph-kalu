@@ -42,7 +42,7 @@ $steps: 4;
 @function calculate-font-size($baseFontSize, $steps) {
     $fontSize: $baseFontSize;
     @for $i from 1 through $steps {
-        $fontSize: calc($fontSize / 1.21);
+        $fontSize: calc($fontSize / 1.19);
     }
     @return $fontSize;
 }

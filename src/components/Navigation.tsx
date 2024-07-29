@@ -16,7 +16,7 @@ const Navigation: React.FC<NavigationProps> = ({currentPage}) => {
     return (
         <nav className={'nav flex flex-col justify-center items-center'}>
             <div className={'navbar flex flex-row justify-between items-center w-full'}>
-                <Links to={'/'} target={'_self'} classes={''} border={false}>
+                <Links to={'/'} target={'_self'} classes={'navbar-logo'} border={false}>
                     <div>
                         <svg width="105" height="42" viewBox="0 0 105 42" fill="none"
                              xmlns="http://www.w3.org/2000/svg">

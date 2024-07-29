@@ -32,6 +32,11 @@ const Lists: React.FC<ListProps> = ({ type }) => {
             "articles": [
                 {
                     event: '',
+                    topic: 'Transforming Nigeria into Africa\'s tech hub',
+                    year: "2024"
+                },
+                {
+                    event: '',
                     topic: 'The Business Value of Good Design',
                     year: "2023"
                 },
@@ -73,8 +78,8 @@ const Lists: React.FC<ListProps> = ({ type }) => {
                 {listings[0][type].map((listing, index) => (
                     <div className={`list-listing-hold w-full flex flex-row justify-between ${type}`} key={index}>
                         {type === 'talks' && (<span className="h6 list-listing-hold-event">{listing.event}</span>)}
-                        <span className="h6 list-listing-hold-topic">{listing.topic}</span>
-                        <span className="h6 list-listing-hold-year text-right">{listing.year}</span>
+                        <span className={`${type === 'talks' ? 'p1' : 'h6'} list-listing-hold-topic`}>{listing.topic}</span>
+                        <span className="p2 list-listing-hold-year text-right">{listing.year}</span>
                     </div>
                 ))}
             </div>

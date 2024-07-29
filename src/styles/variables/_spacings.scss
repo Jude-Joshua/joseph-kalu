@@ -3,7 +3,7 @@
     --border-radi-cards: 32px;
     --border-radi-button: 48px;
     --border-radi-section-groups: 128px;
-    --border-radi-section: 256px;
+    --border-radi-section: 480px;
 
     --gaps-button-inner-gap: 8px;
     --gaps-siblings-gap: 16px;
@@ -29,4 +29,74 @@
 
     --responsiveness-container_width: 1534px;
     --responsiveness-container_height: 1117px;
+}
+
+@include devices(tablet){
+    :root {
+        --border-radi-cards-sm: 13.33px;
+        --border-radi-cards: 26.67px;
+        --border-radi-button: 40px;
+        --border-radi-section-groups: 106.67px;
+        --border-radi-section: 213.33px;
+
+        --gaps-button-inner-gap: 6.67px;
+        --gaps-siblings-gap: 13.33px;
+        --gaps-paragraph-gap: 20px;
+        --gaps-has-button-gap: 26.67px;
+        --gaps-card-gap: 40px;
+        --gaps-title-gap: 53.33px;
+        --gaps-group-parent-gap: 73.33px;
+        --gaps-body-section-gap: 86.67px;
+        --gaps-section-parent-gap: 100px;
+        --gaps-main-gap: 133.33px;
+
+        --paddings-padding-none: 0px;
+        --paddings-padding-parent-small: 13.33px;
+        --paddings-padding-parent-box: 20px;
+        --paddings-nav-block: 26.67px;
+        --paddings-padding-card: 40px;
+        --paddings-padding-card-block: 46.67px;
+        --paddings-padding-inline: 60px;
+        --paddings-padding-block: 86.67px;
+        --paddings-page-padding: 80px;
+        --paddings-padding-body: 166.67px;
+
+        --responsiveness-container_width: 1278.33px;
+        --responsiveness-container_height: 930.83px;
+    }
+}
+
+@include devices(phone){
+    :root {
+        --border-radi-cards-sm: 8.89px;
+        --border-radi-cards: 17.78px;
+        --border-radi-button: 26.67px;
+        --border-radi-section-groups: 71.11px;
+        --border-radi-section: 142.22px;
+
+        --gaps-button-inner-gap: 4.44px;
+        --gaps-siblings-gap: 8.89px;
+        --gaps-paragraph-gap: 13.33px;
+        --gaps-has-button-gap: 17.78px;
+        --gaps-card-gap: 26.67px;
+        --gaps-title-gap: 35.56px;
+        --gaps-group-parent-gap: 48.89px;
+        --gaps-body-section-gap: 57.78px;
+        --gaps-section-parent-gap: 66.67px;
+        --gaps-main-gap: 72px;
+
+        --paddings-padding-none: 0px;
+        --paddings-padding-parent-small: 8.89px;
+        --paddings-padding-parent-box: 13.33px;
+        --paddings-nav-block: 17.78px;
+        --paddings-padding-card: 26.67px;
+        --paddings-padding-card-block: 31.11px;
+        --paddings-padding-inline: 40px;
+        --paddings-padding-block: 57.78px;
+        --paddings-page-padding: 36px;
+        --paddings-padding-body: 111.11px;
+
+        --responsiveness-container_width: 852.22px;
+        --responsiveness-container_height: 620.56px;
+    }
 }

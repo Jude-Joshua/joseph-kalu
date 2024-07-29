@@ -24,6 +24,10 @@
                 width: 45%;
                 color: var(--active-neutrals-black);
 
+                @include devices(phone){
+                    width: 100%;
+                }
+
                 .ProjectCaard {
                     padding-block: var(--paddings-padding-none);
                     gap: var(--gaps-card-gap);
@@ -33,6 +37,10 @@
                         border-radius: var(--border-radi-cards);
                         overflow: hidden;
                         height: 544px;
+
+                        @include devices(phone){
+                            height: 263px;
+                        }
 
                         & img {
                             height: 100%;

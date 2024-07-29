@@ -19,12 +19,6 @@
     }
 
     @else if $breakpoint == "laptop" {
-        @media only screen and (max-width: 1366px) {
-            @content;
-        }
-    }
-
-    @else if $breakpoint == "desktop" {
         @media only screen and (max-width: 1440px) {
             @content;
         }

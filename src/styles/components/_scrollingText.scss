@@ -9,7 +9,7 @@
     }
 
     &.full {
-        height: 80px;
+        padding-block: var(--paddings-nav-block);
         background-color: var(--active-primary);
 
         .scrolling {
@@ -21,13 +21,21 @@
                     animation: animate_text 20s linear infinite;
                 }
 
-                & img {
+                & svg {
                     height: 20px;
                     width: auto;
+
+                    @include devices(phone){
+                        height: 13px;
+                    }
                 }
 
                 & .text-card-area-icon {
                     color: var(--active-neutral);
+
+                    @include devices(phone){
+                        width: 4px;
+                    }
                 }
             }
         }
