@@ -16,12 +16,6 @@ const Lists: React.FC<ListProps> = ({type}) => {
                     link: 'https://youtu.be/bJvbAZ_seP8?si=O76um6aM0fxBxwMj'
                 },
                 {
-                    event: 'Press Interview',
-                    topic: 'Transforming Nigeria into Africa\'s tech hub',
-                    year: "2024",
-                    link: 'https://thenationonlineng.net/developing-nigeria-into-africas-tech-hub/'
-                },
-                {
                     year: '2024',
                     topic: "Building for All: Designing for Accessibility and Inclusivity",
                     event: 'Abia Tech Flock',
@@ -41,6 +35,12 @@ const Lists: React.FC<ListProps> = ({type}) => {
                 }
             ],
             "articles": [
+                {
+                    event: '',
+                    topic: 'Transforming Nigeria into Africa\'s tech hub',
+                    year: "2024",
+                    link: 'https://thenationonlineng.net/developing-nigeria-into-africas-tech-hub/'
+                },
                 {
                     event: '',
                     topic: 'Information Architecture',

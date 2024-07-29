@@ -40,7 +40,7 @@
     }
 
     &-intro-details-row {
-        padding-inline: var(--paddings-page-padding);
+        padding-inline: var(--paddings-padding-card-block);
 
         @include devices(phone) {
             padding-inline: var(--paddings-padding-none);
@@ -58,7 +58,7 @@
 
     &-section {
         gap: var(--gaps-body-section-gap);
-        padding-inline: var(--paddings-page-padding);
+        padding-inline: var(--paddings-padding-card-block);
 
         @include devices(phone) {
             padding-inline: var(--paddings-padding-none);

@@ -89,8 +89,8 @@ const Data = {
     "projects-details": {
         1: {
             "projectName": "Tamarind",
-            "the threat: An Economic Imperative": "Funding is the most significant issue facing SMEs in Nigeria. SMEs contribute 48 percent of the national GDP and 84 percent of employment. The failure of SMEs would have a catastrophic impact on the economy. This is the threat I set out to address with Tamarind.",
-            "Research insights: Unveiling the Accessibility Barrier": {
+            "the threat: An Economic Imperative": "Funding is the most significant issue facing SMEs in Nigeria. SMEs contribute 48 percent of the national GDP and 84 percent of employment. The failure of SMEs would have a catastrophic impact on the economy.\n\nThis is the threat I set out to address with Tamarind.",
+            "Unveiling the Accessibility Barrier": {
                 "desc": "After research, I discovered that the issue wasn't the availability of funds but their accessibility. Key factors limiting access include:",
                 "parts":{
                     "":"Lack of sufficient collateral and credit information",
@@ -138,7 +138,7 @@ const Data = {
                 ]
             },
 
-            "lessons learned: reflecting on the journey": " Prioritizing user needs leads to solutions that truly resonate. Streamlining processes saves time and reduces overhead. Financial literacy reduces default rates and fosters sustainable growth.",
+            "Reflecting on the journey": " Prioritizing user needs leads to solutions that truly resonate. Streamlining processes saves time and reduces overhead. Financial literacy reduces default rates and fosters sustainable growth.",
             "conclusion": "Tamarind's innovative approach to SME loans shows that with the right technology and user-centered design, significant barriers can be overcome, driving economic growth. "
         },
         2: {
@@ -262,9 +262,6 @@ const Data = {
             "introduction": "In a world where cryptocurrency transactions are rampant, users often find themselves grappling with high fees and the hassle of switching between multiple platforms. Manilla Crypto Wallet set out to revolutionize this landscape by offering a one-stop solution for trading, storing, and minting NFTs, all within a single intuitive platform.",
             "Market insights": {
                 "desc": "Extensive market analysis revealed a glaring gap in the crypto ecosystem - the absence of a unified platform for trading cryptocurrencies and creating NFTs. Through primary research, conversations with crypto traders, and analysis of existing platforms, it became evident that users craved simplicity and convenience above all else.\n\nMost users are relatively new to the crypto and NFT space and find it very difficult to navigate between these platforms to perform an action.",
-                "image": [
-                    "market.png",
-                ]
             },
             "user personas": {
                 "desc": "For this early stage iteration, I had focused on the group that makes up the majority of the user base.",
@@ -287,9 +284,9 @@ const Data = {
                     "intuitive dashboard design": "Enhancing user engagement was a top priority for Manilla. By strategically placing relevant information on the dashboard, users can effortlessly track their assets' performance and stay informed about market trends, fostering a more immersive and rewarding user experience.",
                 },
                 "images": [
-                    "platform01.png",
-                    "platform02.png",
-                    "platform03.png",
+                    "final01.png",
+                    "final02.png",
+                    "final03.png",
                 ]
             },
             "lessons learned": {
@@ -304,18 +301,30 @@ const Data = {
         },
         5: {
             "projectName": "HumanManager",
-            "overview": "People management has always been localised to the big corporations. Many times to small business owners people management is a luxury. Human manager is a human capital solution to suit businesses of all shapes and sizes.",
-            "why": "As a business HumanManager’s mission is to create a balance between employee satisfaction and workplace efficiency while constantly providing valuable insights that will keep this process progressive and efficient.",
-            "the solution": {
-                "desc":"",
+            "overview": "People management has always been localised to the big corporations. Many times to small business owners people management is a luxury. Human manager is a human capital solution to suit businesses of all shapes and sizes.\n\nAs a UX designer at HumanManager, I contributed to various projects that enhanced user experience for our diverse client base. My role involved updating designs features, designing a mobile app for employee to view their dashboard, creating an end-to-end solution for HumanManager Flex aimed at small businesses, and contributing to the website design.",
+            "the problem": {
+                "desc":"HumanManager's clients faced several challenges:",
                 "parts":{
-                    "":"HumanManager enterprise",
-                    " ":"HumanManager flex",
-                    "  ":"HumanManager mobile app",
+                    "":"Employees needed easier access to their dashboards on the go.",
+                    " ":"Small businesses required a tailored solution that met their unique HR needs.",
+                    "  ":"The website needed an updated design to improve user experience and engagement.",
                 }
             },
-            "final designs": {
-                "desc": "How can people management be affordable for SMEs?",
+            "project goals": {
+                "desc":"",
+                "parts": {
+                    "Mobile App": "Design an intuitive, user-friendly mobile app to provide employees with seamless access to their dashboards anytime, anywhere.",
+                    "HumanManager Flex": "Develop a comprehensive solution tailored for small businesses, making HR processes more efficient and manageable.",
+                    "Website": "Enhance the website's design to improve navigation, user engagement, and overall user experience."
+                }
+            },
+            "the solution": {
+                "desc":"",
+                "parts": {
+                    "HumanManager mobile app": "Created a clean, responsive design for the mobile app, ensuring easy navigation and quick access to key features. Incorporated user feedback to refine the interface, making it more intuitive and user-friendly.",
+                    "HumanManager flex": "Designed an end-to-end solution tailored for small businesses, focusing on simplifying HR processes. Included features like streamlined payroll management, employee tracking, and automated workflows to increase efficiency.",
+                    "HumanManager enterprise": "Collaborated with the team to redesign the website, focusing on a modern, clean look that enhanced usability. Improved the information architecture, making it easier for users to find relevant content and resources."
+                },
                 "images":[
                     "solution01.png",
                     "solution02.png",
@@ -323,7 +332,13 @@ const Data = {
                     "solution04.png",
                 ]
             },
-            "user testing": "",
+            "challenges": {
+                "parts": {
+                    "" : "Balancing diverse client requests and feedback while maintaining a cohesive design vision.",
+                    " " : "Ensuring the mobile app was both feature-rich and easy to use, accommodating various user needs and technical proficiencies.",
+                    "  " : "Creating a scalable solution for small businesses that could grow with their needs while remaining simple to use.",
+                }
+            },
             "success metrics": "",
             "results": {
                 "desc": "The product was launched in 3 markets in Europe and the United States with a total of 30k app download and a retention rate of 70%. The design were implemented in iOS and Android.",
