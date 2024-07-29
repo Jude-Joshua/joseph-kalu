@@ -18,7 +18,7 @@ const Footer: React.FC<FooterProps> = () => {
                         Let’s create magic together
                     </h4>
                 </div>
-                <Links to={'mailto:mrjosephkalu@gmail.com'} classes="footer-contact-email" border={false}>
+                <Links target={'_blank'} to={'mailto:mrjosephkalu@gmail.com'} classes="footer-contact-email" border={false}>
                     <span className="h1">
                           mrjosephkalu@gmail.com
                     </span>

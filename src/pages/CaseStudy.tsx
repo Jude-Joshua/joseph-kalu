@@ -106,7 +106,7 @@ const CaseStudy: React.FC = () => {
                         return (
                             <>
                                 <article key={key} className="main-div-section flex flex-col">
-                                    <h5 className={'h4 text-center'}>View the study paper <Links to={value} classes={'inline'} border={false}>here</Links></h5>
+                                    <h5 className={'h4 text-center'}>View the study paper <Links target={'_blank'} to={value} classes={'inline'} border={false}>here</Links></h5>
                                 </article>
                                 <PageDivider/>
                             </>

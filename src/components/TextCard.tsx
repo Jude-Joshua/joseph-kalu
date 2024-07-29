@@ -31,7 +31,7 @@ const TextCard: React.FC<RoleListProps> = ({iconName, title, copyOne, copyTwo, l
                         </div>
                     </div>
                 </div>
-                <Links to={linkLocation} classes={''} border={true}>{link}</Links>
+                <Links to={linkLocation} classes={''} border={true} target={'_self'}>{link}</Links>
             </div>
         </>
     )

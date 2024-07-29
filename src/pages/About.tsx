@@ -147,10 +147,10 @@ const About: React.FC = () => {
                             </h2>
                         </div>
                         <div className={'header-action flex flex-row justify-center items-start'}>
-                            <Links to={'mailto:mrjosephkalu@gmail.com'} classes={''} border={true}>
+                            <Links target={'_blank'} to={'mailto:mrjosephkalu@gmail.com'} classes={''} border={true}>
                                 Discuss a project
                             </Links>
-                            <Links to={'https://drive.google.com/file/d/1uxHU2dae8TKFGgKkN3up8_fGtBNN0asO/view'} classes={''} border={true}>
+                            <Links target={'_blank'} to={'https://drive.google.com/file/d/1uxHU2dae8TKFGgKkN3up8_fGtBNN0asO/view'} classes={''} border={true}>
                                View my CV
                             </Links>
                         </div>
@@ -227,7 +227,7 @@ const About: React.FC = () => {
                                     {Object.values(feature.where).map((link, index, array) => (
                                         <span key={index}>
                                             {index > 0 && index < array.length - 1 ? ', ' : index > 0 && index === array.length - 1 ? ' and ' : ''}
-                                            <Links to={link.url} classes={'p1'} border={true}>
+                                            <Links target={'_blank'} to={link.url} classes={'p1'} border={true}>
                                                 {link.place}
                                             </Links>
                                         </span>

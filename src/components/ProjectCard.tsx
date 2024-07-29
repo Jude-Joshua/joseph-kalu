@@ -22,7 +22,7 @@ interface ProductCardColProps extends React.HTMLAttributes<HTMLDivElement> {
 
 const ProjectCardCol: React.FC<ProductCardColProps> = ({title, projectName, presentationImage}) => {
     return (
-        <Links to={`/work/${projectName}`} classes={''} border={false}>
+        <Links to={`/work/${projectName}`} classes={''} target={"_self"} border={false}>
             <div className="ProjectCaard flex flex-col items-start justify-start w-full">
                 <div className="ProjectCaard-image">
                     <ImageComponent source={presentationImage} altText={'case study cover image'}
