@@ -147,10 +147,10 @@ const About: React.FC = () => {
                             </h2>
                         </div>
                         <div className={'header-action flex flex-row justify-center items-start'}>
-                            <Links target={'_blank'} to={'mailto:mrjosephkalu@gmail.com'} classes={''} border={true}>
+                            <Links target={'_blank'} to={'https://calendar.app.google/enSbeLCHzZFYoFsj8'} classes={''} border={true}>
                                 Discuss a project
                             </Links>
-                            <Links target={'_blank'} to={'https://drive.google.com/file/d/1uxHU2dae8TKFGgKkN3up8_fGtBNN0asO/view'} classes={''} border={true}>
+                            <Links target={'_blank'} to={'https://drive.google.com/file/d/1OclIPvx3r3kJrAMCKCgrCnPADyTB2fHu/view?usp=sharing'} classes={''} border={true}>
                                View my CV
                             </Links>
                         </div>
