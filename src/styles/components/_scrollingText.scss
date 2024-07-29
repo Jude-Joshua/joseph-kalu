@@ -32,6 +32,7 @@
 
                 & .text-card-area-icon {
                     color: var(--active-neutral);
+                    width: 8px;
 
                     @include devices(phone){
                         width: 4px;
