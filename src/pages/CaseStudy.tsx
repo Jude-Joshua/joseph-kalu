@@ -102,109 +102,117 @@ const CaseStudy: React.FC = () => {
             const createElement = (key: string, value: string | ProjectDetails | string[], isSubkey: boolean = false): JSX.Element | null => {
 
                 if (typeof value === 'string' && value.trim()) {
+
+                    const paragraphs = value.split('\n\n').map((paragraph, index) => (
+                        <>
+                            <p key={index} className={'p1'}>{paragraph}</p>
+                        </>
+                    ));
+
+                    return (
+                        <>
+                            <article key={key} className="main-div flex flex-col">
+                                {isSubkey ? <h6 className={'h6'}>{key === 'desc' ? '' : key}</h6> :
+                                    <h5 className={'h4'}>{key}</h5>}
+                                {paragraphs}
+                            </article>
+                            <PageDivider/>
+                        </>
+                    );
+                }
+
+
+                if (typeof value === 'object' && !Array.isArray(value)) {
                     if (key === 'url') {
+                        const projectDetailsValue = value as { title: string; link: string };
                         return (
                             <>
                                 <article key={key} className="main-div-section flex flex-col">
-                                    <h5 className={'h4 text-center'}>View the study paper <Links target={'_blank'} to={value} classes={'inline'} border={false}>here</Links></h5>
+                                    <h5 className={'h4 text-center'}>
+                                        {projectDetailsValue.title}{' '}
+                                        <Links  target={'_blank'}  to={projectDetailsValue.link}  classes={'inline'}  border={false}>
+                                            here
+                                        </Links>
+                                    </h5>
                                 </article>
-                                <PageDivider/>
+                                <PageDivider />
                             </>
-                        )
+                        );
                     } else {
-                        const paragraphs = value.split('\n\n').map((paragraph, index) => (
-                            <>
-                                <p key={index} className={'p1'}>{paragraph}</p>
-                            </>
-                        ));
-
                         return (
                             <>
                                 <article key={key} className="main-div flex flex-col">
-                                    {isSubkey ? <h6 className={'h6'}>{key === 'desc' ? '' : key}</h6> :
-                                        <h5 className={'h4'}>{key}</h5>}
-                                    {paragraphs}
+                                    <h5 className={'h4'}>{key}</h5>
+                                    <div className="main-div-section flex flex-col">
+                                        {Object.keys(value).map((subKey) => {
+                                            const subValue = value[subKey];
+
+                                            if (typeof subValue === 'object' && !Array.isArray(subValue)) {
+                                                return (
+                                                    <div className="main-div-section parts flex flex-col" key={subKey}>
+                                                        {Object.keys(subValue).map((innerKey) => {
+                                                            const innerValue = subValue[innerKey];
+
+                                                            if (typeof innerValue === 'string') {
+                                                                const innerParagraphs = innerValue.split('\n\n').map((innerParagraph, index) => (
+                                                                    <>
+                                                                        <p className={'p1'}
+                                                                           key={index}>{innerParagraph}</p>
+                                                                    </>
+                                                                ));
+
+                                                                return (
+                                                                    <div className={'punny'} key={innerKey}>
+                                                                        <p className={'h6'}>{innerKey}</p>
+                                                                        <p className={'p1'}>{innerParagraphs}</p>
+                                                                    </div>
+                                                                );
+                                                            }
+
+                                                            return null;
+                                                        })}
+                                                    </div>
+                                                );
+                                            }
+
+                                            if (Array.isArray(subValue)) {
+                                                return (
+                                                    <div key={subKey} className="main-div">
+                                                        <div className="main-div-images">
+                                                            {subValue.map((item, index) => (
+                                                                <ImageComponent
+                                                                    key={`${subKey}-${index}`}
+                                                                    source={`/projects/${(project.projectName).toLowerCase()}/${item}`}
+                                                                    altText={`Image ${index + 1}`}
+                                                                />
+                                                            ))}
+                                                        </div>
+                                                    </div>
+                                                );
+                                            }
+
+                                            if (subValue.trim()) {
+                                                const paragraphs = subValue.split('\n\n').map((paragraph, index) => (
+                                                    <>
+                                                        <p key={index} className={`p1 ${subKey}`}>{paragraph}</p><br/>
+                                                    </>
+                                                ));
+                                                return (
+                                                    <p className={'p1'}>
+                                                        {paragraphs}
+                                                    </p>
+                                                );
+                                            }
+
+                                            return null;
+
+                                        })}
+                                    </div>
                                 </article>
                                 <PageDivider/>
                             </>
                         );
                     }
-                }
-
-
-                if (typeof value === 'object' && !Array.isArray(value)) {
-                    return (
-                        <>
-                            <article key={key} className="main-div flex flex-col">
-                                <h5 className={'h4'}>{key}</h5>
-                                <div className="main-div-section flex flex-col">
-                                    {Object.keys(value).map((subKey) => {
-                                        const subValue = value[subKey];
-
-                                        if (typeof subValue === 'object' && !Array.isArray(subValue)) {
-                                            return (
-                                                <div className="main-div-section parts flex flex-col" key={subKey}>
-                                                    {Object.keys(subValue).map((innerKey) => {
-                                                        const innerValue = subValue[innerKey];
-
-                                                        if (typeof innerValue === 'string') {
-                                                            const innerParagraphs = innerValue.split('\n\n').map((innerParagraph, index) => (
-                                                                <>
-                                                                    <p className={'p1'} key={index}>{innerParagraph}</p>
-                                                                </>
-                                                            ));
-
-                                                            return (
-                                                                <div className={'punny'} key={innerKey}>
-                                                                    <p className={'h6'}>{innerKey}</p>
-                                                                    <p className={'p1'}>{innerParagraphs}</p>
-                                                                </div>
-                                                            );
-                                                        }
-
-                                                        return null;
-                                                    })}
-                                                </div>
-                                            );
-                                        }
-
-                                        if (Array.isArray(subValue)) {
-                                            return (
-                                                <div key={subKey} className="main-div">
-                                                    <div className="main-div-images">
-                                                        {subValue.map((item, index) => (
-                                                            <ImageComponent
-                                                                key={`${subKey}-${index}`}
-                                                                source={`/projects/${(project.projectName).toLowerCase()}/${item}`}
-                                                                altText={`Image ${index + 1}`}
-                                                            />
-                                                        ))}
-                                                    </div>
-                                                </div>
-                                            );
-                                        }
-
-                                        if (subValue.trim()) {
-                                            const paragraphs = subValue.split('\n\n').map((paragraph, index) => (
-                                                <>
-                                                    <p key={index} className={`p1 ${subKey}`}>{paragraph}</p><br/>
-                                                </>
-                                            ));
-                                            return (
-                                                <p className={'p1'}>
-                                                    {paragraphs}
-                                                </p>
-                                            );
-                                        }
-
-                                        return null;
-
-                                    })}
-                                </div>
-                            </article>
-                            <PageDivider/>
-                        </>
-                    );
                 }
 
                 return null;

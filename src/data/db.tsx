@@ -92,54 +92,58 @@ const Data = {
             "the threat: An Economic Imperative": "Funding is the most significant issue facing SMEs in Nigeria. SMEs contribute 48 percent of the national GDP and 84 percent of employment. The failure of SMEs would have a catastrophic impact on the economy.\n\nThis is the threat I set out to address with Tamarind.",
             "Unveiling the Accessibility Barrier": {
                 "desc": "After research, I discovered that the issue wasn't the availability of funds but their accessibility. Key factors limiting access include:",
-                "parts":{
-                    "":"Lack of sufficient collateral and credit information",
-                    " ":"Strict requirements set by financial institutions",
-                    "  ":"High costs of acquiring cash.",
+                "parts": {
+                    "": "Lack of sufficient collateral and credit information",
+                    " ": "Strict requirements set by financial institutions",
+                    "  ": "High costs of acquiring cash.",
                 }
             },
             "How can Tamarind solve this problem?": {
-                "parts":{
-                    "no collateral":"Loans without the need for collateral.",
-                    "5-minute loan disbursement":"Quick and efficient disbursement process.",
-                    "financial education":"Educational content to help SMEs manage their finances better.",
+                "parts": {
+                    "no collateral": "Loans without the need for collateral.",
+                    "5-minute loan disbursement": "Quick and efficient disbursement process.",
+                    "financial education": "Educational content to help SMEs manage their finances better.",
                 },
-                "images":[
+                "images": [
                     "solution01.png",
                     "solution02.png",
                 ]
             },
             "Crafting the User Journey: Personas and Architecture": {
-                "desc":"I developed detailed user personas to guide my design decisions. Understanding the needs, goals, and pain points of my users was crucial. I also created an end-to-end information architecture and a fluid workflow to ensure a seamless user experience.",
-                "images":[
+                "desc": "I developed detailed user personas to guide my design decisions. Understanding the needs, goals, and pain points of my users was crucial. I also created an end-to-end information architecture and a fluid workflow to ensure a seamless user experience.",
+                "images": [
                     "persona.png",
                     "ia.png",
                 ]
             },
             "the challenge": {
-                "desc":"How can we make sure a borrower will pay back their loan when it’s due?",
-                "Feasibility study":"I started by conducting primary research Feasibility studyto get a broad overview of the loan market. This involved looking at a variety of microenterprises, SMEs, organizations, and people who provide loans in order to comprehend how services are managed in the lending industry. Understanding and tying user goals and corporate goals together was the major objective.",
-                "images":[
+                "desc": "How can we make sure a borrower will pay back their loan when it’s due?",
+                "Feasibility study": "I started by conducting primary research Feasibility studyto get a broad overview of the loan market. This involved looking at a variety of microenterprises, SMEs, organizations, and people who provide loans in order to comprehend how services are managed in the lending industry. Understanding and tying user goals and corporate goals together was the major objective.",
+                "images": [
                     "challenge01.png",
                     "challenge02.png",
                 ]
             },
             "Building the Interface for a unique experience": {
-                "desc":"Creating a robust design system with reusable components was essential. This approach saved time and ensured a consistent, clean design across the entire application.",
-                "images":[
+                "desc": "Creating a robust design system with reusable components was essential. This approach saved time and ensured a consistent, clean design across the entire application.",
+                "images": [
                     "style.png",
                 ]
             },
             "final designs": {
-                "desc":"The onboarding process introduces users to Tamarind's key features and guides them through the initial setup. The homepage provides a clear and concise overview of their loan options, financial resources, and repayment status.",
-                "images":[
+                "desc": "The onboarding process introduces users to Tamarind's key features and guides them through the initial setup. The homepage provides a clear and concise overview of their loan options, financial resources, and repayment status.",
+                "images": [
                     "final01.png",
                     "final02.png",
                 ]
             },
 
             "Reflecting on the journey": " Prioritizing user needs leads to solutions that truly resonate. Streamlining processes saves time and reduces overhead. Financial literacy reduces default rates and fosters sustainable growth.",
-            "conclusion": "Tamarind's innovative approach to SME loans shows that with the right technology and user-centered design, significant barriers can be overcome, driving economic growth. "
+            "conclusion": "Tamarind's innovative approach to SME loans shows that with the right technology and user-centered design, significant barriers can be overcome, driving economic growth.",
+            "url": {
+                "title": "View clickable prototype",
+                "link": "https://www.figma.com/proto/z8dXED2iEgogQHoicFy1f3/Tamarind?node-id=421-2341&t=yWosc6dHhsf45Bq6-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=446%3A2461"
+            }
         },
         2: {
             "projectName": "Scooter Scatter",
@@ -193,7 +197,10 @@ const Data = {
             },
             "challenges and learnings": "Throughout the research process, several challenges and learnings emerged. We initially faced difficulties in recruiting participants for user interviews, resulting in a smaller sample size than anticipated. Additionally, some respondents encountered issues with the survey platform, highlighting the importance of thorough testing and user feedback incorporation.\n\nDespite these challenges, we gained valuable insights into user behaviors and perceptions surrounding scooter usage and indiscriminate parking, emphasizing the need for adaptable research methodologies and robust participant engagement strategies.",
             "conclusion": "Our findings illuminate the complex interplay between user behaviors, urban infrastructure, and regulatory frameworks in shaping the phenomenon of scooter loitering. In reimagining Tallinn's urban mobility landscape, we advocate for user-centric interventions that address the root causes of scooter scatter.\n\nClearer regulations, enhanced awareness campaigns, and incentivized parking solutions can foster a culture of responsible scooter usage, ensuring a safer and more accessible city for all.\n\nThrough collaborative efforts between policymakers, urban planners, and scooter-sharing businesses, we envision a future where shared scooters seamlessly integrate into the fabric of urban life, enriching the mobility experience for residents and visitors alike.",
-            "url":"https://docs.google.com/document/d/1TobUef8DSGB8DG_DrSVJYuBm3Gq-xFsYErn0ws_WtV8/edit"
+            "url": {
+                "title": "View the study paper",
+                "link": "https://docs.google.com/document/d/1TobUef8DSGB8DG_DrSVJYuBm3Gq-xFsYErn0ws_WtV8/edit"
+            }
         },
         3: {
             "projectName": "Smoking Cessation App",
@@ -297,21 +304,25 @@ const Data = {
                     "Flexibility Drives Engagement": "Offering users the flexibility to tailor their experience to their unique preferences fosters a sense of ownership and empowerment, driving deeper engagement and loyalty."
                 }
             },
-            "conclusion": "In reimagining the user experience for Manilla Crypto Wallet, my journey has been one of innovation, empathy, and relentless dedication to user satisfaction. As I continue to push the boundaries of design in the crypto space, I remain committed to empowering users and transforming the way they engage with digital assets."
+            "conclusion": "In reimagining the user experience for Manilla Crypto Wallet, my journey has been one of innovation, empathy, and relentless dedication to user satisfaction. As I continue to push the boundaries of design in the crypto space, I remain committed to empowering users and transforming the way they engage with digital assets.",
+            "url": {
+                "title": "View clickable prototype",
+                "link": "https://www.figma.com/proto/DP7XnRO15AnO8hTr7lV1Vk/Manilla-Crypto?node-id=1-8394&t=jKmqIfYefgmW3GxW-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A4388&starting-point-node-id=1%3A8394&show-proto-sidebar=1"
+            }
         },
         5: {
             "projectName": "HumanManager",
             "overview": "People management has always been localised to the big corporations. Many times to small business owners people management is a luxury. Human manager is a human capital solution to suit businesses of all shapes and sizes.\n\nAs a UX designer at HumanManager, I contributed to various projects that enhanced user experience for our diverse client base. My role involved updating designs features, designing a mobile app for employee to view their dashboard, creating an end-to-end solution for HumanManager Flex aimed at small businesses, and contributing to the website design.",
             "the problem": {
-                "desc":"HumanManager's clients faced several challenges:",
-                "parts":{
-                    "":"Employees needed easier access to their dashboards on the go.",
-                    " ":"Small businesses required a tailored solution that met their unique HR needs.",
-                    "  ":"The website needed an updated design to improve user experience and engagement.",
+                "desc": "HumanManager's clients faced several challenges:",
+                "parts": {
+                    "": "Employees needed easier access to their dashboards on the go.",
+                    " ": "Small businesses required a tailored solution that met their unique HR needs.",
+                    "  ": "The website needed an updated design to improve user experience and engagement.",
                 }
             },
             "project goals": {
-                "desc":"",
+                "desc": "",
                 "parts": {
                     "Mobile App": "Design an intuitive, user-friendly mobile app to provide employees with seamless access to their dashboards anytime, anywhere.",
                     "HumanManager Flex": "Develop a comprehensive solution tailored for small businesses, making HR processes more efficient and manageable.",
@@ -319,13 +330,13 @@ const Data = {
                 }
             },
             "the solution": {
-                "desc":"",
+                "desc": "",
                 "parts": {
                     "HumanManager mobile app": "Created a clean, responsive design for the mobile app, ensuring easy navigation and quick access to key features. Incorporated user feedback to refine the interface, making it more intuitive and user-friendly.",
                     "HumanManager flex": "Designed an end-to-end solution tailored for small businesses, focusing on simplifying HR processes. Included features like streamlined payroll management, employee tracking, and automated workflows to increase efficiency.",
                     "HumanManager enterprise": "Collaborated with the team to redesign the website, focusing on a modern, clean look that enhanced usability. Improved the information architecture, making it easier for users to find relevant content and resources."
                 },
-                "images":[
+                "images": [
                     "solution01.png",
                     "solution02.png",
                     "solution03.png",
@@ -334,18 +345,22 @@ const Data = {
             },
             "challenges": {
                 "parts": {
-                    "" : "Balancing diverse client requests and feedback while maintaining a cohesive design vision.",
-                    " " : "Ensuring the mobile app was both feature-rich and easy to use, accommodating various user needs and technical proficiencies.",
-                    "  " : "Creating a scalable solution for small businesses that could grow with their needs while remaining simple to use.",
+                    "": "Balancing diverse client requests and feedback while maintaining a cohesive design vision.",
+                    " ": "Ensuring the mobile app was both feature-rich and easy to use, accommodating various user needs and technical proficiencies.",
+                    "  ": "Creating a scalable solution for small businesses that could grow with their needs while remaining simple to use.",
                 }
             },
             "success metrics": "",
             "results": {
                 "desc": "The product was launched in 3 markets in Europe and the United States with a total of 30k app download and a retention rate of 70%. The design were implemented in iOS and Android.",
-                "images":[
+                "images": [
                     "result01.png",
                 ]
             },
+            "url": {
+                "title": "View the website",
+                "link": "https://humanmanager.net/"
+            }
         },
         6: {
             "projectName": "NFT Marketplace Design",
@@ -465,6 +480,10 @@ const Data = {
                     "Iterative Design Process": "Continuous testing and refinement are essential for meeting the evolving needs of users and stakeholders",
                     "Simplicity Drives Adoption": "Designing for simplicity and ease of use is paramount, especially in communities with varying levels of digital literacy."
                 },
+            },
+            "url": {
+                "title": "View clickable prototype",
+                "link": "https://www.figma.com/proto/twS0yqVI3GrvyhR2eaUwGD/accorn-(Digital-Product)?node-id=9-5317&t=foclLAQregLH1I4j-1&scaling=scale-down&content-scaling=fixed&page-id=9%3A921&starting-point-node-id=9%3A5316"
             }
         }
     },
