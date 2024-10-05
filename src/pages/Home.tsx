@@ -27,7 +27,7 @@ const textCards = {
         "iconName": 'Briefcase',
         "copyOne": 'My journey has been defined by leading innovative design teams, fostering creativity, and turning collaborative ideas into exceptional products.',
         "copyTwo": 'Whether it’s through strategic partnerships or individual projects, I continue to push the limits of what’s possible in design.',
-        "linker": 'Let\'s connect',
+        "linker": 'Send me an email',
         "linkLocation": 'mailto:mrjosephkalu@gmail.com'
     },
     2: {
