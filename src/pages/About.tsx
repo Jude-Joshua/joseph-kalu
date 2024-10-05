@@ -20,7 +20,7 @@ import more02 from "../assets/images/more-2.webp"
 const career = {
     1: {
         "company": "Kenvue Inc. (Johnson & Johnson)",
-        "year": "2023 - Present",
+        "year": "2023 - 2024",
         "role": "Digital Experience Design Lead"
     },
     2: {

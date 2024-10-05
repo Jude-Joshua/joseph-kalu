@@ -23,10 +23,10 @@ const featuredProjects = projects.filter(project => project.featured);
 const roles = ["Design leader", "Design Strategist", "Community Builder"]
 const textCards = {
     1: {
-        "title": 'Currently working at Kenvue',
+        "title": 'Designing the Future',
         "iconName": 'Briefcase',
-        "copyOne": 'The team at Kenvue is a mix of creativity, collaboration, and innovativeness over a cup of coffee.',
-        "copyTwo": 'As the design leader, I harness each member\'s unique blend of ingenuity to drive the creation of our products.',
+        "copyOne": 'My journey has been defined by leading innovative design teams, fostering creativity, and turning collaborative ideas into exceptional products.',
+        "copyTwo": 'Whether it’s through strategic partnerships or individual projects, I continue to push the limits of what’s possible in design.',
         "linker": 'Send me an email',
         "linkLocation": 'mailto:mrjosephkalu@gmail.com'
     },
