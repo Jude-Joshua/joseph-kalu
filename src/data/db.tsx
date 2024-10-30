@@ -1,17 +1,17 @@
 const Data = {
     "projects": {
-        1: {
-            "id": 1,
-            "featured": false,
-            "title": "Turbocharging financing for SMES",
-            "projectName": "Tamarind",
-            "description": "Conducted user research and implemented streamlined workflows to simplified the loan application process for SMEs.",
-            "tags": "mobile app design, user research, style guide, ui components, UX/UI design",
-            "presentationImage": "cover-image.webp",
-            "year": "2023",
-            "industry": "Fintech",
-            "password": false
-        },
+        // 1: {
+        //     "id": 1,
+        //     "featured": false,
+        //     "title": "Turbocharging financing for SMES",
+        //     "projectName": "Tamarind",
+        //     "description": "Conducted user research and implemented streamlined workflows to simplified the loan application process for SMEs.",
+        //     "tags": "mobile app design, user research, style guide, ui components, UX/UI design",
+        //     "presentationImage": "cover-image.webp",
+        //     "year": "2023",
+        //     "industry": "Fintech",
+        //     "password": false
+        // },
         3: {
             "id": 3,
             "featured": true,
@@ -25,18 +25,18 @@ const Data = {
             "password": true
 
         },
-        4: {
-            "id": 4,
-            "featured": false,
-            "title": "The Future of Money in Africa",
-            "projectName": "Manilla Crypto",
-            "description": "Conducted user research and implemented streamlined workflows to simplified the loan application process for SMEs.",
-            "tags": "UI/UX design, UX research, Style Guide, UI components, interactive prototypes",
-            "presentationImage": "cover-image.webp",
-            "year": "2022",
-            "industry": "Fintech, Crypto",
-            "password": false
-        },
+        // 4: {
+        //     "id": 4,
+        //     "featured": false,
+        //     "title": "The Future of Money in Africa",
+        //     "projectName": "Manilla Crypto",
+        //     "description": "Conducted user research and implemented streamlined workflows to simplified the loan application process for SMEs.",
+        //     "tags": "UI/UX design, UX research, Style Guide, UI components, interactive prototypes",
+        //     "presentationImage": "cover-image.webp",
+        //     "year": "2022",
+        //     "industry": "Fintech, Crypto",
+        //     "password": false
+        // },
         2: {
             "id": 5,
             "featured": false,
@@ -87,64 +87,64 @@ const Data = {
         }
     },
     "projects-details": {
-        1: {
-            "projectName": "Tamarind",
-            "the threat: An Economic Imperative": "Funding is the most significant issue facing SMEs in Nigeria. SMEs contribute 48 percent of the national GDP and 84 percent of employment. The failure of SMEs would have a catastrophic impact on the economy.\n\nThis is the threat I set out to address with Tamarind.",
-            "Unveiling the Accessibility Barrier": {
-                "desc": "After research, I discovered that the issue wasn't the availability of funds but their accessibility. Key factors limiting access include:",
-                "parts": {
-                    "": "Lack of sufficient collateral and credit information",
-                    " ": "Strict requirements set by financial institutions",
-                    "  ": "High costs of acquiring cash.",
-                }
-            },
-            "How can Tamarind solve this problem?": {
-                "parts": {
-                    "no collateral": "Loans without the need for collateral.",
-                    "5-minute loan disbursement": "Quick and efficient disbursement process.",
-                    "financial education": "Educational content to help SMEs manage their finances better.",
-                },
-                "images": [
-                    "solution01.png",
-                    "solution02.png",
-                ]
-            },
-            "Crafting the User Journey: Personas and Architecture": {
-                "desc": "I developed detailed user personas to guide my design decisions. Understanding the needs, goals, and pain points of my users was crucial. I also created an end-to-end information architecture and a fluid workflow to ensure a seamless user experience.",
-                "images": [
-                    "persona.png",
-                    "ia.png",
-                ]
-            },
-            "the challenge": {
-                "desc": "How can we make sure a borrower will pay back their loan when it’s due?",
-                "Feasibility study": "I started by conducting primary research Feasibility studyto get a broad overview of the loan market. This involved looking at a variety of microenterprises, SMEs, organizations, and people who provide loans in order to comprehend how services are managed in the lending industry. Understanding and tying user goals and corporate goals together was the major objective.",
-                "images": [
-                    "challenge01.png",
-                    "challenge02.png",
-                ]
-            },
-            "Building the Interface for a unique experience": {
-                "desc": "Creating a robust design system with reusable components was essential. This approach saved time and ensured a consistent, clean design across the entire application.",
-                "images": [
-                    "style.png",
-                ]
-            },
-            "final designs": {
-                "desc": "The onboarding process introduces users to Tamarind's key features and guides them through the initial setup. The homepage provides a clear and concise overview of their loan options, financial resources, and repayment status.",
-                "images": [
-                    "final01.png",
-                    "final02.png",
-                ]
-            },
-
-            "Reflecting on the journey": " Prioritizing user needs leads to solutions that truly resonate. Streamlining processes saves time and reduces overhead. Financial literacy reduces default rates and fosters sustainable growth.",
-            "conclusion": "Tamarind's innovative approach to SME loans shows that with the right technology and user-centered design, significant barriers can be overcome, driving economic growth.",
-            "url": {
-                "title": "View clickable prototype",
-                "link": "https://www.figma.com/proto/z8dXED2iEgogQHoicFy1f3/Tamarind?node-id=421-2341&t=yWosc6dHhsf45Bq6-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=446%3A2461"
-            }
-        },
+        // 1: {
+        //     "projectName": "Tamarind",
+        //     "the threat: An Economic Imperative": "Funding is the most significant issue facing SMEs in Nigeria. SMEs contribute 48 percent of the national GDP and 84 percent of employment. The failure of SMEs would have a catastrophic impact on the economy.\n\nThis is the threat I set out to address with Tamarind.",
+        //     "Unveiling the Accessibility Barrier": {
+        //         "desc": "After research, I discovered that the issue wasn't the availability of funds but their accessibility. Key factors limiting access include:",
+        //         "parts": {
+        //             "": "Lack of sufficient collateral and credit information",
+        //             " ": "Strict requirements set by financial institutions",
+        //             "  ": "High costs of acquiring cash.",
+        //         }
+        //     },
+        //     "How can Tamarind solve this problem?": {
+        //         "parts": {
+        //             "no collateral": "Loans without the need for collateral.",
+        //             "5-minute loan disbursement": "Quick and efficient disbursement process.",
+        //             "financial education": "Educational content to help SMEs manage their finances better.",
+        //         },
+        //         "images": [
+        //             "solution01.png",
+        //             "solution02.png",
+        //         ]
+        //     },
+        //     "Crafting the User Journey: Personas and Architecture": {
+        //         "desc": "I developed detailed user personas to guide my design decisions. Understanding the needs, goals, and pain points of my users was crucial. I also created an end-to-end information architecture and a fluid workflow to ensure a seamless user experience.",
+        //         "images": [
+        //             "persona.png",
+        //             "ia.png",
+        //         ]
+        //     },
+        //     "the challenge": {
+        //         "desc": "How can we make sure a borrower will pay back their loan when it’s due?",
+        //         "Feasibility study": "I started by conducting primary research Feasibility studyto get a broad overview of the loan market. This involved looking at a variety of microenterprises, SMEs, organizations, and people who provide loans in order to comprehend how services are managed in the lending industry. Understanding and tying user goals and corporate goals together was the major objective.",
+        //         "images": [
+        //             "challenge01.png",
+        //             "challenge02.png",
+        //         ]
+        //     },
+        //     "Building the Interface for a unique experience": {
+        //         "desc": "Creating a robust design system with reusable components was essential. This approach saved time and ensured a consistent, clean design across the entire application.",
+        //         "images": [
+        //             "style.png",
+        //         ]
+        //     },
+        //     "final designs": {
+        //         "desc": "The onboarding process introduces users to Tamarind's key features and guides them through the initial setup. The homepage provides a clear and concise overview of their loan options, financial resources, and repayment status.",
+        //         "images": [
+        //             "final01.png",
+        //             "final02.png",
+        //         ]
+        //     },
+        //
+        //     "Reflecting on the journey": " Prioritizing user needs leads to solutions that truly resonate. Streamlining processes saves time and reduces overhead. Financial literacy reduces default rates and fosters sustainable growth.",
+        //     "conclusion": "Tamarind's innovative approach to SME loans shows that with the right technology and user-centered design, significant barriers can be overcome, driving economic growth.",
+        //     "url": {
+        //         "title": "View clickable prototype",
+        //         "link": "https://www.figma.com/proto/z8dXED2iEgogQHoicFy1f3/Tamarind?node-id=421-2341&t=yWosc6dHhsf45Bq6-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=446%3A2461"
+        //     }
+        // },
         2: {
             "projectName": "Scooter Scatter",
             "problem statement": {
@@ -264,52 +264,52 @@ const Data = {
             "conclusion": "Rebranding the smoking cessation app involved several challenges, including aligning with the company's brand, balancing user preferences, redesigning the interface, adding new features, and improving navigation. Despite these hurdles, the project successfully delivered a more visually appealing, user-friendly, and effective app to help users quit smoking.\n\nIt was also a good experience creating a documentation for the developers to follow while building the app. We did UAT Testing to ensure what was designed is what has been developed.\n\nOverall, rebranding this app was a delightful experience."
 
         },
-        4: {
-            "projectName": "Manilla Crypto",
-            "introduction": "In a world where cryptocurrency transactions are rampant, users often find themselves grappling with high fees and the hassle of switching between multiple platforms. Manilla Crypto Wallet set out to revolutionize this landscape by offering a one-stop solution for trading, storing, and minting NFTs, all within a single intuitive platform.",
-            "Market insights": {
-                "desc": "Extensive market analysis revealed a glaring gap in the crypto ecosystem - the absence of a unified platform for trading cryptocurrencies and creating NFTs. Through primary research, conversations with crypto traders, and analysis of existing platforms, it became evident that users craved simplicity and convenience above all else.\n\nMost users are relatively new to the crypto and NFT space and find it very difficult to navigate between these platforms to perform an action.",
-            },
-            "user personas": {
-                "desc": "For this early stage iteration, I had focused on the group that makes up the majority of the user base.",
-                "image": [
-                    "persona.png",
-                ]
-            },
-            "the solution": "COWRIE, BEADS, SHELL — Manilla Coins. Alternative cryptocurrency for the African market. Manilla Coin  is a decentralised protocol on open-source code to transfer digital currency to fiat money domestically and across borders.\n\nManilla Coin (MNC) is an alternative cryptocurrency created in September 2021 by Joseph (God-Body) Kalu. Like Bitcoin, Manilla Coin  is based on an open-source global payment network that is not controlled by any central authority.\n\nManilla Coin  is a decentralized protocol on open-source code to transfer digital currency to fiat money domestically and across borders.",
-            "the currencies": {
-                "image": [
-                    "currency.png",
-                ]
-            },
-            "the platform": {
-                "desc": "Manilla is a mobile wallet that allows users to trade and store digital assets. It also gives the user the freedom to create and store NFTs. This wallet gives users the freedom of trading, buying, storing and minting NFTs all on the same platform.",
-                "parts": {
-                    "segmenting functionality": "To address the diverse needs of users, Manilla introduced a segmented approach, allowing users to seamlessly toggle between wallet and exchange functionalities. This segmentation not only simplifies the user experience but also empowers users with greater control over their assets.",
-                    "simplified onboarding": "Gone are the days of complex passphrase memorization. With Manilla's one-click sign-up feature, users can effortlessly create an account using just their email, eliminating the friction associated with traditional onboarding processes.",
-                    "empowering NFT creation": "Manilla goes beyond traditional wallets by integrating NFT creation capabilities directly into the platform. Users can now transform their cherished artwork into digital assets and securely store them within their wallet, adding a personal touch to their investment portfolios.",
-                    "intuitive dashboard design": "Enhancing user engagement was a top priority for Manilla. By strategically placing relevant information on the dashboard, users can effortlessly track their assets' performance and stay informed about market trends, fostering a more immersive and rewarding user experience.",
-                },
-                "images": [
-                    "final01.png",
-                    "final02.png",
-                    "final03.png",
-                ]
-            },
-            "lessons learned": {
-                "desc": "Navigating this design journey, I have learnt a few but important things:",
-                "parts": {
-                    "User-Centricity is Key": "Grounding design decisions in user research and feedback is paramount to creating impactful and intuitive experiences.",
-                    "Simplicity Trumps Complexity": "In a complex landscape like cryptocurrency, simplicity reigns supreme. Prioritizing ease of use and accessibility can significantly enhance user adoption and satisfaction.",
-                    "Flexibility Drives Engagement": "Offering users the flexibility to tailor their experience to their unique preferences fosters a sense of ownership and empowerment, driving deeper engagement and loyalty."
-                }
-            },
-            "conclusion": "In reimagining the user experience for Manilla Crypto Wallet, my journey has been one of innovation, empathy, and relentless dedication to user satisfaction. As I continue to push the boundaries of design in the crypto space, I remain committed to empowering users and transforming the way they engage with digital assets.",
-            "url": {
-                "title": "View clickable prototype",
-                "link": "https://www.figma.com/proto/DP7XnRO15AnO8hTr7lV1Vk/Manilla-Crypto?node-id=1-8394&t=jKmqIfYefgmW3GxW-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A4388&starting-point-node-id=1%3A8394&show-proto-sidebar=1"
-            }
-        },
+        // 4: {
+        //     "projectName": "Manilla Crypto",
+        //     "introduction": "In a world where cryptocurrency transactions are rampant, users often find themselves grappling with high fees and the hassle of switching between multiple platforms. Manilla Crypto Wallet set out to revolutionize this landscape by offering a one-stop solution for trading, storing, and minting NFTs, all within a single intuitive platform.",
+        //     "Market insights": {
+        //         "desc": "Extensive market analysis revealed a glaring gap in the crypto ecosystem - the absence of a unified platform for trading cryptocurrencies and creating NFTs. Through primary research, conversations with crypto traders, and analysis of existing platforms, it became evident that users craved simplicity and convenience above all else.\n\nMost users are relatively new to the crypto and NFT space and find it very difficult to navigate between these platforms to perform an action.",
+        //     },
+        //     "user personas": {
+        //         "desc": "For this early stage iteration, I had focused on the group that makes up the majority of the user base.",
+        //         "image": [
+        //             "persona.png",
+        //         ]
+        //     },
+        //     "the solution": "COWRIE, BEADS, SHELL — Manilla Coins. Alternative cryptocurrency for the African market. Manilla Coin  is a decentralised protocol on open-source code to transfer digital currency to fiat money domestically and across borders.\n\nManilla Coin (MNC) is an alternative cryptocurrency created in September 2021 by Joseph (God-Body) Kalu. Like Bitcoin, Manilla Coin  is based on an open-source global payment network that is not controlled by any central authority.\n\nManilla Coin  is a decentralized protocol on open-source code to transfer digital currency to fiat money domestically and across borders.",
+        //     "the currencies": {
+        //         "image": [
+        //             "currency.png",
+        //         ]
+        //     },
+        //     "the platform": {
+        //         "desc": "Manilla is a mobile wallet that allows users to trade and store digital assets. It also gives the user the freedom to create and store NFTs. This wallet gives users the freedom of trading, buying, storing and minting NFTs all on the same platform.",
+        //         "parts": {
+        //             "segmenting functionality": "To address the diverse needs of users, Manilla introduced a segmented approach, allowing users to seamlessly toggle between wallet and exchange functionalities. This segmentation not only simplifies the user experience but also empowers users with greater control over their assets.",
+        //             "simplified onboarding": "Gone are the days of complex passphrase memorization. With Manilla's one-click sign-up feature, users can effortlessly create an account using just their email, eliminating the friction associated with traditional onboarding processes.",
+        //             "empowering NFT creation": "Manilla goes beyond traditional wallets by integrating NFT creation capabilities directly into the platform. Users can now transform their cherished artwork into digital assets and securely store them within their wallet, adding a personal touch to their investment portfolios.",
+        //             "intuitive dashboard design": "Enhancing user engagement was a top priority for Manilla. By strategically placing relevant information on the dashboard, users can effortlessly track their assets' performance and stay informed about market trends, fostering a more immersive and rewarding user experience.",
+        //         },
+        //         "images": [
+        //             "final01.png",
+        //             "final02.png",
+        //             "final03.png",
+        //         ]
+        //     },
+        //     "lessons learned": {
+        //         "desc": "Navigating this design journey, I have learnt a few but important things:",
+        //         "parts": {
+        //             "User-Centricity is Key": "Grounding design decisions in user research and feedback is paramount to creating impactful and intuitive experiences.",
+        //             "Simplicity Trumps Complexity": "In a complex landscape like cryptocurrency, simplicity reigns supreme. Prioritizing ease of use and accessibility can significantly enhance user adoption and satisfaction.",
+        //             "Flexibility Drives Engagement": "Offering users the flexibility to tailor their experience to their unique preferences fosters a sense of ownership and empowerment, driving deeper engagement and loyalty."
+        //         }
+        //     },
+        //     "conclusion": "In reimagining the user experience for Manilla Crypto Wallet, my journey has been one of innovation, empathy, and relentless dedication to user satisfaction. As I continue to push the boundaries of design in the crypto space, I remain committed to empowering users and transforming the way they engage with digital assets.",
+        //     "url": {
+        //         "title": "View clickable prototype",
+        //         "link": "https://www.figma.com/proto/DP7XnRO15AnO8hTr7lV1Vk/Manilla-Crypto?node-id=1-8394&t=jKmqIfYefgmW3GxW-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A4388&starting-point-node-id=1%3A8394&show-proto-sidebar=1"
+        //     }
+        // },
         5: {
             "projectName": "HumanManager",
             "overview": "People management has always been localised to the big corporations. Many times to small business owners people management is a luxury. Human manager is a human capital solution to suit businesses of all shapes and sizes.\n\nAs a UX designer at HumanManager, I contributed to various projects that enhanced user experience for our diverse client base. My role involved updating designs features, designing a mobile app for employee to view their dashboard, creating an end-to-end solution for HumanManager Flex aimed at small businesses, and contributing to the website design.",
