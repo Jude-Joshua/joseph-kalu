@@ -1,7 +1,6 @@
 import React from 'react';
 
 import PageDivider from "../components/PageDivider.tsx";
-import TextCard from "../components/TextCard.tsx";
 import {ScrollingImages} from "../components/ScrollingText.tsx";
 import {ProjectCardRow} from "../components/ProjectCard.tsx";
 import Links from "../components/Links.tsx";
@@ -15,38 +14,14 @@ import Client04 from "../assets/images/clients/KENVUE.svg";
 import Client05 from "../assets/images/clients/adplist.svg";
 
 import Data from "../data/db.tsx";
+import Button from "../components/Button.tsx";
+import {ArrowRight} from "@phosphor-icons/react";
 
 const projects = Object.values(Data.projects)
 const featuredProjects = projects.filter(project => project.featured);
 
 
 const roles = ["Design leader", "Design Strategist", "Community Builder"]
-const textCards = {
-    1: {
-        "title": 'Designing the Future',
-        "iconName": 'Briefcase',
-        "copyOne": 'My journey has been defined by leading innovative design teams, fostering creativity, and turning collaborative ideas into exceptional products.',
-        "copyTwo": 'Whether it’s through strategic partnerships or individual projects, I continue to push the limits of what’s possible in design.',
-        "linker": 'Send me an email',
-        "linkLocation": 'mailto:mrjosephkalu@gmail.com'
-    },
-    2: {
-        "title": "Open source projects",
-        "iconName": 'GitPullRequest',
-        "copyOne": 'My weekends are spent on building free and useful projects for the community.',
-        "copyTwo": 'I currently offer free resources on the Figma Community for designers, including icons, design systems, and plugins, to enhance their creative work.',
-        "linker": 'Learn more about me',
-        "linkLocation": '/about'
-    },
-    3: {
-        "title": "Giving back to the community",
-        "iconName": 'Globe',
-        "copyOne": '“We are not put on this earth for ourselves, but are placed here for each other. If you are there always for others, then in time of need, someone will be there for you.” Jeff Warner',
-        "copyTwo": 'I mentor and build tech communities.',
-        "linker": 'Discover my impact',
-        "linkLocation": '/talks'
-    },
-}
 const clientLogos = [Client01, Client02, Client03, Client04, Client05]
 
 const Home: React.FC = () => {
@@ -76,12 +51,15 @@ const Home: React.FC = () => {
                                 experiences and achieve profitability
                             </h2>
                         </div>
-                        <div className={'text-cards-row flex flex-row items-start justify-center'}>
-                            {Object.values(textCards).map((content, index) => (
-                                <TextCard iconName={content.iconName} title={content.title} copyOne={content.copyOne}
-                                          copyTwo={content.copyTwo} link={content.linker}
-                                          linkLocation={content.linkLocation} key={index}/>
-                            ))}
+                        <div className={'header-action flex flex-row justify-start items-start'}>
+                            <Button to={`mailto:mrjosephkalu@gmail.com`}>
+                                <span className="b1 button-text">
+                                    Discuss a project
+                                </span>
+                                <div className="button-icon">
+                                    <ArrowRight size={16} weight={'bold'}/>
+                                </div>
+                            </Button>
                         </div>
                     </div>
                 </div>
@@ -203,12 +181,13 @@ const Home: React.FC = () => {
                                 Collaborating on open-source community projects
                             </p>
                             <p className="p1">
-                                <Links to={'https://www.figma.com/community/file/1385981291431580402/memoji-emoji-illustrations'}
-                                       classes={''}
-                                       target={'_blank'} border={true}>Memoji</Links> | <Links to={'#'}
-                                                                                               target={'_blank'}
-                                                                                               classes={''}
-                                                                                               border={true}>Nebulon</Links>
+                                <Links
+                                    to={'https://www.figma.com/community/file/1385981291431580402/memoji-emoji-illustrations'}
+                                    classes={''}
+                                    target={'_blank'} border={true}>Memoji</Links> | <Links to={'#'}
+                                                                                            target={'_blank'}
+                                                                                            classes={''}
+                                                                                            border={true}>Nebulon</Links>
                             </p>
                         </div>
                         <PageDivider/>

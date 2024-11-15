@@ -1,19 +1,7 @@
 const Data = {
     "projects": {
-        // 1: {
-        //     "id": 1,
-        //     "featured": false,
-        //     "title": "Turbocharging financing for SMES",
-        //     "projectName": "Tamarind",
-        //     "description": "Conducted user research and implemented streamlined workflows to simplified the loan application process for SMEs.",
-        //     "tags": "mobile app design, user research, style guide, ui components, UX/UI design",
-        //     "presentationImage": "cover-image.webp",
-        //     "year": "2023",
-        //     "industry": "Fintech",
-        //     "password": false
-        // },
-        3: {
-            "id": 3,
+        7: {
+            "id": 7,
             "featured": true,
             "title": "Helping smokers combat cigarette cravings",
             "projectName": "Smoking Cessation App",
@@ -25,21 +13,9 @@ const Data = {
             "password": true
 
         },
-        // 4: {
-        //     "id": 4,
-        //     "featured": false,
-        //     "title": "The Future of Money in Africa",
-        //     "projectName": "Manilla Crypto",
-        //     "description": "Conducted user research and implemented streamlined workflows to simplified the loan application process for SMEs.",
-        //     "tags": "UI/UX design, UX research, Style Guide, UI components, interactive prototypes",
-        //     "presentationImage": "cover-image.webp",
-        //     "year": "2022",
-        //     "industry": "Fintech, Crypto",
-        //     "password": false
-        // },
-        2: {
+        5: {
             "id": 5,
-            "featured": false,
+            "featured": true,
             "title": "Unlocking every SME and BIG Co. potential with the ultimate people management tool!",
             "projectName": "HumanManager",
             "description": "Conducted user research and implemented streamlined workflows to simplified the loan application process for SMEs.",
@@ -49,8 +25,8 @@ const Data = {
             "industry": "Human resources",
             "password": false
         },
-        5: {
-            "id": 6,
+        1: {
+            "id": 1,
             "featured": true,
             "title": "Marketplace for enthusiasts to mint, buy and sell NFTs",
             "projectName": "NFT Marketplace Design",
@@ -61,9 +37,9 @@ const Data = {
             "industry": "Crypto, Digital assets",
             "password": false
         },
-        7: {
-            "id": 7,
-            "featured": false,
+        4: {
+            "id": 4,
+            "featured": true,
             "title": "Empowering a community of merchants to reach the unbanked",
             "projectName": "Accorn",
             "description": "Conducted user research and implemented streamlined workflows to simplified the loan application process for SMEs.",
@@ -73,9 +49,9 @@ const Data = {
             "industry": "Fintech",
             "password": false
         },
-        6: {
-            "id": 2,
-            "featured": true,
+        3: {
+            "id": 3,
+            "featured": false,
             "title": "Promoting responsible and efficient scooter usage in Tallinn",
             "projectName": "Scooter Scatter",
             "description": "Conducted user research and product strategy to fix scooter parking related problems.",

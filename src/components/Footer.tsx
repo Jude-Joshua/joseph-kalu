@@ -33,9 +33,6 @@ const Footer: React.FC<FooterProps> = () => {
                            classes="p2 footer-info-holder-data" border={false}>
                         Connect on LinkedIn
                     </Links>
-                    <span className="p2 footer-info-holder-data">
-                        Tallinn, Estonia
-                    </span>
                     <span className="p2 footer-info-holder-data copyright">
                         &copy; 2024 Joseph Kalu. All rights reserved.
                     </span>

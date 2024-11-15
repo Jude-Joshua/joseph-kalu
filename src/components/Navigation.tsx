@@ -11,7 +11,7 @@ interface NavigationProps {
 
 const Navigation: React.FC<NavigationProps> = ({currentPage}) => {
 
-    const pages = ['home', 'work', 'about', 'talks']
+    const pages = ['home', 'work', 'about', 'talks', 'resume']
 
     return (
         <nav className={'nav flex flex-col justify-center items-center'}>
