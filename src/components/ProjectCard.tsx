@@ -2,7 +2,6 @@ import React from "react";
 
 import ImageComponent from "./ImageComponent.tsx";
 
-import {ArrowRight} from "@phosphor-icons/react";
 import Button from "./Button.tsx";
 import Links from "./Links.tsx";
 
@@ -38,41 +37,26 @@ const ProjectCardCol: React.FC<ProductCardColProps> = ({title, projectName, pres
         </Links>
     );
 };
-const ProjectCardRow: React.FC<ProductCardRowProps> = ({title, projectName, tags, presentationImage, description}) => {
-    const tagsArray = tags.split(',').map(word => word.trim());
-
+const ProjectCardRow: React.FC<ProductCardRowProps> = ({projectName, tags, presentationImage, description}) => {
     return (
-        <div className="ProjectCaard flex flex-row items-center justify-start w-full">
-            <div className="ProjectCaard-image">
-                <ImageComponent source={presentationImage} altText={'case study cover image'}
-                                className={"presentation-cover"}/>
-            </div>
-            <div className="ProjectCaard-info flex flex-col items-start justify-start">
-                <div className="ProjectCaard-info-data flex flex-col items-start justify-start">
-                    <div className="h4 ProjectCaard-info-data-title">
-                        <span className={'ProjectCaard-info-data-title-name'}>{projectName}</span>
-                        <span> - </span>
-                        <span>{title}</span>
-                    </div>
-                    <p className="p1 ProjectCaard-info-data-description">
-                        {description}
-                    </p>
+        <Button to={`/work/${projectName}`}>
+            <div className="ProjectCaard flex flex-col items-center justify-start w-full">
+                <div className="ProjectCaard-image">
+                    <ImageComponent source={presentationImage} altText={'case study cover image'}
+                                    className={"presentation-cover"}/>
                 </div>
-                <div className="ProjectCaard-info-tags flex flex-row justify-start items-center">
-                    {tagsArray.map((tag, index) => (
-                        <p className={'c1 tag'} key={index}>{tag}</p>
-                    ))}
-                </div>
-                <Button to={`/work/${projectName}`}>
-                    <span className="b1 button-text">
-                        View case study
-                    </span>
-                    <div className="button-icon">
-                        <ArrowRight size={16} weight={'bold'}/>
+                <div className="ProjectCaard-info flex flex-row items-start justify-between">
+                    <div className="ProjectCaard-info-data flex flex-row items-start justify-start">
+                        <div className="h6 ProjectCaard-info-data-title">
+                            <span>{description}</span>
+                        </div>
                     </div>
-                </Button>
+                    <div className="c1 ProjectCaard-info-tags flex flex-row justify-start items-center">
+                        {tags}
+                    </div>
+                </div>
             </div>
-        </div>
+        </Button>
     );
 };
 

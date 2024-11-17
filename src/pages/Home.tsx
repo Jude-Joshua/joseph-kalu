@@ -15,7 +15,7 @@ import Client05 from "../assets/images/clients/adplist.svg";
 
 import Data from "../data/db.tsx";
 import Button from "../components/Button.tsx";
-import {ArrowRight} from "@phosphor-icons/react";
+import {Circle, Copy} from "@phosphor-icons/react";
 
 const projects = Object.values(Data.projects)
 const featuredProjects = projects.filter(project => project.featured);
@@ -26,6 +26,19 @@ const clientLogos = [Client01, Client02, Client03, Client04, Client05]
 
 const Home: React.FC = () => {
     const IconComponent = iconMapping['Circle']
+
+    const handleCopyClick = async () => {
+        try {
+            await window.navigator.clipboard.writeText('mrjosephkalu@gmail.com');
+            alert("Email has been copied to clipboard!");
+        } catch (err) {
+            console.error(
+                "Unable to copy to clipboard.",
+                err
+            );
+            alert("Copying to clipboard failed.");
+        }
+    };
 
     return (
         <>
@@ -51,15 +64,19 @@ const Home: React.FC = () => {
                                 experiences and achieve profitability
                             </h2>
                         </div>
-                        <div className={'header-action flex flex-row justify-start items-start'}>
-                            <Button to={`mailto:mrjosephkalu@gmail.com`}>
+                        <div className={'header-action flex flex-row justify-start items-center'}>
+                            <Button onClick={handleCopyClick} to={'#'}>
                                 <span className="b1 button-text">
-                                    Discuss a project
+                                    Copy my email
                                 </span>
                                 <div className="button-icon">
-                                    <ArrowRight size={16} weight={'bold'}/>
+                                    <Copy size={16} weight={'bold'}/>
                                 </div>
                             </Button>
+                            <div className={'header-action-slope flex flex-row justify-center items-center'}>
+                                <Circle size={16} weight={'fill'}/>
+                                <p className={'c1'}>Open to work</p>
+                            </div>
                         </div>
                     </div>
                 </div>

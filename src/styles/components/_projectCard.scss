@@ -8,8 +8,7 @@
         }
 
         .ProjectCaard {
-            padding-block: var(--paddings-padding-parent-small);
-            gap: var(--gaps-group-parent-gap);
+            gap: var(--gaps-card-gap);
 
             @include devices(phone){
                 flex-direction: column !important;
@@ -17,44 +16,56 @@
             }
 
             &-image {
-                width: 53%;
+                width: 100%;
                 border-radius: var(--border-radi-cards);
                 overflow: hidden;
-                height: 528px;
+                height: 800px;
 
                 @include devices(phone){
-                    width: 100%;
                     height: 263px;
                 }
 
                 & img {
+                    width: 100%;
                     height: 100%;
+                    object-position: center;
+                    transition: 0.5s linear;
                 }
             }
 
             &-info {
                 gap: var(--gaps-card-gap);
-                width: 46%;
+                width: 100%;
 
                 @include devices(phone){
-                    width: 100%;
+                    flex-direction: column;
+                    gap: var(--gaps-paragraph-gap);
                 }
 
                 &-data {
-                    gap: var(--gaps-paragraph-gap);
+                    gap: var(--gaps-title-gap);
+                    width: 56%;
+                    color: var(--active-primary);
 
                     &-title {
-                        &-name {
-                            color: var(--active-secondary);
-                        }
+                        width: 100%;
+                        line-height: 140%;
+                    }
+
+                    @include devices(phone){
+                        width: 100%;
                     }
                 }
 
                 &-tags {
                     gap: var(--gaps-siblings-gap);
+                    width: 20%;
+                    justify-content: flex-end;
 
                     @include devices(phone){
                         flex-wrap: wrap;
+                        width: 100%;
+                        justify-content: flex-start;
                     }
 
                     & .tag {
@@ -68,6 +79,26 @@
         .pages-divider{
             &:last-of-type{
                 display: none;
+            }
+        }
+
+        & a{
+            border: none;
+            padding: 0;
+            overflow: hidden;
+            border-radius: 0;
+            color: var(--active-neutrals-black);
+
+            &:before{
+                display: none;
+            }
+
+            &:hover{
+               color: var(--active-neutrals-black);
+
+                & img{
+                    transform: scale(1.05);
+                }
             }
         }
     }

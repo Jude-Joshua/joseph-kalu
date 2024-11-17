@@ -7,7 +7,6 @@
                 &-text {
                     gap: 3.5rem;
 
-
                     &-contain {
                         gap: var(--gaps-paragraph-gap);
                         width: 85%;
@@ -54,6 +53,15 @@
                         }
                     }
                 }
+            }
+        }
+
+        &-action{
+            gap: var(--gaps-has-button-gap);
+
+            &-slope{
+                gap: var(--gaps-button-inner-gap);
+                color: var(--active-secondary);
             }
         }
 

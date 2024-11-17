@@ -1,7 +1,7 @@
 const Data = {
     "projects": {
-        7: {
-            "id": 7,
+        4: {
+            "id": 4,
             "featured": true,
             "title": "Helping smokers combat cigarette cravings",
             "projectName": "Smoking Cessation App",
@@ -13,8 +13,8 @@ const Data = {
             "password": true
 
         },
-        5: {
-            "id": 5,
+        3: {
+            "id": 3,
             "featured": true,
             "title": "Unlocking every SME and BIG Co. potential with the ultimate people management tool!",
             "projectName": "HumanManager",
@@ -37,8 +37,8 @@ const Data = {
             "industry": "Crypto, Digital assets",
             "password": false
         },
-        4: {
-            "id": 4,
+        2: {
+            "id": 2,
             "featured": true,
             "title": "Empowering a community of merchants to reach the unbanked",
             "projectName": "Accorn",
@@ -49,9 +49,9 @@ const Data = {
             "industry": "Fintech",
             "password": false
         },
-        3: {
-            "id": 3,
-            "featured": false,
+        5: {
+            "id": 5,
+            "featured": true,
             "title": "Promoting responsible and efficient scooter usage in Tallinn",
             "projectName": "Scooter Scatter",
             "description": "Conducted user research and product strategy to fix scooter parking related problems.",
