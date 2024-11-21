@@ -66,8 +66,8 @@ const Home: React.FC = () => {
                         </div>
                         <div className={'header-action flex flex-row justify-start items-center'}>
                             <Button onClick={handleCopyClick} to={'#'}>
-                                <span className="p1 button-text">
-                                    Copy my email
+                                <span className="b1 button-text">
+                                    Send me an email
                                 </span>
                                 <div className="button-icon">
                                     <Copy size={16} weight={'bold'}/>
