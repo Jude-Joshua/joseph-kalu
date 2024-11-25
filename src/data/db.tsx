@@ -71,55 +71,74 @@ const Data = {
         2: {
             "projectName": "Scooter Scatter",
             "problem statement": {
-                "desc": "In Tallinn's historic streets, a modern phenomenon has emerged alongside centuries-old architecture - electric scooters. A promising  eco-friendly  and affordable vehicle is now a problem due to  indiscriminate parking, so much so that once in Paris 90% voted to ban its use at a referendum in 2020. A bad news for green transport if one more solution is taken off the already small list of eco-friendly transport. A costly global cost for disorderliness.\n\nIn this study we set out to understand:",
-                "parts": {
-                    "": "Why did this happen?",
-                    " ": "How badly does it affects the city?",
-                    "  ": "How can we fix this?",
-                },
-                "close": "This was achieved by speaking to residents asking them to fill forms and answer our questions in an interview"
+                "desc": "Indiscriminate parking of shared scooters refers to the disorderly manner in which users leave scooters at various locations within a city, often ignoring designated parking areas and without consideration for pedestrians, traffic, or public spaces. This behavior has led to stress for pedestrians and poses a serious safety concern. For instance, in 2020, nearly 90% of Paris residents voted in favor of banning shared scooters due to these issues. If not properly managed, similar actions could be taken in cities worldwide." +
+                    "\n\n" +
+                    "Tallinn, a vibrant and growing city, has not been immune to this phenomenon. As the city embraces eco-friendly and affordable transportation options, understanding the reasons behind the indiscriminate parking of shared scooters is essential.",
+            },
+            "Research Problem Statement": {
+                "desc": "This research focuses on the indiscriminate parking of shared scooters in Tallinn. The goal is to raise awareness and promote a harmonious coexistence between this mode of transportation and the city's residents and visitors.",
             },
             "research goals": {
-                "desc": "By the end of this research, we want to:",
+                "desc": "The team aims to:",
                 "parts": {
-                    "": "Find the root causes",
-                    " ": "Access the impacts",
-                    "  ": "Propose strategies for Talinn",
+                    "": "Investigate the factors contributing to indiscriminate parking.",
+                    " ": "Identify the root causes of this behaviour.",
+                    "  ": "Assess the impact of indiscriminate parking on urban life.",
+                    "    ": "Propose effective strategies for Tallinn.",
                 },
                 "close": "Through a human-centered approach, we aimed to enhance the urban mobility experience for all stakeholders."
             },
             "research and analysis": {
-                "desc": "The team conducted literature research to inform user interview question. Then applied cultural angles to the sets of questions in order to analyze data according to Critical theory. The questions were distributed via google forms which included open ended questions. The following are research questions that guided the team:",
                 "parts": {
                     "": "What are the underlying factors driving users to park shared scooters indiscriminately in Tallinn?",
-                    " ": "How does the availability and design of scooter-sharing infrastructure influence parking behavior in Tallinn?",
+                    " ": "How does the availability and design of scooter-sharing infrastructure influence parking behaviour?",
                     "  ": "What are the safety implications of indiscriminate scooter parking on Tallinn's sidewalks and roadways?",
-                    "   ": "What local regulations exist to mitigate indiscriminate parking of scooters, and what role do they play? What are their limitations?",
                 },
-                "images": [
-                    'research01.png',
-                ]
+            },
+            "Methodology": {
+                "desc": "The research methodology included a literature review to inform the development of user interview questions and surveys to examine user behaviour, urban infrastructure, and scooter-sharing service characteristics. Google Forms was used to collect quantitative data from 111 participants, specifically targeting shared scooter users in Tallinn. Participants were recruited through social media platforms like Facebook, Telegram, and WhatsApp.",
             },
             "Understanding the problem": {
-                "desc": "We collected quantitative data from 111 participants, specifically targeting shared scooter users. Participants were recruited from social media platforms, including Facebook, Telegram, and WhatsApp. Some of the question we asked to understand their motivation, awareness of rules & guidelines of scooter usage and attitude towards the problem were:",
+                "desc": "A quantitative research method was employed, with data collected from surveys. Open-ended questions provided qualitative insights. The data analysis process included:",
                 "parts": {
-                    "": "Have you ever shared a scooter?",
-                    "  ": "Have you ever parked indiscriminately?",
-                    "   ": "Are you aware of designated parking areas or guidelines for scooter parking in Tallinn?",
+                    "": "Defining research questions.",
+                    "  ": "Collecting and storing data",
+                    "   ": "Cleaning data.",
+                    "    ": "Analyzing data using Critical Theory.",
+                    "     ": "Sharing insights.",
+                }
+            },
+            "Types of collected data": {
+                "desc": "We collected the following data: Demographics, scooter usage patterns, and parking behaviour",
+                "image": [
+                    "Data.png",
+                    "Data-1.png",
+                    "Data-2.png",
+                ]
+            },
+            "Main Findings": {
+                "desc": "Participants were primarily over 25 years old, of diverse genders and occupations, with 68.5% being full-time employees. The top reasons for using shared scooters were speed (48.6%) and convenience for last-mile transportation (20.7%).",
+                "parts": {
+                    "Parking Behavior": "70.3% reported parking scooters properly on sidewalks or in designated areas. 48.6% followed app guidelines for parking. The absence of designated areas was the most common reason for indiscriminate parking, along with time constraints.",
+                    "Awareness of Parking Guidelines": "79.3% were aware of scooter parking guidelines in Tallinn. 64.9% received notifications about responsible parking from scooter-sharing companies.",
+                    "Safety and Accessibility": "77.4% considered indiscriminate parking a significant safety threat. 59.5% had personally experienced safety issues related to scooter parking.",
+                    "Regulations and Enforcement": "62.2% were unaware of current regulations related to scooter usage in Tallinn. 21% considered the regulations somewhat effective.",
+                    "Incentives and Penalties": "63.1% reported that current regulations do not influence their parking behavior. 48.6% believed that incentives could motivate better parking habits. Only 18% felt that penalties would influence their behaviour.",
+                }
+            },
+            "Discussion": {
+                "desc": "The findings reveal that while many users are aware of the guidelines, there is still a significant portion who park indiscriminately due to the lack of designated areas, time constraints, and insufficient regulations. The data also show that poorly parked scooters pose a safety risk to pedestrians, cyclists, and other road users.",
+            },
+            "Techniques": {
+                "desc": "Critical Theory was applied to analyze the cultural factors influencing scooter parking behaviour. This approach helped uncover the social dynamics and assumptions that contribute to the issue.",
+            },
+            "challenges and Surprising Insights": {
+                "parts": {
+                    "Challenges": "Difficulty in scheduling user interviews due to time constraints.",
+                    "Surprising Insights": "Many users are unaware of the potential issues caused by improper parking. Additionally, while there is support for incentives, few people favour fines for improper parking.",
                 },
-                "images": [
-                    'understand.png'
-                ]
             },
-            "insights: The root cause": {
-                "desc": "Based on these responses the major reasons why these have been happening are:",
-                "images": [
-                    'insight01.png',
-                    'insight02.png'
-                ]
-            },
-            "challenges and learnings": "Throughout the research process, several challenges and learnings emerged. We initially faced difficulties in recruiting participants for user interviews, resulting in a smaller sample size than anticipated. Additionally, some respondents encountered issues with the survey platform, highlighting the importance of thorough testing and user feedback incorporation.\n\nDespite these challenges, we gained valuable insights into user behaviors and perceptions surrounding scooter usage and indiscriminate parking, emphasizing the need for adaptable research methodologies and robust participant engagement strategies.",
-            "conclusion": "Our findings illuminate the complex interplay between user behaviors, urban infrastructure, and regulatory frameworks in shaping the phenomenon of scooter loitering. In reimagining Tallinn's urban mobility landscape, we advocate for user-centric interventions that address the root causes of scooter scatter.\n\nClearer regulations, enhanced awareness campaigns, and incentivized parking solutions can foster a culture of responsible scooter usage, ensuring a safer and more accessible city for all.\n\nThrough collaborative efforts between policymakers, urban planners, and scooter-sharing businesses, we envision a future where shared scooters seamlessly integrate into the fabric of urban life, enriching the mobility experience for residents and visitors alike.",
+            "conclusion": "The ScooterScatter User Research offers valuable insights into the problem of indiscriminate scooter parking in Tallinn. The study recommends clearer regulations, enhanced awareness campaigns, and incentives to encourage proper parking. These findings aim to foster a more harmonious relationship between shared scooters and the urban environment.",
             "url": {
                 "title": "View the study paper",
                 "link": "https://docs.google.com/document/d/1TobUef8DSGB8DG_DrSVJYuBm3Gq-xFsYErn0ws_WtV8/edit"
