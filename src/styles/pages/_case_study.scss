@@ -115,6 +115,10 @@
                 }
 
                 & .rehold{
+                    & .swiper{
+                        overflow: visible;
+                    }
+
                     & .button-icon {
                         border: var(--border-width) solid var(--active-primary);
                         color: var(--active-neutral);
