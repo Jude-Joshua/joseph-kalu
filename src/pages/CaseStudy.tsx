@@ -252,7 +252,7 @@ const CaseStudy: React.FC = () => {
                         </div>
                         <div className={'header-content-hero-image'}>
                             <ImageComponent
-                                source={`/projects/${(project.projectName).toLowerCase()}/${project.caseImage}`}
+                                source={`/projects/${(project.projectName).toLowerCase()}/${project.presentationImage}`}
                                 altText={'Case study cover image'}
                                 className={'header-content-hero-image-img'}/>
                         </div>
