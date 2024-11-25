@@ -5,8 +5,11 @@ import ImageComponent from "../components/ImageComponent.tsx";
 
 import Data from "../data/db.tsx";
 import PageDivider from "../components/PageDivider.tsx";
-import {ArrowRight, FolderSimpleLock} from "@phosphor-icons/react";
+import {ArrowLeft, ArrowRight, FolderSimpleLock} from "@phosphor-icons/react";
 import Links from "../components/Links.tsx";
+
+import {Swiper, SwiperSlide} from 'swiper/react';
+import {Keyboard, Navigation} from 'swiper/modules';
 
 interface ProjectDetails {
     [key: string]: string | ProjectDetails | string[];
@@ -100,6 +103,14 @@ const CaseStudy: React.FC = () => {
             const elements: JSX.Element[] = [];
 
             const createElement = (key: string, value: string | ProjectDetails | string[], isSubkey: boolean = false): JSX.Element | null => {
+                // Slider condition for specific projects and sections
+                const shouldUseSlider = (
+                    (projectName === 'NFT Marketplace Design' &&
+                        (key === 'crafted solution' || key === 'final designs')) ||
+                    (projectName === 'HumanManager' &&
+                        key === 'final designs')
+                );
+
 
                 if (typeof value === 'string' && value.trim()) {
 
@@ -130,12 +141,13 @@ const CaseStudy: React.FC = () => {
                                 <article key={key} className="main-div-section flex flex-col">
                                     <h5 className={'h4 text-center'}>
                                         {projectDetailsValue.title}{' '}
-                                        <Links  target={'_blank'}  to={projectDetailsValue.link}  classes={'inline'}  border={false}>
+                                        <Links target={'_blank'} to={projectDetailsValue.link} classes={'inline'}
+                                               border={false}>
                                             here
                                         </Links>
                                     </h5>
                                 </article>
-                                <PageDivider />
+                                <PageDivider/>
                             </>
                         );
                     } else {
@@ -176,7 +188,39 @@ const CaseStudy: React.FC = () => {
                                             }
 
                                             if (Array.isArray(subValue)) {
-                                                return (
+                                                // Wrap images in Slider if condition is met
+
+                                                return shouldUseSlider ? (
+                                                    <div className={'rehold'}>
+                                                        <Swiper
+                                                            modules={[Keyboard, Navigation]}
+                                                            navigation={{
+                                                                nextEl: '.swiper-button-next',
+                                                                prevEl: '.swiper-button-prev',
+                                                            }}
+                                                            keyboard={true}
+                                                            loop={true}
+                                                        >
+                                                            <div
+                                                                className="button-icon swiper-button-prev swiper-button">
+                                                                <ArrowLeft size={'24'} weight={'regular'}/>
+                                                            </div>
+                                                            {subValue.map((item, index) => (
+                                                                <SwiperSlide className={'slidererre'} key={subKey}>
+                                                                    <ImageComponent
+                                                                        key={`${subKey}-${index}`}
+                                                                        source={`/projects/${(project.projectName).toLowerCase()}/${item}`}
+                                                                        altText={`Image ${index + 1}`}
+                                                                    />
+                                                                </SwiperSlide>
+                                                            ))}
+                                                            <div
+                                                                className="button-icon right swiper-button-next swiper-button">
+                                                                <ArrowRight size={'24'} weight={'regular'}/>
+                                                            </div>
+                                                        </Swiper>
+                                                    </div>
+                                                ) : (
                                                     <div key={subKey} className="main-div">
                                                         <div className="main-div-images">
                                                             {subValue.map((item, index) => (

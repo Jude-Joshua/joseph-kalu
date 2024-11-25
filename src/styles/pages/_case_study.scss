@@ -113,6 +113,33 @@
                     border-bottom: var(--border-width-bold) solid var(--active-primary);
                     line-height: 88% !important;
                 }
+
+                & .rehold{
+                    & .button-icon {
+                        border: var(--border-width) solid var(--active-primary);
+                        color: var(--active-neutral);
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        z-index: 100;
+                        cursor: pointer;
+                        background-color: var(--active-neutrals-black);
+                        backdrop-filter: blur(12px);
+
+                        @include devices(phone) {
+                            left: -10%;
+                        }
+
+                        &.right {
+                            right: 0;
+                            left: unset;
+
+                            @include devices(phone) {
+                                right: -10%;
+                            }
+                        }
+                    }
+                }
             }
 
             &-images {

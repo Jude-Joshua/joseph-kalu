@@ -217,16 +217,16 @@ const Data = {
                 "images": [
                     "solution01.png",
                     "solution02.png",
-                ],
+                    "solution04.png",
+                ]
+            },
+            "final designs": {
                 "image": [
                     "Body.png",
                     "Body-1.png",
                     "Body-2.png",
                     "Body-3.png",
                     "Body-4.png",
-                ],
-                "imager": [
-                    "solution04.png",
                 ]
             },
             "challenges": {
@@ -308,7 +308,11 @@ const Data = {
             },
             "final designs": {
                 "image": [
-                    "final.png",
+                    "final-1.png",
+                    "final-2.png",
+                    "final-3.png",
+                    "final-4.png",
+                    "final-5.png",
                 ]
             },
             "user testing": {
