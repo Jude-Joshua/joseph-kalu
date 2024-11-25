@@ -252,8 +252,8 @@ const CaseStudy: React.FC = () => {
                         </div>
                         <div className={'header-content-hero-image'}>
                             <ImageComponent
-                                source={`/projects/${(project.projectName).toLowerCase()}/${project.presentationImage}`}
-                                altText={'A portrait of Jospeh Kalu in Green stripped shirt smiling'}
+                                source={`/projects/${(project.projectName).toLowerCase()}/${project.caseImage}`}
+                                altText={'Case study cover image'}
                                 className={'header-content-hero-image-img'}/>
                         </div>
                         <div className="case-study-intro-details-row flex flex-row justify-between w-full">
