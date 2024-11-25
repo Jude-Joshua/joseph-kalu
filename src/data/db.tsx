@@ -111,9 +111,9 @@ const Data = {
             "Types of collected data": {
                 "desc": "We collected the following data: Demographics, scooter usage patterns, and parking behaviour",
                 "image": [
-                    "Data.png",
-                    "Data-1.png",
-                    "Data-2.png",
+                    "data.png",
+                    "data-1.png",
+                    "data-2.png",
                 ]
             },
             "Main Findings": {
