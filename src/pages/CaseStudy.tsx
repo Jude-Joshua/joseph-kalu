@@ -206,9 +206,9 @@ const CaseStudy: React.FC = () => {
                                                                 <ArrowLeft size={'24'} weight={'regular'}/>
                                                             </div>
                                                             {subValue.map((item, index) => (
-                                                                <SwiperSlide className={'slidererre'} key={subKey}>
+                                                                <SwiperSlide className={'slidererre'}>
                                                                     <ImageComponent
-                                                                        key={`${subKey}-${index}`}
+                                                                        key={`${index + 1}`}
                                                                         source={`/projects/${(project.projectName).toLowerCase()}/${item}`}
                                                                         altText={`Image ${index + 1}`}
                                                                     />
@@ -221,11 +221,11 @@ const CaseStudy: React.FC = () => {
                                                         </Swiper>
                                                     </div>
                                                 ) : (
-                                                    <div key={subKey} className="main-div">
+                                                    <div className="main-div">
                                                         <div className="main-div-images">
                                                             {subValue.map((item, index) => (
                                                                 <ImageComponent
-                                                                    key={`${subKey}-${index}`}
+                                                                    key={`${index + 1}`}
                                                                     source={`/projects/${(project.projectName).toLowerCase()}/${item}`}
                                                                     altText={`Image ${index + 1}`}
                                                                 />
