@@ -11,7 +11,7 @@ const NavLink: React.FC<NavLinkProps> = ({activeLink, children}) => {
         <li className={`menuLink l1 ${children === activeLink ? "active" : ""}`}>
             {
                 children === 'resume' ? (
-                    <a target={'_blank'} href={'https://drive.google.com/file/d/1OclIPvx3r3kJrAMCKCgrCnPADyTB2fHu/view?usp=sharing'}>
+                    <a target={'_blank'} href={'https://drive.google.com/file/d/1kxr7Ixsyuhwskez6Z_gx7MwYxqex15lm/view?usp=sharing'}>
                         {children}
                     </a>
                 ) : (
