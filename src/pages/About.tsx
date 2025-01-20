@@ -150,7 +150,7 @@ const About: React.FC = () => {
                             <Links target={'_blank'} to={'https://calendar.app.google/enSbeLCHzZFYoFsj8'} classes={''} border={true}>
                                 Discuss a project
                             </Links>
-                            <Links target={'_blank'} to={'https://drive.google.com/file/d/1OclIPvx3r3kJrAMCKCgrCnPADyTB2fHu/view?usp=sharing'} classes={''} border={true}>
+                            <Links target={'_blank'} to={'https://drive.google.com/file/d/1kxr7Ixsyuhwskez6Z_gx7MwYxqex15lm/view?usp=sharing'} classes={''} border={true}>
                                View my CV
                             </Links>
                         </div>
