@@ -30,7 +30,7 @@ const Data = {
         1: {
             "id": 1,
             "featured": true,
-            "title": "Marketplace for enthusiasts to mint, buy and sell NFTs",
+            "title": "Coinhaven NFT Platform: Simplifying NFTs While Solving Business Challenges",
             "projectName": "NFT Marketplace Design",
             "description": "Designed an NFT marketplace where users can mint new NFTs, buy and sell NFTs and learn more about cryptocurrency",
             "tags": "mobile app design, user research, product strategy, ux design",
@@ -269,63 +269,89 @@ const Data = {
         },
         6: {
             "projectName": "NFT Marketplace Design",
-            "context": "With the rise of the NFT boom in 2021, many startups were founded, and exchanges began building NFT platforms for their users. When our company launched its cryptocurrency exchange, we realized that NFTs presented another goldmine we could tap into. This recognition led us to the need to build an NFT platform where users could mint and trade NFTs.\n\nWe immediately went to work to understand users' needs, the market landscape, and what competitors were building. After extensive research, we developed flows and designs that would be intuitive and user-friendly. This strategic approach ensured that our platform not only met market demands but also provided a seamless and engaging experience for our users.",
-            "problem statement": "In 2021, NFTs became very popular, and many platforms were created for minting and trading them. However, many of these platforms were hard to use and confusing. Our company saw an opportunity with NFTs but needed to build a platform that was easy to use and competitive.We needed to develop a solution that would simplify the process of minting and trading NFTs and make it fun for people to mint and trade NFTs, while setting ourselves apart from existing competitors.",
-            "crafted solution": {
-                "desc": "After thorough research and multiple iterations, we arrived at the final design for our NFT platform. Our primary focus was on simplicity and ease of use.",
+            " ": "In 2022, NFTs were everywhere. The hype was unstoppable, and creators around the world were scrambling to join the NFT rush. For CoinHaven, a small cryptocurrency startup in Germany, this was the perfect storm to ride. They had just launched a cryptocurrency exchange MVP and were eager to expand their offerings by diving into the NFT space. Their idea? Build a platform where users can easily mint, buy, and sell NFTs while creating a community that would empower creators, big and small.\n\nI was brought on as the UX designer to turn their vision into a reality. My task wasn’t just to create a platform—it was to craft an experience. One that made creating and trading NFTs intuitive, accessible, and, most importantly, fun. The challenge was clear: make something so simple that even someone new to crypto could navigate it with ease.\n\nBut the road wasn’t smooth. CoinHaven faced significant hurdles: regulatory constraints in Europe, the challenges of being a small team, and the need to secure funding for the platform’s growth.",
+            "Business Goal: Bridging the Gap in the NFT Market": {
+                "desc": "Coinhaven aims to become a leading NFT platform that democratizes the creation and trading of NFTs, making it accessible for both novice and experienced users. The primary objectives include:",
+                "parts": {
+                    "": "Democratize NFT Creation and Trading: The platform aimed to be accessible to both newcomers and seasoned users, eliminating barriers that often hinder participation",
+                    "  ": "Secure Investor Funding: To scale operations and enhance their offerings, Coinhaven needed to attract investors who believed in their vision.",
+                },
+                "close": "To achieve this, the platform needed to solve critical user pain points while also showcasing its potential to investors. My job was to align these goals with user needs through research-driven design.",
+            },
+            "Market Size and Growth": "In 2022, the NFT market was valued at approximately $24 billion, with projections indicating it could reach around $80 billion by 2025. This explosive growth was driven by increasing interest from creators and collectors alike, alongside advancements in blockchain technology. Coinhaven recognized this  opportunity as a chance to carve out its niche.",
+            "Forecast and Strategy": "To realize its ambitions, Coinhaven needed to develop a compelling product that could attract investment. The plan was to leverage user-centered design principles to create an intuitive platform that addressed the pain points of NFT creators. A successful prototype would not only validate their concept but also serve as a powerful tool for pitching potential investors.",
+            "Project Goal": "To realize its ambitions, Coinhaven needed to develop a compelling product that could attract investment. The plan was to leverage user-centered design principles to create an intuitive platform that addressed the pain points of NFT creators. A successful prototype would not only validate their concept but also serve as a powerful tool for pitching potential investors.",
+            "The Research: Listening to the Creators": {
+                "desc": "The first step in designing something meaningful is understanding the people you’re designing for. So, I set out to meet the NFT creators. I didn’t rely on hypothetical personas or assumptions—I went straight to the source.\n\nTwitter, Telegram, Discord groups—these were the digital cafes where creators hung out, talked about their projects, and, yes, vented their frustrations. I joined their conversations, sometimes casually and sometimes more formally through surveys and interviews. What I found was eye-opening.",
                 "image": [
-                    "Body.png",
-                    "Body-1.png",
-                    "Body-2.png",
-                    "Body-3.png",
-                    "Body-4.png",
+                    "surveys.png",
+                    "one-one.png",
                 ]
             },
-            "the story": {
+            "Competitive Analysis": {
+                "desc": "A deep dive into platforms like OpenSea, Magic Eden, and Rarible to identify gaps in the market.",
                 "image": [
-                    "story01.png",
+                    "compete.png",
                 ]
             },
-            "project goal": "Our goal for this project is to create an easy-to-use NFT platform where people can mint and trade NFTs. We aim to make the process simple and intuitive for categories of users, whether they are new to NFTs or have a ton of experience. We want our platform to be secure, reliable, and user-friendly, standing out from other platforms in the market.",
-            "market research": {
-                "desc": "To get things started, I conducted a preliminary market research to gain a comprehensive understanding of the NFT and crypto currency landscape. This research encompasses market size, user demographic, competitor analysis, market trends, technological landscape and  regulations.",
+            "Key Findings": {
+                "desc": "For many creators, platforms like OpenSea were a double-edged sword. Sure, they were the giants, but they weren’t built for everyone. High gas fees on Ethereum made minting NFTs an expensive gamble. Small creators were struggling to get noticed amidst a sea of big names. And scams?\n\nBut it wasn’t all complaints. These creators also had hopes. They dreamed of platforms that were more affordable, inclusive, and secure. They wanted tools to help them build buzz for their work before launch, something that could level the playing field. This wasn’t just a wish list; it was my design brief.",
                 "image": [
-                    "research01.png",
-                    "research02.png",
-                    "research03.png",
+                    "findings.png",
                 ]
             },
-            "analysis": {
-                "desc": "We analysed all the collected insights from the user interview and survey and arranged into an affinity map so we can come up with some valuable information that could lead to a possible solution.\n\nBased on the affinity map, we were able to come up with six pain points that our user persona was experiencing and needed a solution to.\n\nWe understood that addressing these pain points will not only make our product stand out, it’ll also attract users to be fully engaged in using the product and in-turn increase referrals.",
+            "Defining the User stories": {
+                "desc": "With my research in hand, I began mapping out the journey of a CoinHaven user. Not just one user, but many—new creators who were minting their first NFT, seasoned creators looking to expand their reach, and buyers hoping to avoid scams while finding the next big thing.\n\nOne insight stood out: simplicity was non-negotiable. Many creators felt overwhelmed by the complexity of existing platforms, so I set out to design an experience that felt intuitive from the first click.\n\nUsing insights from the research, I crafted detailed user stories that captured the needs of our target audience. Here are a few examples:",
                 "image": [
-                    "analysis.png",
+                    "stories.png",
                 ]
             },
-            "brainstorming and ideation": {
+            "Interaction design and accessibility": {
+                "desc": "As an interaction designer, I focused on creating a product that was not only functional but also delightful to use. Key considerations included:",
                 "image": [
-                    "brain.png",
-                    "brain02.png",
+                    "interact.png",
                 ]
             },
-            "develop": {
+            "Ideation and Prioritization": {
+                "desc": "With the user stories in place, I facilitated an ideation workshop with the team to brainstorm solutions. Each idea was evaluated based on its user impact and technical feasibility, resulting in a prioritized feature set:",
                 "image": [
-                    "develop01.png",
-                    "develop02.png",
+                    "idea.png",
+                ]
+            },
+            "User journey map": {
+                "image": [
+                    "user journey.png",
+                ]
+            },
+            "Overcoming Constraints": {
+                "parts": {
+                    "Technical Constraints": "Coinhaven’s small team and limited resources meant we couldn’t launch both a web and mobile app simultaneously. Instead, I designed a web application with a mobile-responsive interface, ensuring users had a seamless experience on any device. This was critical because most existing NFT platforms were only partially mobile-friendly.",
+                    "Regulatory Constraints": "Operating in Europe brought its own challenges, as crypto regulations were strict and constantly evolving. I worked closely with the legal team to ensure the platform complied with regulations, particularly around user verification and security.",
+                }
+            },
+            "User Flow": {
+                "desc": "Once we prioritised the features that are an easy win, we went ahead to create a user flow.",
+                "image": [
+                    "user flow.png",
                 ]
             },
             "sketches and wireframes": {
-                "desc": "We used wireframe to quickly test the ideas and iterate without much effort and finance. We started by sketching out the wireframe, tested it in house, iterated and tested it with potential users. At the end of the iterative process, we adjusted our designs and came with a better product design. ",
+                "desc": "We used wireframe to quickly test the ideas and iterate without much effort and finance. We started by sketching out the wireframe, tested it in house, iterated and tested it with potential users. At the end of the iterative process, we adjusted our designs and came with a better product design.",
                 "image": [
-                    "wire.png",
+                    "Home Page 9.jpg",
+                    "Home Page 10.jpg",
+                    "Home Page 11.jpg",
+                    "Home Page 12.jpg",
+                    "Home Page 13.jpg",
+                    "Home Page 14.jpg",
+                    "Home Page 15.jpg",
+                    "Home Page 16.jpg",
+                    "Home Page 17.jpg",
+                    "Home Page 18.jpg",
                 ]
             },
-            "style guide": {
-                "desc": "We created a style guide to enable us have a consistent design with the crypto exchange and make design and development efforts less stressful.",
-                "image": [
-                    "style.png",
-                ]
-            },
-            "final designs": {
+            "From Research to Reality": {
+                "desc": "The design process wasn’t just about functionality; it was about storytelling. Every interaction, from browsing the marketplace to referring a friend, had to feel like part of a larger journey.\n\nFor example, the minting process became a moment of creation—a digital canvas where creators could upload their art, choose their blockchain, and customize their NFT’s settings.\n\nThe prototype was tested with 15 users, whose feedback led to refinements in navigation and feature prioritization..",
                 "image": [
                     "final-1.png",
                     "final-2.png",
@@ -334,28 +360,23 @@ const Data = {
                     "final-5.png",
                 ]
             },
-            "user testing": {
+            "User Testing": {
                 "desc": "To check how easy and effective the NFT platform we’ve designed is to use. We conducted a user testing before going into development and further release into the market.",
-                "image": [
-                    "testing.png",
-                ]
-            },
-            "success metrics": "We wanted to measure the success of the NFT platform over time to make sure it meets user needs and also profitable for the business. To validate this, we focused on key metrics that are important success indicators.\n\nOne of the metrics we tracked was the percentage of users who complete onboarding, mint an NFT and list it for sale. We also tracked the time it took to mint an NFT. The goal is to know if the issue is a design or technical problem.\n\nWe tracked net promoter score which is the willingness of a user to recommend the platform. Since we have a referral program, it was easy to input who referred who. Finally, we tracked user retention rate and new user growth rate. One of  the success of a product is on how many people return to use it and how fast new users get to discover the platform.",
-            "results": {
-                "desc": "The results are a landing page, a web app (Web, iPad and Mobile) and an academy where people learn about NFT",
-                "image": [
-                    "results.png",
-                ]
-            },
-            "challenges": {
-                "desc": "While designing this product, we were faced several challenges that required us to be flexible and go back to the drawing board. We couldn’t skip or ignore some of these challenges so we don’t waste time and resource only to hit it in the future.",
                 "parts": {
-                    "": "The first challenge was the complex industry we were building for. We needed to comply with a lot of regulations as the company is based in Europe",
-                    "  ": "Another challenge is the technicality of building a platform that can mint NFT cross chain. We wanted to ensure our users can mint on Solana and other platforms that weren’t as expensive as Ethereum.",
+                    "": "Account Setup: Mostly easy.",
+                    " ": "Minting NFTs: Some found it easy, others struggled with understanding the words.",
+                    "  ": "Listing for Sale: Smooth for most, though some users wanted clearer auction instructions.",
+                    "   ": "Exploring Platform: Users liked browsing but wanted better filter options.",
+                    "    ": "Purchasing NFTs: Process was easy",
                 },
-                "close": "Despite these challenges, we were able to overcome them using design thinking methodology. By remaining focused on the users and testing and iterating regularly we were able to design a platform that was very easy for the user to navigate.",
             },
-            "conclusion": "This product design case study highlights the success of using the design thinking methodology to design products. By focusing on the needs and desires of users, we were able to create a product that not only addressed their pain points but also exceeded their expectations.\n\nThe success of this project is a testament to the power of design thinking and its ability to drive innovation and improve products. By adopting this approach, we were able to create a product that not only met the needs of our users but also differentiated us from our competitors in the market.",
+            "Business Impact": {
+                "parts": {
+                    "Business Results": "Coinhaven’s leadership team was thrilled with the prototype. It wasn’t just a design—it was a tool they could use to pitch investors. And pitch they did. The prototype became the star of their funding presentation, helping CoinHaven raise a €7 million funding round in 2022. This funding enabled the team to scale operations and attract creators globally.",
+                    "Platform Growth": "But the impact didn’t stop there. When the platform launched, the results spoke for themselves. Within months, CoinHaven saw a 60% growth in platform usage, with creators flocking to the site for its simplicity and affordability. Multichain minting proved to be a game-changer, attracting creators who had been priced out of Ethereum-dominated platforms.",
+                },
+            },
+            "Looking Back, Moving Forward": "Designing CoinHaven’s NFT platform was more than a project—it was a lesson. I learned that great design isn’t just about solving problems; it’s about building trust, empowering users, and creating moments of delight.\n\nToday, the platform continues to grow, and while it’s still a web-only experience, the foundation has been laid for mobile expansion and beyond. CoinHaven’s story is proof that with the right design, even small startups can make a big impact.",
         },
         7: {
             "projectName": "Accorn",
@@ -367,7 +388,7 @@ const Data = {
                 ],
                 "close": "Main reasons for being unbanked\n- Poor credit history\n- Lack of trust in mainstream banking\n- Problems with language and literacy\n- Unemployed or lack steady income\n- Major causes include"
             },
-            "Billion dollar question: How did we bring the bank to the unbanked?":{
+            "Billion dollar question: How did we bring the bank to the unbanked?": {
                 "image": [
                     "solution01.png",
                     "solution02.png",

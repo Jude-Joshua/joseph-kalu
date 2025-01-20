@@ -106,7 +106,7 @@ const CaseStudy: React.FC = () => {
                 // Slider condition for specific projects and sections
                 const shouldUseSlider = (
                     (projectName === 'NFT Marketplace Design' &&
-                        (key === 'crafted solution' || key === 'final designs')) ||
+                        (key === 'crafted solution' || key === 'final designs' || key === 'sketches and wireframes')) ||
                     (projectName === 'HumanManager' &&
                         key === 'final designs')
                 );
