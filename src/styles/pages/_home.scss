@@ -1,268 +1,288 @@
 .home {
-    & .header {
-        &-content {
-            z-index: 2;
+	& .header {
+		&-content {
+			z-index: 2;
 
-            &-hero {
-                &-text {
-                    gap: 3.5rem;
+			&-hero {
+				&-text {
+					gap: 3.5rem;
 
-                    &-contain {
-                        gap: var(--gaps-paragraph-gap);
-                        width: 85%;
+					&-contain {
+						gap: var(--gaps-paragraph-gap);
+						width: 85%;
 
-                        @include devices(phone) {
-                            width: 100%;
-                        }
+						@include devices(phone) {
+							width: 100%;
+						}
 
-                        &-roles {
-                            gap: var(--gaps-siblings-gap);
+						&-roles {
+							gap: var(--gaps-siblings-gap);
 
-                            @include devices(phone) {
-                                width: 132%;
-                                left: 0;
-                                color: var(--active-neutrals-black-blur);
-                            }
+							@include devices(phone) {
+								width: 132%;
+								left: 0;
+								color: var(--active-neutrals-black-blur);
+							}
 
-                            & p {
-                                @include h6;
+							& p {
+								@include h6;
 
-                                @include devices(phone) {
-                                    word-break: keep-all;
-                                    @include b1;
-                                }
+								@include devices(phone) {
+									word-break: keep-all;
+									@include b1;
+								}
 
-                            }
+							}
 
-                            & .text-card-area-icon {
-                                color: var(--active-neutrals-black);
+							& .text-card-area-icon {
+								color: var(--active-neutrals-black);
 
-                                @include devices(phone) {
-                                    color: var(--active-primary-blur);
-                                    width: 6px;
-                                }
-                            }
-                        }
-                    }
+								@include devices(phone) {
+									color: var(--active-primary-blur);
+									width: 6px;
+								}
+							}
+						}
+					}
 
-                    & .text-cards-row {
-                        gap: var(--gaps-siblings-gap);
+					& .text-cards-row {
+						gap: var(--gaps-siblings-gap);
 
-                        @include devices(phone) {
-                            flex-direction: column !important;
-                        }
-                    }
-                }
-            }
-        }
+						@include devices(phone) {
+							flex-direction: column !important;
+						}
+					}
+				}
+			}
+		}
 
-        &-action{
-            gap: var(--gaps-has-button-gap);
+		&-action {
+			gap: var(--gaps-has-button-gap);
 
-            &-slope{
-                gap: var(--gaps-button-inner-gap);
-                color: var(--active-secondary);
-            }
-        }
+			@include devices(phone) {
+				flex-direction: column;
+				width: 100%;
+				justify-content: flex-start;
+				align-content: flex-start;
+			}
 
-    }
+			& .button {
+				@include devices(phone) {
+					gap: var(--gaps-siblings-gap);
+					padding-block: var(--paddings-padding-parent-box);
+					width: 100%;
+				}
+			}
 
-    article {
-        &.clients {
-            padding: var(--paddings-padding-none);
+			&-slope {
+				gap: var(--gaps-button-inner-gap);
+				color: var(--active-secondary);
 
-            & .scrolling-container {
-                z-index: 2;
+				@include devices(phone) {
+					width: 100%;
+				}
 
-                &:first-child {
-                    position: absolute;
-                    z-index: 1;
-                    background-color: var(--active-neutrals-black);
-                    transform: rotate(-8.5deg);
-                    width: 102%;
-                    left: -1%;
+			}
+		}
 
-                    @include devices(phone) {
-                        width: 106%;
-                        left: -3%;
-                        transform: rotate(-14.5deg);
-                    }
+	}
 
-                    & svg {
-                        color: var(--active-primary);
-                        fill: var(--active-primary);
+	article {
+		&.clients {
+			padding: var(--paddings-padding-none);
 
-                        & g {
-                            & path {
-                                fill: var(--active-primary);
-                                stroke: var(--active-primary);
-                            }
-                        }
-                    }
-                }
-            }
-        }
+			& .scrolling-container {
+				z-index: 2;
 
-        &.testimonials {
-            & .review {
-                &-testimonial {
-                    gap: var(--gaps-group-parent-gap);
+				&:first-child {
+					position: absolute;
+					z-index: 1;
+					background-color: var(--active-neutrals-black);
+					transform: rotate(-8.5deg);
+					width: 102%;
+					left: -1%;
 
-                    @include devices(phone) {
-                        flex-direction: column !important;
-                    }
+					@include devices(phone) {
+						width: 106%;
+						left: -3%;
+						transform: rotate(-14.5deg);
+					}
 
-                    &-person {
-                        gap: var(--gaps-has-button-gap);
-                        color: var(--active-primary);
+					& svg {
+						color: var(--active-primary);
+						fill: var(--active-primary);
 
-                        & img {
-                            border-radius: var(--border-radi-section);
-                            width: 200px;
-                            height: 200px;
+						& g {
+							& path {
+								fill: var(--active-primary);
+								stroke: var(--active-primary);
+							}
+						}
+					}
+				}
+			}
+		}
 
-                            @include devices(phone) {
-                                width: 80px;
-                                height: 80px;
-                            }
-                        }
+		&.testimonials {
+			& .review {
+				&-testimonial {
+					gap: var(--gaps-group-parent-gap);
 
-                        &-details {
-                            gap: var(--gaps-button-inner-gap);
-                        }
-                    }
+					@include devices(phone) {
+						flex-direction: column !important;
+					}
 
-                    &-review {
-                        border-radius: var(--border-radi-cards);
-                        border: var(--border-width) solid var(--active-secondary-blur);
-                        background: var(--active-neutral);
-                        padding: var(--paddings-padding-inline);
-                        width: 56%;
+					&-person {
+						gap: var(--gaps-has-button-gap);
+						color: var(--active-primary);
 
-                        @include devices(phone) {
-                            width: 100%;
-                        }
-                    }
-                }
+						& img {
+							border-radius: var(--border-radi-section);
+							width: 200px;
+							height: 200px;
 
-                .swiper {
-                    overflow: visible !important;
+							@include devices(phone) {
+								width: 80px;
+								height: 80px;
+							}
+						}
 
-                    &-slide {
-                        height: 0;
+						&-details {
+							gap: var(--gaps-button-inner-gap);
+						}
+					}
 
-                        &-active {
-                            height: auto;
-                        }
-                    }
-                }
+					&-review {
+						border-radius: var(--border-radi-cards);
+						border: var(--border-width) solid var(--active-secondary-blur);
+						background: var(--active-neutral);
+						padding: var(--paddings-padding-inline);
+						width: 56%;
 
-                & .button-icon {
-                    border: var(--border-width) solid var(--active-primary);
-                    color: var(--active-primary);
-                    position: absolute;
-                    left: 0;
-                    top: 50%;
-                    z-index: 100;
-                    cursor: pointer;
-                    background-color: var(--active-neutral-blur);
-                    backdrop-filter: blur(12px);
+						@include devices(phone) {
+							width: 100%;
+						}
+					}
+				}
 
-                    @include devices(phone) {
-                        left: -10%;
-                    }
+				.swiper {
+					overflow: visible !important;
 
-                    &.right {
-                        right: 0;
-                        left: unset;
+					&-slide {
+						height: 0;
 
-                        @include devices(phone) {
-                            right: -10%;
-                        }
-                    }
-                }
-            }
-        }
+						&-active {
+							height: auto;
+						}
+					}
+				}
 
-        &.brief {
-            & .article-title {
-                &-text {
-                    width: 70%;
+				& .button-icon {
+					border: var(--border-width) solid var(--active-primary);
+					color: var(--active-primary);
+					position: absolute;
+					left: 0;
+					top: 50%;
+					z-index: 100;
+					cursor: pointer;
+					background-color: var(--active-neutral-blur);
+					backdrop-filter: blur(12px);
 
-                    @include devices(phone) {
-                        width: 100%;
-                    }
+					@include devices(phone) {
+						left: -10%;
+					}
 
-                    &:last-child {
-                        align-self: flex-end;
-                        padding-right: var(--paddings-padding-body);
-                        width: 90%;
+					&.right {
+						right: 0;
+						left: unset;
 
-                        @include devices(phone) {
-                            width: 100%;
-                            align-self: flex-start;
-                            padding-right: var(--paddings-padding-none);
-                        }
+						@include devices(phone) {
+							right: -10%;
+						}
+					}
+				}
+			}
+		}
 
-                        & h3 {
-                            text-align: left !important;
-                        }
-                    }
-                }
-            }
+		&.brief {
+			& .article-title {
+				&-text {
+					width: 70%;
 
-            & .facts-container {
-                &-fact {
-                    transition: 0.8s;
+					@include devices(phone) {
+						width: 100%;
+					}
 
-                    & p {
-                        &:first-child {
-                            width: 50%;
+					&:last-child {
+						align-self: flex-end;
+						padding-right: var(--paddings-padding-body);
+						width: 90%;
 
-                            @include devices(phone) {
-                                width: 100%;
-                            }
-                        }
+						@include devices(phone) {
+							width: 100%;
+							align-self: flex-start;
+							padding-right: var(--paddings-padding-none);
+						}
 
-                        &:last-child {
-                            text-align: right;
+						& h3 {
+							text-align: left !important;
+						}
+					}
+				}
+			}
 
-                            @include devices(phone) {
-                                text-align: left;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+			& .facts-container {
+				&-fact {
+					transition: 0.8s;
 
-        &.explorations {
-            padding-inline: var(--paddings-padding-none);
+					& p {
+						&:first-child {
+							width: 50%;
 
-            & .scrolling-container {
-                background-color: unset;
-                border: none;
-                height: auto;
+							@include devices(phone) {
+								width: 100%;
+							}
+						}
 
-                &.full {
-                    & .scrolling {
-                        &-text {
-                            gap: var(--gaps-paragraph-gap);
+						&:last-child {
+							text-align: right;
 
-                            &-item {
-                                gap: var(--gaps-paragraph-gap);
+							@include devices(phone) {
+								text-align: left;
+							}
+						}
+					}
+				}
+			}
+		}
 
-                                & img {
-                                    height: 616px;
-                                    width: 640px;
-                                    border-radius: var(--border-radi-cards);
-                                    border: var(--border-width) solid var(--active-neutrals-black-blur);
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+		&.explorations {
+			padding-inline: var(--paddings-padding-none);
+
+			& .scrolling-container {
+				background-color: unset;
+				border: none;
+				height: auto;
+
+				&.full {
+					& .scrolling {
+						&-text {
+							gap: var(--gaps-paragraph-gap);
+
+							&-item {
+								gap: var(--gaps-paragraph-gap);
+
+								& img {
+									height: 616px;
+									width: 640px;
+									border-radius: var(--border-radi-cards);
+									border: var(--border-width) solid var(--active-neutrals-black-blur);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

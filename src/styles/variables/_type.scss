@@ -24,7 +24,7 @@
 }
 
 :root {
-    --font-size: 20px;
+    --font-size: 22px;
     --font-family: "Copy", sans-serif;
 
     --spacing-heading-1: -6px;
@@ -42,7 +42,7 @@ $steps: 4;
 @function calculate-font-size($baseFontSize, $steps) {
     $fontSize: $baseFontSize;
     @for $i from 1 through $steps {
-        $fontSize: calc($fontSize / 1.19);
+        $fontSize: calc($fontSize / 1.2);
     }
     @return $fontSize;
 }
@@ -71,7 +71,8 @@ $steps: 4;
 
     @include devices(phone) {
         font-size: calculate-font-size($baseFontSize, $steps);
-        letter-spacing: -3.2px;
+        letter-spacing: -1px;
+        font-weight: bold;
     }
 
 }
@@ -97,7 +98,8 @@ $steps: 4;
 
     @include devices(phone) {
         font-size: calculate-font-size($baseFontSize, $steps);
-        letter-spacing: -3.2px;
+        letter-spacing: -1px;
+        font-weight: 600;
     }
 
 }
@@ -123,7 +125,8 @@ $steps: 4;
 
     @include devices(phone) {
         font-size: calculate-font-size($baseFontSize, $steps);
-        letter-spacing: -2.8px;
+        letter-spacing: -2.5px;
+        font-weight: 600;
     }
 }
 
@@ -139,16 +142,17 @@ $steps: 4;
     }
 
     @include devices(laptop) {
-        font-size: calculate-font-size($baseFontSize, $steps - 3);
+        font-size: calculate-font-size($baseFontSize, $steps);
     }
 
     @include devices(sm-laptop) {
-        font-size: calculate-font-size($baseFontSize, $steps - 2);
+        font-size: calculate-font-size($baseFontSize, $steps - 3);
     }
 
     @include devices(phone) {
-        font-size: calculate-font-size($baseFontSize, $steps - 1);
+        font-size: calculate-font-size($baseFontSize, $steps - 2);
         letter-spacing: -2.3px;
+        font-weight: 600;
     }
 }
 
@@ -164,16 +168,17 @@ $steps: 4;
     }
 
     @include devices(laptop) {
-        font-size: calculate-font-size($baseFontSize, $steps - 3);
+        font-size: calculate-font-size($baseFontSize, $steps);
     }
 
     @include devices(sm-laptop) {
-        font-size: calculate-font-size($baseFontSize, $steps - 2);
+        font-size: calculate-font-size($baseFontSize, $steps - 3);
     }
 
     @include devices(phone) {
-        font-size: calculate-font-size($baseFontSize, $steps - 1);
+        font-size: calculate-font-size($baseFontSize, $steps - 2);
         letter-spacing: -1.2px;
+        font-weight: 600;
     }
 }
 
@@ -189,16 +194,17 @@ $steps: 4;
     }
 
     @include devices(laptop) {
-        font-size: calculate-font-size($baseFontSize, $steps - 3);
+        font-size: calculate-font-size($baseFontSize, $steps);
     }
 
     @include devices(sm-laptop) {
-        font-size: calculate-font-size($baseFontSize, $steps - 2);
+        font-size: calculate-font-size($baseFontSize, $steps - 3);
     }
 
     @include devices(phone) {
-        font-size: calculate-font-size($baseFontSize, $steps - 1);
-        letter-spacing: -0.8px;
+        font-size: calculate-font-size($baseFontSize, $steps - 2);
+        letter-spacing: unset;
+        font-weight: 600;
     }
 }
 
@@ -223,6 +229,8 @@ $steps: 4;
 
     @include devices(phone) {
         font-size: calculate-font-size($baseFontSize, $steps - 1);
+        letter-spacing: unset;
+        font-weight: 600;
     }
 }
 /*
@@ -271,11 +279,11 @@ $steps: 4;
     }
 
     @include devices(sm-laptop) {
-        font-size: calculate-font-size($baseFontSize, $steps - 3);
+        font-size: calculate-font-size($baseFontSize, $steps);
     }
 
     @include devices(phone) {
-        font-size: calculate-font-size($baseFontSize, $steps - 2);
+        font-size: calculate-font-size($baseFontSize, $steps - 3);
     }
 }
 
@@ -320,11 +328,11 @@ $steps: 4;
     }
 
     @include devices(sm-laptop) {
-        font-size: calculate-font-size($baseFontSize, $steps - 3);
+        font-size: calculate-font-size($baseFontSize, $steps);
     }
 
     @include devices(phone) {
-        font-size: calculate-font-size($baseFontSize, $steps - 2);
+        font-size: calculate-font-size($baseFontSize, $steps - 3);
     }
 }
 

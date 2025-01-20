@@ -47,7 +47,7 @@ const ProjectCardRow: React.FC<ProductCardRowProps> = ({projectName, tags, prese
                 </div>
                 <div className="ProjectCaard-info flex flex-row items-start justify-between">
                     <div className="ProjectCaard-info-data flex flex-row items-start justify-start">
-                        <div className="h6 ProjectCaard-info-data-title">
+                        <div className="h5 ProjectCaard-info-data-title">
                             <span>{description}</span>
                         </div>
                     </div>
