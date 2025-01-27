@@ -82,7 +82,6 @@ $steps: 4;
     line-height: 1.1;
     font-weight: normal;
     font-size: $baseFontSize;
-    letter-spacing: var(--spacing-heading-1);
 
     @include devices(desktop) {
         font-size: calculate-font-size($baseFontSize, $steps - 3);
@@ -109,7 +108,6 @@ $steps: 4;
     line-height: 1.1;
     font-weight: normal;
     font-size: $baseFontSize;
-    letter-spacing: var(--spacing-heading-2);
 
     @include devices(desktop) {
         font-size: $baseFontSize;
@@ -135,14 +133,13 @@ $steps: 4;
     line-height: 1.15;
     font-weight: normal;
     font-size: $baseFontSize;
-    letter-spacing: var(--spacing-heading-3);
 
     @include devices(desktop) {
         font-size: $baseFontSize;
     }
 
     @include devices(laptop) {
-        font-size: calculate-font-size($baseFontSize, $steps);
+        font-size: $baseFontSize;
     }
 
     @include devices(sm-laptop) {
@@ -161,14 +158,13 @@ $steps: 4;
     line-height: 1.2;
     font-weight: normal;
     font-size: $baseFontSize;
-    letter-spacing: var(--spacing-heading-4);
 
     @include devices(desktop) {
         font-size: $baseFontSize;
     }
 
     @include devices(laptop) {
-        font-size: calculate-font-size($baseFontSize, $steps);
+        font-size: $baseFontSize;
     }
 
     @include devices(sm-laptop) {
@@ -187,14 +183,13 @@ $steps: 4;
     line-height: 1.2;
     font-weight: normal;
     font-size: $baseFontSize;
-    letter-spacing: var(--spacing-heading-5);
 
     @include devices(desktop) {
         font-size: $baseFontSize;
     }
 
     @include devices(laptop) {
-        font-size: calculate-font-size($baseFontSize, $steps);
+        font-size: $baseFontSize;
     }
 
     @include devices(sm-laptop) {

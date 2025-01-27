@@ -289,7 +289,7 @@ const CaseStudy: React.FC = () => {
                     <div className={"header-content flex flex-col items-center justify-center"}>
                         <div className={"header-content-hero-text flex flex-col items-start"}>
                             <div className={'header-content-hero-text-contain flex flex-col'}>
-                                <h2 className={"h2 text-center"}>
+                                <h2 className={"h4 text-center"}>
                                     {project.title}
                                 </h2>
                             </div>
