@@ -416,11 +416,11 @@ const Data = {
             "Understanding the Problem": {
                 "desc": "Despite Nigeria’s vibrant economy, a significant portion of its population remains financially excluded, particularly in rural areas. My research revealed several critical challenges:",
                 "parts": {
-                    "Lack of Banking Infrastructure":"Rural areas are devoid of banks or ATMs, forcing residents to travel long distances to access basic financial services.",
-                    "Limited Internet Access":"Mobile internet penetration in these regions is minimal, and many residents lack smartphones capable of running fintech apps.",
-                    "Low Trust in Banks":"Past negative experiences with traditional banks, including hidden fees and poor customer service, have eroded trust among rural populations.",
-                    "Language and Literacy Barriers":"Many residents are illiterate or speak only local languages, making existing financial products inaccessible.",
-                    "Informal Financial Practices":"Villagers rely on trusted intermediaries and informal cooperatives for savings and transactions, as these are more familiar and culturally aligned with their needs.",
+                    "Lack of Banking Infrastructure": "Rural areas are devoid of banks or ATMs, forcing residents to travel long distances to access basic financial services.",
+                    "Limited Internet Access": "Mobile internet penetration in these regions is minimal, and many residents lack smartphones capable of running fintech apps.",
+                    "Low Trust in Banks": "Past negative experiences with traditional banks, including hidden fees and poor customer service, have eroded trust among rural populations.",
+                    "Language and Literacy Barriers": "Many residents are illiterate or speak only local languages, making existing financial products inaccessible.",
+                    "Informal Financial Practices": "Villagers rely on trusted intermediaries and informal cooperatives for savings and transactions, as these are more familiar and culturally aligned with their needs.",
                 },
                 "close": "These challenges underscored the urgent need for a solution tailored to the realities of rural Nigeria—one that was simple, trustworthy, and accessible."
             },
@@ -530,28 +530,28 @@ const Data = {
             "Business Goals": {
                 "desc": "The stakeholders aimed to establish the product as the go-to HR solution for both large enterprises and small businesses, increasing its presence across multiple industries.",
                 "parts": {
-                    "Enhance Citizen Engagement:":"Encourage more residents to report issues by offering a streamlined and trustworthy platform.",
-                    "Improve Response Efficiency:":"Reduce delays in handling citizen requests by automating workflows and integrating with municipal systems like Jira.",
-                    "Promote Accessibility:":"Leverage existing, familiar platforms to minimize learning curves and maximize adoption.",
+                    "Enhance Citizen Engagement:": "Encourage more residents to report issues by offering a streamlined and trustworthy platform.",
+                    "Improve Response Efficiency:": "Reduce delays in handling citizen requests by automating workflows and integrating with municipal systems like Jira.",
+                    "Promote Accessibility:": "Leverage existing, familiar platforms to minimize learning curves and maximize adoption.",
                 },
             },
             "User Goals": {
                 "parts": {
-                    "Ease of Use:":"Citizens wanted a platform that required minimal effort and technical knowledge to report issues.",
-                    "Transparency and Trust:":"Real-time responses and clear communication were critical to restoring confidence in municipal services.",
-                    "Centralized Problem Reporting:":"Users preferred a single platform for reporting diverse issues, from traffic hazards to waste management.",
+                    "Ease of Use:": "Citizens wanted a platform that required minimal effort and technical knowledge to report issues.",
+                    "Transparency and Trust:": "Real-time responses and clear communication were critical to restoring confidence in municipal services.",
+                    "Centralized Problem Reporting:": "Users preferred a single platform for reporting diverse issues, from traffic hazards to waste management.",
                 },
             },
             "The Challenge": {
                 "desc": "Current systems like the Anna Teada platform were underutilized due to several key issues:",
                 "parts": {
-                    "Fragmented Reporting:":"Citizens lacked a centralized platform to report various issues (e.g., safety hazards, waste management).",
-                    "Low Trust and Motivation:":"Negative experiences with unresolved complaints discouraged further engagement.",
-                    "Complexity:":"Users found existing systems difficult to navigate, especially those with limited technical skills.",
-                    "Preference for Familiarity:":"Many citizens preferred using familiar platforms like WhatsApp over downloading new apps.",
-                    "Manual tracking:":"Tallinn city office were manually sorting out the mails and this led to delay in response, missed reports and frustration.",
+                    "Fragmented Reporting:": "Citizens lacked a centralized platform to report various issues (e.g., safety hazards, waste management).",
+                    "Low Trust and Motivation:": "Negative experiences with unresolved complaints discouraged further engagement.",
+                    "Complexity:": "Users found existing systems difficult to navigate, especially those with limited technical skills.",
+                    "Preference for Familiarity:": "Many citizens preferred using familiar platforms like WhatsApp over downloading new apps.",
+                    "Manual tracking:": "Tallinn city office were manually sorting out the mails and this led to delay in response, missed reports and frustration.",
                 },
-                "image":[
+                "image": [
                     "challenge.png"
                 ]
             },
@@ -559,64 +559,64 @@ const Data = {
                 "desc": "We began with a deep dive into user needs, leveraging both qualitative and quantitative methods to uncover pain points and preferences.",
             },
             "Methodology": {
-                "desc":"The primary goal of this research is to collect data to design a Single Entry Point for Customer Support for the citizens of Tallinn, emphasizing the need for a user-friendly and efficient interface. By focusing on modern UX research and Human-Computer Interaction (HCI) methodologies, the project aims to gather insights into user needs and system requirements, creating a streamlined, user-centered experience for customer support."
+                "desc": "The primary goal of this research is to collect data to design a Single Entry Point for Customer Support for the citizens of Tallinn, emphasizing the need for a user-friendly and efficient interface. By focusing on modern UX research and Human-Computer Interaction (HCI) methodologies, the project aims to gather insights into user needs and system requirements, creating a streamlined, user-centered experience for customer support."
             },
             "Content Analysis": {
-                "desc":"From the five (5) anonymised examples of citizens email requests provided and the twenty two (22) messages documented on Anna Teada https://annateada.ee, we conducted a content analysis and identified common themes, trends, and users’ pain-points.\n\nThe following trend were identified based on the cause of sending the requests:",
+                "desc": "From the five (5) anonymised examples of citizens email requests provided and the twenty two (22) messages documented on Anna Teada https://annateada.ee, we conducted a content analysis and identified common themes, trends, and users’ pain-points.\n\nThe following trend were identified based on the cause of sending the requests:",
                 "parts": {
-                    "Visual Appearance and Aesthetic Quality:":"They include multiple complaints about lack of streetlights and malfunctioning lights, and aesthetic coherence.",
-                    "Public Safety as a Recurring Topic:":"Requests for dismantling old structures, fixing icy pathways, improving hazardous pavement and road standards.",
-                    "Waste Management and Urban Space Proposals:":"Broken, overflowing waste containers, missing trash cans, suggestions of transforming parking areas into landscaped zones.",
-                    "Misuse of Public Space and Illegal Practices:":"Advertisements occupying parking spaces, absence of warning signs for camera surveillance.",
+                    "Visual Appearance and Aesthetic Quality:": "They include multiple complaints about lack of streetlights and malfunctioning lights, and aesthetic coherence.",
+                    "Public Safety as a Recurring Topic:": "Requests for dismantling old structures, fixing icy pathways, improving hazardous pavement and road standards.",
+                    "Waste Management and Urban Space Proposals:": "Broken, overflowing waste containers, missing trash cans, suggestions of transforming parking areas into landscaped zones.",
+                    "Misuse of Public Space and Illegal Practices:": "Advertisements occupying parking spaces, absence of warning signs for camera surveillance.",
                 },
-                "close":"The problem nature of user requests served as a defining factor for grouping the themes in the following categories:",
+                "close": "The problem nature of user requests served as a defining factor for grouping the themes in the following categories:",
                 "partse": {
-                    " ":"Maintenance and construction concerns",
-                    "  ":"Environmental and waste management concerns",
-                    "   ":"Safety concerns",
-                    "    ":"Signage and accessibility issues",
-                    "     ":"Private property issues",
-                    "      ":"Jurisdiction concerns",
+                    " ": "Maintenance and construction concerns",
+                    "  ": "Environmental and waste management concerns",
+                    "   ": "Safety concerns",
+                    "    ": "Signage and accessibility issues",
+                    "     ": "Private property issues",
+                    "      ": "Jurisdiction concerns",
                 },
                 "image": [
                     "tallinn.png",
                 ],
             },
             "User Interviews": {
-                "desc":"The results of the content analysis were presented in a form of cards and categories to the users during the interview. Participants were asked to sort the cards in the corresponding categories based on their perceptions and preferences.\n\nA total of twenty (20) cards with the common problems documented in the requests were presented for hybrid card sorting. The following categories were proposed to the participants:",
+                "desc": "The results of the content analysis were presented in a form of cards and categories to the users during the interview. Participants were asked to sort the cards in the corresponding categories based on their perceptions and preferences.\n\nA total of twenty (20) cards with the common problems documented in the requests were presented for hybrid card sorting. The following categories were proposed to the participants:",
                 "parts": {
-                    " ":"Infrastructure maintenance",
-                    "  ":"Road safety",
-                    "   ":"Green area management",
-                    "    ":"Waste management",
-                    "     ":"Ownership",
+                    " ": "Infrastructure maintenance",
+                    "  ": "Road safety",
+                    "   ": "Green area management",
+                    "    ": "Waste management",
+                    "     ": "Ownership",
                 },
-                "close":"Participants were allowed to add and name new categories in case they didn’t find a suitable existing category for a card.",
+                "close": "Participants were allowed to add and name new categories in case they didn’t find a suitable existing category for a card.",
                 "image": [
                     "interview.png",
                 ],
                 " ": "Standardization grid shows the distribution of cards across the defined standardized categories. Each table cell shows the number of times a card was sorted into the corresponding standardized category.\n\nThe answers were distributed between the following three categories:",
                 "partse": {
-                    " ":"Strong consensus: with 5 or 6 participants agreement of the sorting category;",
-                    "  ":"Normal consensus: with 4 participants agreement;",
-                    "   ":"Weak consensus: with less than a half of respondents agreeing on the category.",
+                    " ": "Strong consensus: with 5 or 6 participants agreement of the sorting category;",
+                    "  ": "Normal consensus: with 4 participants agreement;",
+                    "   ": "Weak consensus: with less than a half of respondents agreeing on the category.",
                 },
                 "imagee": [
                     "find.png",
                 ],
             },
             "Desk Research": {
-                "desc":"Next, we reviewed existing support systems to identify limitations and opportunities for improvement.",
+                "desc": "Next, we reviewed existing support systems to identify limitations and opportunities for improvement.",
                 "image": [
                     "site.png",
                     "key.png",
                 ],
             },
             "Brainstorming and Conceptualization": {
-                "desc":"From our research, we identified three potential solutions:\n\n- AI-Powered Platform: Rejected due to privacy concerns and lack of user trust.\n\n- Standalone Mobile App: Dismissed based on user feedback, as citizens were unwilling to download new apps.\n\n- WhatsApp Chatbot: Chosen for its familiarity, simplicity, and broad accessibility.",
+                "desc": "From our research, we identified three potential solutions:\n\n- AI-Powered Platform: Rejected due to privacy concerns and lack of user trust.\n\n- Standalone Mobile App: Dismissed based on user feedback, as citizens were unwilling to download new apps.\n\n- WhatsApp Chatbot: Chosen for its familiarity, simplicity, and broad accessibility.",
             },
             "Conceptualizing the Chatbot": {
-                "desc":"Given the preference for familiar tools, we opted to design a WhatsApp chatbot rather than a new application. The chatbot was built to guide users through reporting problems in an intuitive and conversational manner.",
+                "desc": "Given the preference for familiar tools, we opted to design a WhatsApp chatbot rather than a new application. The chatbot was built to guide users through reporting problems in an intuitive and conversational manner.",
             },
             "Prioritized Features": {
                 "image": [
@@ -624,18 +624,18 @@ const Data = {
                 ],
             },
             "Information Architecture": {
-                "desc":"The chatbot’s structure was designed to mirror the most common problem categories identified during research:\n\n- Infrastructure Maintenance\n\n- Road Safety\n\n- Waste Management\n\n- Animal-Related Issues\n\n- Private Property Concerns",
-                "close":"This categorization ensured users could easily find the appropriate channels for their concerns.",
-                "image":[
+                "desc": "The chatbot’s structure was designed to mirror the most common problem categories identified during research:\n\n- Infrastructure Maintenance\n\n- Road Safety\n\n- Waste Management\n\n- Animal-Related Issues\n\n- Private Property Concerns",
+                "close": "This categorization ensured users could easily find the appropriate channels for their concerns.",
+                "image": [
                     "ia.png"
                 ]
             },
             "Designing the Chatbot": {
-                "desc":"Our solution was a WhatsApp-based chatbot integrated with the Tallinn City website. Key design decisions included:",
+                "desc": "Our solution was a WhatsApp-based chatbot integrated with the Tallinn City website. Key design decisions included:",
                 "parts": {
-                    "Positioning":"A sticky “Report a Problem” button in the bottom-right corner of the webpage, easily recognizable with WhatsApp’s signature green color.",
-                    "Interface":"A simple, conversational flow guided users through issue reporting in a few steps:\n\n- Greeting and introduction.\n\n- Collecting the user’s name and contact information.\n\n- Classifying the issue (e.g., safety, waste management).\n\n- Verifying the location using Google Maps API.\n\n- Collecting additional details or images (optional).",
-                    "Character Design":"We created Killu, a friendly chatbot persona inspired by Tallinn’s iconic sprat fish, to make the experience more engaging and trustworthy.",
+                    "Positioning": "A sticky “Report a Problem” button in the bottom-right corner of the webpage, easily recognizable with WhatsApp’s signature green color.",
+                    "Interface": "A simple, conversational flow guided users through issue reporting in a few steps:\n\n- Greeting and introduction.\n\n- Collecting the user’s name and contact information.\n\n- Classifying the issue (e.g., safety, waste management).\n\n- Verifying the location using Google Maps API.\n\n- Collecting additional details or images (optional).",
+                    "Character Design": "We created Killu, a friendly chatbot persona inspired by Tallinn’s iconic sprat fish, to make the experience more engaging and trustworthy.",
                 },
             },
             "Killu's Personality": {
@@ -644,7 +644,7 @@ const Data = {
                 ],
             },
             "Technology Stack": {
-                "desc":"- Backend: Node.js with Nest.js framework.\n\n- Integration: Google Maps API for location verification and Jira for task management.\n\n- Media Storage: Cloudinary for handling uploaded images.",
+                "desc": "- Backend: Node.js with Nest.js framework.\n\n- Integration: Google Maps API for location verification and Jira for task management.\n\n- Media Storage: Cloudinary for handling uploaded images.",
             },
             "From Research to Reality": {
                 "image": [
@@ -654,11 +654,11 @@ const Data = {
                 ]
             },
             "Evaluation and Iteration": {
-                "desc":"The prototype underwent rigorous usability testing with 4 participants aged 23–55.\n\nThree evaluation methods were employed:",
+                "desc": "The prototype underwent rigorous usability testing with 4 participants aged 23–55.\n\nThree evaluation methods were employed:",
                 "parts": {
-                    "Task-Based Usability Testing:":"Observed participants as they completed a reporting task using the chatbot.",
-                    "Emoji Wheel Feedback:":"Participants rated their satisfaction using emojis, with most selecting 🙂 (satisfied).",
-                    "System Usability Scale (SUS):":"The chatbot scored an impressive 85.63 out of 100, reflecting excellent usability.",
+                    "Task-Based Usability Testing:": "Observed participants as they completed a reporting task using the chatbot.",
+                    "Emoji Wheel Feedback:": "Participants rated their satisfaction using emojis, with most selecting 🙂 (satisfied).",
+                    "System Usability Scale (SUS):": "The chatbot scored an impressive 85.63 out of 100, reflecting excellent usability.",
                 },
                 "image": [
                     "test.png",
@@ -691,11 +691,9 @@ const Data = {
                 },
             },
             "Future Recommendations": {
-                "parts": {
-                    " ":"- Location Sharing: Enable users to share their location automatically for quicker issue resolution.\n\n" +
-                        "- Language Support: Add multilingual capabilities to serve Tallinn’s diverse community.\n\n" +
-                        "- Platform Expansion: Extend Killu’s functionality to Facebook Messenger and Telegram to reach a broader audience.",
-                },
+                "desc": "- Location Sharing: Enable users to share their location automatically for quicker issue resolution.\n\n" +
+                    "- Language Support: Add multilingual capabilities to serve Tallinn’s diverse community.\n\n" +
+                    "- Platform Expansion: Extend Killu’s functionality to Facebook Messenger and Telegram to reach a broader audience.",
             },
         }
     },
