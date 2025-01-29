@@ -195,7 +195,7 @@ const Data = {
                     "Enhance Retention": "The goal was to reduce customer churn and boost retention rates by addressing usability issues and ensuring the platform met diverse client needs.",
                     "Expand Market Share": "The stakeholders aimed to establish the product as the go-to HR solution for both large enterprises and small businesses, increasing its presence across multiple industries.",
                 },
-                " ": "To achieve these ambitious goals, I needed to communicate the product’s value through design: aligning user needs with business objectives, simplifying workflows for large enterprises, and introducing an entirely new solution for small businesses.",
+                "close": "To achieve these ambitious goals, I needed to communicate the product’s value through design: aligning user needs with business objectives, simplifying workflows for large enterprises, and introducing an entirely new solution for small businesses.",
             },
             "The Challenges: One Product, Diverse Needs": {
                 "desc": "HumanManager served over 40 industries with large workforces, but each organization had unique needs. A one-size-fits-all approach simply wasn’t working. Meanwhile, small businesses with fewer than 10 employees were left without any solution.\nWe identified three primary challenges:",
@@ -399,44 +399,111 @@ const Data = {
         },
         7: {
             "projectName": "Accorn",
-            "context": "In the ever-evolving landscape of Nigerian banking, the persistent challenge of financial exclusion looms large. With millions of individuals left unbanked or underbanked, the need for innovative solutions has never been more pressing. This case study delves into the journey of Accorn - Agency Banking, a project aimed at leveraging technology to bring basic banking services to remote and underserved communities.\n\nAccorn utilizes a network of local merchants, in areas where traditional banking usually doesn’t have a presence, to provide basic banking services. The agent is equipped with basic knowledge of the application and they get to provide banking services to the rural populace with just their mobile application.",
-            "problem statement": {
-                "desc": "Before delving into design solutions, it was crucial to grasp the nuances of the Nigerian banking ecosystem. Through  market research, I uncovered startling statistics.\n\nAccording to the Business Day financial inclusion  report  of December 2021, 36% of Nigeria’s 106 million adults (18 years and older) are still entirely financially excluded, or 38.1 million people remained financially excluded.\n\nTraditional banking institutions, largely concentrated in urban areas, failed to reach the majority of the population, especially in rural regions.\n\nPeople are unbanked for a variety of reasons.",
+            " ": "In a nation where over 36% of adults—more than 106 million Nigerians—remain financially excluded, the challenge of bringing banking services to rural areas is both urgent and immense. For decades, traditional banking systems have failed to reach these populations due to limited infrastructure, high operating costs, and low profitability in rural markets.\n\nFintech innovations, while promising, have been largely inaccessible to this demographic, as many lack internet-enabled devices or the technical literacy to use such tools.\n\nRecognizing this gap presented a profound business opportunity: to provide financial services to millions of unbanked Nigerians, creating a sustainable, scalable solution that not only addressed societal needs but also generated revenue.",
+            "Understanding the Problem": {
+                "desc": "Despite Nigeria’s vibrant economy, a significant portion of its population remains financially excluded, particularly in rural areas. My research revealed several critical challenges:",
+                "parts": {
+                    "Lack of Banking Infrastructure":"Rural areas are devoid of banks or ATMs, forcing residents to travel long distances to access basic financial services.",
+                    "Limited Internet Access":"Mobile internet penetration in these regions is minimal, and many residents lack smartphones capable of running fintech apps.",
+                    "Low Trust in Banks":"Past negative experiences with traditional banks, including hidden fees and poor customer service, have eroded trust among rural populations.",
+                    "Language and Literacy Barriers":"Many residents are illiterate or speak only local languages, making existing financial products inaccessible.",
+                    "Informal Financial Practices":"Villagers rely on trusted intermediaries and informal cooperatives for savings and transactions, as these are more familiar and culturally aligned with their needs.",
+                },
+                "close": "These challenges underscored the urgent need for a solution tailored to the realities of rural Nigeria—one that was simple, trustworthy, and accessible."
+            },
+            "My role": {
+                "desc": "As the UX Designer and Product Researcher, I played a central role in designing the Agent Banking App. I conducted immersive research in rural communities, where I spent three months understanding the behaviors, needs, and pain points of unbanked individuals. This research informed the development of an agent-centric model tailored to rural realities. I led the ideation and design process.",
+            },
+            "The Business Opportunity: Tapping into an Untapped Market": {
                 "image": [
-                    "problem.png",
+                    "business.png",
                 ],
-                "close": "Main reasons for being unbanked\n- Poor credit history\n- Lack of trust in mainstream banking\n- Problems with language and literacy\n- Unemployed or lack steady income\n- Major causes include"
+                "desc": "\nNigeria’s rural population represents a massive, untapped market for financial services. The unbanked population saves, transacts, and borrows outside the formal financial system, creating informal economies worth billions of dollars annually. With over 772 local government areas, there is immense potential for growth if even a fraction of these individuals can be integrated into the formal economy.\n\nKey opportunities include:",
+                "parts": {
+                    "Transactional Revenue:": "Charging a fee for deposits, withdrawals, bill payments, and transfers.",
+                    "Credit Services:": "Extending microloans to rural entrepreneurs and farmers, earning interest while driving economic activity.",
+                    "Government Partnerships:": "Collaborating with government programs for welfare disbursements and other initiatives to rural populations.",
+                    "Agent Incentivization:": "Engaging local agents who generate income for themselves while ensuring cost-effective customer acquisition.",
+                },
+                "close": "The projected first-year revenue of $5 million was based on onboarding agents in 100 local government areas across eight states. This growth strategy aimed to capitalize on both the unmet needs of rural communities and the scalability of the agent banking model.",
             },
-            "Billion dollar question: How did we bring the bank to the unbanked?": {
+            "Research: Insights from the Field": {
+                "desc": "To ensure the product would resonate with its target audience, I conducted extensive user research across rural communities. This involved immersive fieldwork, where I spent three months living and interacting with the people we aimed to serve.",
+            },
+            "Methodology": {
                 "image": [
-                    "solution01.png",
-                    "solution02.png",
-                    "solution03.png",
+                    "method.png",
                 ]
             },
-            "Identifying Problems": "The core challenge lay in accessibility. How could we empower individuals in remote areas to access basic financial services conveniently and securely? Traditional brick-and-mortar banks have been impractical, leaving a segment of the population without viable options.\n\nThe task is clear: design a solution that bridged the gap between underserved communities and essential banking services.",
-            "user flows": {
+            "Key findings": {
                 "image": [
-                    "userflow.png",
+                    "findings.png",
                 ]
             },
-            "wireframes": {
-                "desc": "Creating a wireframe for this project was necessary so that I can better understand the structure of the application and how to place information so users do not have to think before using it.",
+            "Conceptualizing the Solution": {
+                "desc": "The insights gathered shaped the vision for the Agent Banking App: a mobile-first platform designed for trusted community agents to serve as intermediaries between banks and rural users.",
+                "image": [
+                    "concept.png",
+                ],
+                "close": "Instead of targeting end-users directly, the app empowered community agents—trusted individuals with access to smartphones and basic digital skills. These agents acted as the bridge, offering banking services to their communities.",
+            },
+            "Defining the User Stories": {
+                "desc": "To guide the design process, I developed detailed user stories based on the needs of agents and rural users:",
+                "image": [
+                    "story.png",
+                ]
+            },
+            "Feature Prioritization": {
+                "desc": "Given the diverse needs of rural users and the constraints of their environment, designing the Agent Banking App required a laser focus on simplicity and functionality. The challenge was to prioritize features that aligned with the core goals: empowering agents to facilitate financial transactions while ensuring an intuitive experience for rural users. Every feature was carefully selected to balance user needs with technical feasibility, ensuring that the solution could operate effectively even in areas with limited connectivity.",
+                "image": [
+                    "feature.png",
+                ]
+            },
+            "User Journey Mapping": {
+                "desc": "The user journey was crafted to ensure a seamless experience for both agents and rural users, with each interaction designed to build trust and confidence in the system. The following steps illustrate the journey:",
+                "image": [
+                    "journey.png",
+                ]
+            },
+            "User Flow": {
+                "desc": "Once I’ve prioritised the features that are an easy win, we went ahead to create a user flow.",
+                "image": [
+                    "flow.png",
+                ]
+            },
+            "Sketches and wireframes": {
+                "desc": "Once I’ve prioritised the features that are an easy win, we went ahead to create a user flow.",
                 "image": [
                     "wireframes.png",
                 ]
             },
-            "impact": {
-                "desc": " By prioritizing trust, accessibility, and simplicity, we've paved the way for millions of Nigerians to access essential banking services. From empowering local merchants to providing financial security for underserved communities, the impact of Accorn extends far beyond digital transactions.\n",
+            "From Research to Reality": {
                 "image": [
-                    "impact.png"
-                ],
+                    "final-1.png",
+                    "final-2.png",
+                    "final-3.png",
+                    "final-4.png",
+                ]
             },
-            "lessons learned": {
+            "User Testing": {
+                "desc": "To validate the effectiveness of the Agent Banking App and ensure it met the needs of both agents and rural users, we conducted user testing as part of the design and development process. The goal was to assess usability, identify pain points, and gather actionable feedback for iterative improvements.",
+            },
+            "Key Findings": {
                 "parts": {
-                    "Community-Centric Approach": "Prioritizing local knowledge and relationships is key to fostering trust and adoption.",
-                    "Iterative Design Process": "Continuous testing and refinement are essential for meeting the evolving needs of users and stakeholders",
-                    "Simplicity Drives Adoption": "Designing for simplicity and ease of use is paramount, especially in communities with varying levels of digital literacy."
+                    "Simplicity:": "Both agents and users found the interface intuitive, even for those with low digital literacy.",
+                    "Offline Functionality:": "This feature was highly praised as it ensured service continuity in low-connectivity areas.",
+                    "Transparency:": "Agents appreciated the detailed breakdown of their earnings in the commission dashboard.",
+                    "Error Messaging:": "Some participants struggled with unclear or generic error messages during onboarding.",
+                    "Syncing Delays:": "While offline functionality was appreciated, participants suggested clearer visual indicators for pending syncs.",
+                    "Language Support:": "A few rural users requested additional local dialect options.",
+                },
+            },
+            "Key Takeaways": {
+                "parts": {
+                    "Empathy-Driven Design:": "Immersive research in rural communities ensured the solution addressed real user needs.",
+                    "Scalable Systems:": "The design system streamlined development and ensured consistency across multiple deployments.",
+                    "Innovative Business Model:": "The revenue-sharing model proved that financial inclusion could be profitable.",
+                    "Simplicity Wins:": "By focusing on agents as intermediaries, the app eliminated barriers for low-literate users.",
                 },
             },
             "url": {
