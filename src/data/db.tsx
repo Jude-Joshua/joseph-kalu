@@ -52,6 +52,19 @@ const Data = {
             "year": "2021",
             "industry": "Fintech",
             "password": false
+        },
+        5: {
+            "id": 5,
+            "featured": true,
+            "title": "Led design and AI development of Tallinn City and citizen communication platform.",
+            "projectName": "Tallinn Customer Support",
+            "description": "Led design and AI development of Tallinn City and citizen communication platform.",
+            "tags": "mobile app design, user research, product strategy, ux design",
+            "presentationImage": "cover-image.webp",
+            "caseImage": "cover-image.webp",
+            "year": "2024",
+            "industry": "Support",
+            "password": false
         }
     },
     "projects-details": {
@@ -510,6 +523,180 @@ const Data = {
                 "title": "View clickable prototype",
                 "link": "https://www.figma.com/proto/twS0yqVI3GrvyhR2eaUwGD/accorn-(Digital-Product)?node-id=9-5317&t=foclLAQregLH1I4j-1&scaling=scale-down&content-scaling=fixed&page-id=9%3A921&starting-point-node-id=9%3A5316"
             }
+        },
+        8: {
+            "projectName": "Tallinn Customer Support",
+            " ": "Tallinn Urban Environment and Public Works Department faced a growing challenge: enhancing communication between the city's municipal services and its citizens. The existing platforms were fragmented, difficult to navigate, and not widely adopted. Many citizens expressed frustration with reporting issues, citing inefficiencies, lack of trust, and cumbersome processes.\n\nOur mission was clear: design a user-centered, accessible solution to streamline problem reporting and improve citizen engagement. As part of the Interaction Design Workshop at Tallinn University, our team of three collaborated with the Tallinn Strategic Management Office to create a WhatsApp chatbot, named Killu, designed to simplify and centralize customer support.",
+            "Business Goals": {
+                "desc": "The stakeholders aimed to establish the product as the go-to HR solution for both large enterprises and small businesses, increasing its presence across multiple industries.",
+                "parts": {
+                    "Enhance Citizen Engagement:":"Encourage more residents to report issues by offering a streamlined and trustworthy platform.",
+                    "Improve Response Efficiency:":"Reduce delays in handling citizen requests by automating workflows and integrating with municipal systems like Jira.",
+                    "Promote Accessibility:":"Leverage existing, familiar platforms to minimize learning curves and maximize adoption.",
+                },
+            },
+            "User Goals": {
+                "parts": {
+                    "Ease of Use:":"Citizens wanted a platform that required minimal effort and technical knowledge to report issues.",
+                    "Transparency and Trust:":"Real-time responses and clear communication were critical to restoring confidence in municipal services.",
+                    "Centralized Problem Reporting:":"Users preferred a single platform for reporting diverse issues, from traffic hazards to waste management.",
+                },
+            },
+            "The Challenge": {
+                "desc": "Current systems like the Anna Teada platform were underutilized due to several key issues:",
+                "parts": {
+                    "Fragmented Reporting:":"Citizens lacked a centralized platform to report various issues (e.g., safety hazards, waste management).",
+                    "Low Trust and Motivation:":"Negative experiences with unresolved complaints discouraged further engagement.",
+                    "Complexity:":"Users found existing systems difficult to navigate, especially those with limited technical skills.",
+                    "Preference for Familiarity:":"Many citizens preferred using familiar platforms like WhatsApp over downloading new apps.",
+                    "Manual tracking:":"Tallinn city office were manually sorting out the mails and this led to delay in response, missed reports and frustration.",
+                },
+                "image":[
+                    "challenge.png"
+                ]
+            },
+            "The Research: Understanding the Users": {
+                "desc": "We began with a deep dive into user needs, leveraging both qualitative and quantitative methods to uncover pain points and preferences.",
+            },
+            "Methodology": {
+                "desc":"The primary goal of this research is to collect data to design a Single Entry Point for Customer Support for the citizens of Tallinn, emphasizing the need for a user-friendly and efficient interface. By focusing on modern UX research and Human-Computer Interaction (HCI) methodologies, the project aims to gather insights into user needs and system requirements, creating a streamlined, user-centered experience for customer support."
+            },
+            "Content Analysis": {
+                "desc":"From the five (5) anonymised examples of citizens email requests provided and the twenty two (22) messages documented on Anna Teada https://annateada.ee, we conducted a content analysis and identified common themes, trends, and users’ pain-points.\n\nThe following trend were identified based on the cause of sending the requests:",
+                "parts": {
+                    "Visual Appearance and Aesthetic Quality:":"They include multiple complaints about lack of streetlights and malfunctioning lights, and aesthetic coherence.",
+                    "Public Safety as a Recurring Topic:":"Requests for dismantling old structures, fixing icy pathways, improving hazardous pavement and road standards.",
+                    "Waste Management and Urban Space Proposals:":"Broken, overflowing waste containers, missing trash cans, suggestions of transforming parking areas into landscaped zones.",
+                    "Misuse of Public Space and Illegal Practices:":"Advertisements occupying parking spaces, absence of warning signs for camera surveillance.",
+                },
+                "close":"The problem nature of user requests served as a defining factor for grouping the themes in the following categories:",
+                "partse": {
+                    " ":"Maintenance and construction concerns",
+                    "  ":"Environmental and waste management concerns",
+                    "   ":"Safety concerns",
+                    "    ":"Signage and accessibility issues",
+                    "     ":"Private property issues",
+                    "      ":"Jurisdiction concerns",
+                },
+                "image": [
+                    "tallinn.png",
+                ],
+            },
+            "User Interviews": {
+                "desc":"The results of the content analysis were presented in a form of cards and categories to the users during the interview. Participants were asked to sort the cards in the corresponding categories based on their perceptions and preferences.\n\nA total of twenty (20) cards with the common problems documented in the requests were presented for hybrid card sorting. The following categories were proposed to the participants:",
+                "parts": {
+                    " ":"Infrastructure maintenance",
+                    "  ":"Road safety",
+                    "   ":"Green area management",
+                    "    ":"Waste management",
+                    "     ":"Ownership",
+                },
+                "close":"Participants were allowed to add and name new categories in case they didn’t find a suitable existing category for a card.",
+                "image": [
+                    "interview.png",
+                ],
+                " ": "Standardization grid shows the distribution of cards across the defined standardized categories. Each table cell shows the number of times a card was sorted into the corresponding standardized category.\n\nThe answers were distributed between the following three categories:",
+                "partse": {
+                    " ":"Strong consensus: with 5 or 6 participants agreement of the sorting category;",
+                    "  ":"Normal consensus: with 4 participants agreement;",
+                    "   ":"Weak consensus: with less than a half of respondents agreeing on the category.",
+                },
+                "imagee": [
+                    "find.png",
+                ],
+            },
+            "Desk Research": {
+                "desc":"Next, we reviewed existing support systems to identify limitations and opportunities for improvement.",
+                "image": [
+                    "site.png",
+                    "key.png",
+                ],
+            },
+            "Brainstorming and Conceptualization": {
+                "desc":"From our research, we identified three potential solutions:\n\n- AI-Powered Platform: Rejected due to privacy concerns and lack of user trust.\n\n- Standalone Mobile App: Dismissed based on user feedback, as citizens were unwilling to download new apps.\n\n- WhatsApp Chatbot: Chosen for its familiarity, simplicity, and broad accessibility.",
+            },
+            "Conceptualizing the Chatbot": {
+                "desc":"Given the preference for familiar tools, we opted to design a WhatsApp chatbot rather than a new application. The chatbot was built to guide users through reporting problems in an intuitive and conversational manner.",
+            },
+            "Prioritized Features": {
+                "image": [
+                    "features.png",
+                ],
+            },
+            "Information Architecture": {
+                "desc":"The chatbot’s structure was designed to mirror the most common problem categories identified during research:\n\n- Infrastructure Maintenance\n\n- Road Safety\n\n- Waste Management\n\n- Animal-Related Issues\n\n- Private Property Concerns",
+                "close":"This categorization ensured users could easily find the appropriate channels for their concerns.",
+                "image":[
+                    "ia.png"
+                ]
+            },
+            "Designing the Chatbot": {
+                "desc":"Our solution was a WhatsApp-based chatbot integrated with the Tallinn City website. Key design decisions included:",
+                "parts": {
+                    "Positioning":"A sticky “Report a Problem” button in the bottom-right corner of the webpage, easily recognizable with WhatsApp’s signature green color.",
+                    "Interface":"A simple, conversational flow guided users through issue reporting in a few steps:\n\n- Greeting and introduction.\n\n- Collecting the user’s name and contact information.\n\n- Classifying the issue (e.g., safety, waste management).\n\n- Verifying the location using Google Maps API.\n\n- Collecting additional details or images (optional).",
+                    "Character Design":"We created Killu, a friendly chatbot persona inspired by Tallinn’s iconic sprat fish, to make the experience more engaging and trustworthy.",
+                },
+            },
+            "Killu's Personality": {
+                "image": [
+                    "personality.png",
+                ],
+            },
+            "Technology Stack": {
+                "desc":"- Backend: Node.js with Nest.js framework.\n\n- Integration: Google Maps API for location verification and Jira for task management.\n\n- Media Storage: Cloudinary for handling uploaded images.",
+            },
+            "From Research to Reality": {
+                "image": [
+                    "final-1.png",
+                    "final-2.png",
+                    "final-3.png",
+                ]
+            },
+            "Evaluation and Iteration": {
+                "desc":"The prototype underwent rigorous usability testing with 4 participants aged 23–55.\n\nThree evaluation methods were employed:",
+                "parts": {
+                    "Task-Based Usability Testing:":"Observed participants as they completed a reporting task using the chatbot.",
+                    "Emoji Wheel Feedback:":"Participants rated their satisfaction using emojis, with most selecting 🙂 (satisfied).",
+                    "System Usability Scale (SUS):":"The chatbot scored an impressive 85.63 out of 100, reflecting excellent usability.",
+                },
+                "image": [
+                    "test.png",
+                ],
+            },
+            "Key Insights": {
+                "parts": {
+                    " ": "Emoji Wheel: Participants rated their experience as 🙂 (satisfied) on average.",
+                    "  ": "SUS Scores: Achieved an average score of 85.63, reflecting excellent usability.",
+                },
+            },
+            "User Feedback": {
+                "parts": {
+                    "Positive Comments:": "- “I use WhatsApp, so I don’t need to learn a new app.”\n\n- “The procedure is clear and easy to follow.”",
+                    "Areas for Improvement:": "- Initial Interaction: Users preferred the chatbot to initiate the conversation.\n\n- Location Sharing: Suggested enabling automatic location sharing for faster issue reporting.",
+                },
+            },
+            "Impact: A Game-Changer for Citizen Support": {
+                "parts": {
+                    "Enhanced Citizen Engagement": "Killu empowered citizens to report issues effortlessly. By leveraging WhatsApp, we eliminated barriers associated with new tools, resulting in increased adoption among users who previously avoided reporting problems.",
+                    "Streamlined Processes for the City": "The Jira integration automated the task assignment process, reducing manual workload and ensuring timely responses to citizen requests. Municipal staff could easily track, update, and resolve issues via a centralized dashboard.",
+                    "Positive User Reception": "Participants praised the chatbot’s accessibility and usability. As one participant noted, “I use WhatsApp, so I don’t need to learn a new app.”",
+                },
+            },
+            "Key Takeaways": {
+                "parts": {
+                    "Leverage Familiar Platforms:": "Designing for existing tools like WhatsApp can dramatically improve adoption and user satisfaction.",
+                    "Iterate Based on Feedback:": "Insights from usability testing ensured that Killu met real user needs.",
+                    "User-Centered Information Architecture:": "Organizing content logically, based on user input, reduced cognitive load and improved navigation.",
+                },
+            },
+            "Future Recommendations": {
+                "parts": {
+                    " ":"- Location Sharing: Enable users to share their location automatically for quicker issue resolution.\n\n" +
+                        "- Language Support: Add multilingual capabilities to serve Tallinn’s diverse community.\n\n" +
+                        "- Platform Expansion: Extend Killu’s functionality to Facebook Messenger and Telegram to reach a broader audience.",
+                },
+            },
         }
     },
 }
