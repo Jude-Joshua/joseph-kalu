@@ -57,7 +57,7 @@
     }
 
     &-section {
-        gap: var(--gaps-body-section-gap);
+        gap: var(--gaps-title-gap);
         padding-inline: var(--paddings-padding-card-block);
 
         @include devices(phone) {

@@ -3,9 +3,9 @@ const Data = {
         4: {
             "id": 4,
             "featured": true,
-            "title": "Led redesign of a smoking cessation app launch on iOS and Android. Increased in-app purchase by +25%, onboarding success by +60% and community engagement by +70%",
+            "title": "Redesigning features and designing new features to enhance brand consistency and overall user engagement.",
             "projectName": "Smoking Cessation App",
-            "description": "Redesigning features and designing new features to enhance brand consistency and overall user engagement.",
+            "description": "Led redesign of a smoking cessation app launch on iOS and Android. Increased in-app purchase by +25%, onboarding success by +60% and community engagement by +70%",
             "tags": "mobile app design, product strategy, UX design, interaction design",
             "presentationImage": "cover-image.webp",
             "caseImage": "case-image.webp",
@@ -17,9 +17,9 @@ const Data = {
         3: {
             "id": 3,
             "featured": true,
-            "title": "Led redesign of HumanManager SaaS platform and app launch on iOS and Android. – Increased +2.5x in enterprise clients",
+            "title": "Conducted user research and implemented streamlined workflows to simplified the loan application process for SMEs.",
             "projectName": "HumanManager",
-            "description": "Conducted user research and implemented streamlined workflows to simplified the loan application process for SMEs.",
+            "description": "Led redesign of HumanManager SaaS platform and app launch on iOS and Android. Increased +2.5x in enterprise clients",
             "tags": "Web app, mobile app design",
             "presentationImage": "cover-image.webp",
             "caseImage": "case-image.webp",
@@ -30,9 +30,9 @@ const Data = {
         1: {
             "id": 1,
             "featured": true,
-            "title": "Led the design of Coinhaven NFT marketplace. Secured €7 million in funding and 60% platform growth.",
+            "title": "Designed an NFT marketplace where users can mint new NFTs, buy and sell NFTs and learn more about cryptocurrency",
             "projectName": "NFT Marketplace Design",
-            "description": "Designed an NFT marketplace where users can mint new NFTs, buy and sell NFTs and learn more about cryptocurrency",
+            "description": "Led the design of Coinhaven NFT marketplace. Secured €7 million in funding and 60% platform growth.",
             "tags": "mobile app design, user research, product strategy, ux design",
             "presentationImage": "cover-image.webp",
             "caseImage": "case-image.webp",
@@ -43,125 +43,65 @@ const Data = {
         2: {
             "id": 2,
             "featured": true,
-            "title": "Led design of a FinTech app that empowered a community of merchants to reach the unbanked.",
+            "title": "Conducted user research and implemented streamlined workflows to simplified the loan application process for SMEs.",
             "projectName": "Accorn",
-            "description": "Conducted user research and implemented streamlined workflows to simplified the loan application process for SMEs.",
+            "description": "Led design of a FinTech app that empowered a community of merchants to reach the unbanked.",
             "tags": "mobile app design, user research, product strategy, ux design",
             "presentationImage": "cover-image.webp",
             "caseImage": "case-image.webp",
             "year": "2021",
             "industry": "Fintech",
             "password": false
-        },
-        5: {
-            "id": 5,
-            "featured": true,
-            "title": "Promoting responsible and efficient scooter usage in Tallinn",
-            "projectName": "Scooter Scatter",
-            "description": "Conducted user research and product strategy to fix scooter parking related problems.",
-            "tags": "user research, product strategy",
-            "presentationImage": "cover-image.webp",
-            "caseImage": "case-image.webp",
-            "year": "2024",
-            "industry": "Transportation",
-            "password": false
         }
     },
     "projects-details": {
-        2: {
-            "projectName": "Scooter Scatter",
-            "problem statement": {
-                "desc": "Indiscriminate parking of shared scooters refers to the disorderly manner in which users leave scooters at various locations within a city, often ignoring designated parking areas and without consideration for pedestrians, traffic, or public spaces. This behavior has led to stress for pedestrians and poses a serious safety concern. For instance, in 2020, nearly 90% of Paris residents voted in favor of banning shared scooters due to these issues. If not properly managed, similar actions could be taken in cities worldwide." +
-                    "\n\n" +
-                    "Tallinn, a vibrant and growing city, has not been immune to this phenomenon. As the city embraces eco-friendly and affordable transportation options, understanding the reasons behind the indiscriminate parking of shared scooters is essential.",
-            },
-            "Research Problem Statement": {
-                "desc": "This research focuses on the indiscriminate parking of shared scooters in Tallinn. The goal is to raise awareness and promote a harmonious coexistence between this mode of transportation and the city's residents and visitors.",
-            },
-            "research goals": {
-                "desc": "The team aims to:",
-                "parts": {
-                    "": "Investigate the factors contributing to indiscriminate parking.",
-                    " ": "Identify the root causes of this behaviour.",
-                    "  ": "Assess the impact of indiscriminate parking on urban life.",
-                    "    ": "Propose effective strategies for Tallinn.",
-                },
-                "close": "Through a human-centered approach, we aimed to enhance the urban mobility experience for all stakeholders."
-            },
-            "research and analysis": {
-                "parts": {
-                    "": "What are the underlying factors driving users to park shared scooters indiscriminately in Tallinn?",
-                    " ": "How does the availability and design of scooter-sharing infrastructure influence parking behaviour?",
-                    "  ": "What are the safety implications of indiscriminate scooter parking on Tallinn's sidewalks and roadways?",
-                },
-            },
-            "Methodology": {
-                "desc": "The research methodology included a literature review to inform the development of user interview questions and surveys to examine user behaviour, urban infrastructure, and scooter-sharing service characteristics. Google Forms was used to collect quantitative data from 111 participants, specifically targeting shared scooter users in Tallinn. Participants were recruited through social media platforms like Facebook, Telegram, and WhatsApp.",
-            },
-            "Understanding the problem": {
-                "desc": "A quantitative research method was employed, with data collected from surveys. Open-ended questions provided qualitative insights. The data analysis process included:",
-                "parts": {
-                    "": "Defining research questions.",
-                    "  ": "Collecting and storing data",
-                    "   ": "Cleaning data.",
-                    "    ": "Analyzing data using Critical Theory.",
-                    "     ": "Sharing insights.",
-                }
-            },
-            "Types of collected data": {
-                "desc": "We collected the following data: Demographics, scooter usage patterns, and parking behaviour",
-                "image": [
-                    "data.png",
-                    "data-1.png",
-                    "data-2.png",
-                ]
-            },
-            "Main Findings": {
-                "desc": "Participants were primarily over 25 years old, of diverse genders and occupations, with 68.5% being full-time employees. The top reasons for using shared scooters were speed (48.6%) and convenience for last-mile transportation (20.7%).",
-                "parts": {
-                    "Parking Behavior": "70.3% reported parking scooters properly on sidewalks or in designated areas. 48.6% followed app guidelines for parking. The absence of designated areas was the most common reason for indiscriminate parking, along with time constraints.",
-                    "Awareness of Parking Guidelines": "79.3% were aware of scooter parking guidelines in Tallinn. 64.9% received notifications about responsible parking from scooter-sharing companies.",
-                    "Safety and Accessibility": "77.4% considered indiscriminate parking a significant safety threat. 59.5% had personally experienced safety issues related to scooter parking.",
-                    "Regulations and Enforcement": "62.2% were unaware of current regulations related to scooter usage in Tallinn. 21% considered the regulations somewhat effective.",
-                    "Incentives and Penalties": "63.1% reported that current regulations do not influence their parking behavior. 48.6% believed that incentives could motivate better parking habits. Only 18% felt that penalties would influence their behaviour.",
-                }
-            },
-            "Discussion": {
-                "desc": "The findings reveal that while many users are aware of the guidelines, there is still a significant portion who park indiscriminately due to the lack of designated areas, time constraints, and insufficient regulations. The data also show that poorly parked scooters pose a safety risk to pedestrians, cyclists, and other road users.",
-            },
-            "Techniques": {
-                "desc": "Critical Theory was applied to analyze the cultural factors influencing scooter parking behaviour. This approach helped uncover the social dynamics and assumptions that contribute to the issue.",
-            },
-            "challenges and Surprising Insights": {
-                "parts": {
-                    "Challenges": "Difficulty in scheduling user interviews due to time constraints.",
-                    "Surprising Insights": "Many users are unaware of the potential issues caused by improper parking. Additionally, while there is support for incentives, few people favour fines for improper parking.",
-                },
-            },
-            "conclusion": "The ScooterScatter User Research offers valuable insights into the problem of indiscriminate scooter parking in Tallinn. The study recommends clearer regulations, enhanced awareness campaigns, and incentives to encourage proper parking. These findings aim to foster a more harmonious relationship between shared scooters and the urban environment.",
-            "url": {
-                "title": "View the study paper",
-                "link": "https://docs.google.com/document/d/1TobUef8DSGB8DG_DrSVJYuBm3Gq-xFsYErn0ws_WtV8/edit"
-            }
-        },
         3: {
             "projectName": "Smoking Cessation App",
-            "context": "In 2023, I joined a health-tech company who was on a mission to help users quit smoking. They had recently acquired a game-changing product and needed my expertise to modernize the product. The task was both challenging and ambitious: redesign their smoking cessation app to serve users in three distinct markets—the UK, Germany, and France. The product needed to integrate seamlessly with a physical CO2 measurement device, align with stringent EU health regulations, and incorporate behavioral science principles to create an engaging and effective user experience.\n\nCollaborating with a multidisciplinary team of technical product managers, developers, behavioral scientists, and regulatory experts, I set out to design an application that could track smoking habits, recommend nicotine replacement therapies (NRT), and foster community-driven support for users at every stage of their quit journey.",
+            " ": "In 2023, I joined a health-tech company who was on a mission to help users quit smoking. They had recently acquired a game-changing product and needed my expertise to modernize the product. The task was both challenging and ambitious: redesign their smoking cessation app to serve users in three distinct markets—the UK, Germany, and France. The product needed to integrate seamlessly with a physical CO2 measurement device, align with stringent EU health regulations, and incorporate behavioral science principles to create an engaging and effective user experience.\n\nCollaborating with a multidisciplinary team of technical product managers, developers, behavioral scientists, and regulatory experts, I set out to design an application that could track smoking habits, recommend nicotine replacement therapies (NRT), and foster community-driven support for users at every stage of their quit journey.",
+            "Let's Talk About the Business": {
+                "desc": "We targeted the rapidly growing smoking cessation industry, driven by increasing awareness of the health risks associated with smoking and government regulations aimed at reducing tobacco use. The market included nicotine replacement therapies (NRT), behavioral interventions, and digital health solutions.",
+                "parts": {
+                    "Market Size:": "The global smoking cessation market was valued at $21 billion in 2023 and is projected to grow at a 14.5% CAGR, reaching $45 billion by 2030.",
+                    "Focus Markets:": "We focused on the UK, Germany, and France, where regulatory frameworks and public health campaigns support smoking cessation programs. These three countries alone accounted for 30% of the EU market.",
+                }
+            },
+            "Revenue and Growth Projections:": {
+                "desc": "The redesigned app aimed to drive revenue growth by leveraging three key revenue streams:",
+                "parts": {
+                    "": "Subscription Model: Monthly or annual subscriptions for premium app features.",
+                    " ": "In-App Purchases: Sales of NRT products and accessories directly through the app.",
+                    "  ": "Corporate Partnerships: Collaborations with public health organizations and employers to offer the coaching services.",
+                }
+            },
+            "Projections:": {
+                "desc": "The company positioned itself as a pioneer in digital health solutions, attracting attention from investors in the health-tech and digital wellness sectors. The redesign was a key part of their strategy to launch and release an IPO, which would support scaling the platform and entering new markets.",
+                "parts": {
+                    "": "Year 1 Revenue: $20 million from initial rollout in three countries.",
+                    " ": "Year 2 Revenue: $50 million from sales of NRT and the device",
+                    "  ": "Year 3 Revenue: $100 million with app penetration in additional EU markets and expanded offerings.",
+                },
+                "image": [
+                    "project.png"
+                ]
+            },
+            "App forecast:": {
+                "desc": "The overarching goal was to create an engaging smoking cessation app that would:",
+                "parts": {
+                    "": "Expand market reach by successfully launching in three European countries.",
+                    " ": "Drive user adoption, with a 60% onboarding success rate.",
+                    "  ": "Increase community engagement, targeting a 70% interaction rate.",
+                    "   ": "Streamline the design process, reducing development turnaround time by 40%.",
+                }
+            },
             "the challenge": {
-                "desc":"In light of the business goal and revenue projection for the product, we had a big task at hand to build a product that is good enough to attract and retain enough users.",
-                "image":[
+                "desc": "In light of the business goal and revenue projection for the product, we had a big task at hand to build a product that is good enough to attract and retain enough users.",
+                "image": [
                     "challenge.png"
                 ],
-                "conc": "\n\n\nThis required a design that balanced the complexities of health regulations in the UK, Germany, and France, while aligning with psychological models of behavior change to support users in their quit journey. The app also needed to address technical, cultural, and usability nuances. On top of this, the existing app lacked good interaction, wasn’t optimized for behavior change, and needed to align with the brand’s design system for scalability.\n\nIn essence, this was about creating a single, adaptable platform that could deliver value to diverse user groups, empower behavior change, and comply with strict healthcare requirements—without overwhelming the development process or sacrificing quality."
+                "conc": "This required a design that balanced the complexities of health regulations in the UK, Germany, and France, while aligning with psychological models of behavior change to support users in their quit journey. The app also needed to address technical, cultural, and usability nuances. On top of this, the existing app lacked good interaction, wasn’t optimized for behavior change, and needed to align with the brand’s design system for scalability.\n\nIn essence, this was about creating a single, adaptable platform that could deliver value to diverse user groups, empower behavior change, and comply with strict healthcare requirements—without overwhelming the development process or sacrificing quality."
             },
-            "project goal": {
-                "desc": "The goal of this project is to rebrand the smoking cessation app to align with the company's brand and add new features to enhance its effectiveness in helping users quit smoking. The four (4) key objectives to achieve the project goal are;",
-                "parts": {
-                    "Understand the Product": "Analyze the current features and functionality of the app and identify strengths and weaknesses in the existing design.",
-                    "Understand the Company and Its Brand": "Analyze the current features and functionality of the app and identify strengths and weaknesses in the existing design.",
-                    "Rebrand the App": "Create new user interfaces that aligns with the company’s brand and improve user experience and navigation.",
-                    "Build New Features": "Add new features and improve on existing ones that enhance the app’s ability to help users quit smoking and ensure the new features are user-friendly and effective.",
-                }
+            "The Research: Understanding the Users": {
+                "desc": "To design an effective smoking cessation app for , user research was central to uncovering the needs, pain points, and behaviors of users. Leveraging insights from the behavioral scientists’ research, the COM-B framework, and competitor analysis, I conducted a deep dive into the user base across three markets: UK, Germany, and France."
             },
             "Research Goals": {
                 "desc": "The primary objectives were to:",
@@ -187,6 +127,12 @@ const Data = {
                     "findings.png",
                 ]
             },
+            "Feature Prioritization": {
+                "desc": "The feature prioritization matrix for the smoking cessation app provides a clear roadmap for delivering impactful, user-centered functionalities. The Do Now quadrant focuses on core features to drive immediate user adoption and engagement. The Do Next quadrant prioritizes enhancements which foster long-term motivation and support. Features in the Do Later quadrant, are valuable but secondary to the app’s initial success. Lastly, features in the Don’t Do quadrant, are deprioritized due to limited user impact and alignment with the app’s goals. This structured approach ensures the app delivers value quickly while allowing room for strategic growth.",
+                "image": [
+                    "feature.png",
+                ]
+            },
             "information architecture": {
                 "desc": "The next step was to create the Information Architecture, which organises and structures the content of the app to help users find information and complete tasks efficiently.",
                 "image": [
@@ -197,6 +143,26 @@ const Data = {
                 "image": [
                     "old-app.webp",
                 ]
+            },
+            "final designs": {
+                "image": [
+                    "final-1.png",
+                    "final-2.png",
+                    "final-3.png",
+                    "final-4.png",
+                ]
+            }
+            ,
+            "user testing": {
+                "desc": "In other to evaluate the effectiveness of the designs  and new features created, we performed a usability testing. 15 participants were recruited for the semi structured testing.",
+            },
+            "Summary of testing": {
+                "parts": {
+                    "": "Overall, users found the app intuitive and easy to navigate.",
+                    " ": "Interactive tools and games were particularly well-received.",
+                    "  ": "Progress tracking and data analytics provided valuable insights to users.",
+                    "   ": "Add a quick log feature for daily smoking activity."
+                },
             },
             "Business Impact": {
                 "desc": "The redesigned app launched successfully in the UK delivering measurable results:",
@@ -220,58 +186,100 @@ const Data = {
         },
         5: {
             "projectName": "HumanManager",
-            "overview": "People management has always been localised to the big corporations. Many times to small business owners people management is a luxury. Human manager is a human capital solution to suit businesses of all shapes and sizes.\n\nAs a UX designer at HumanManager, I contributed to various projects that enhanced user experience for our diverse client base. My role involved updating designs features, designing a mobile app for employee to view their dashboard, creating an end-to-end solution for HumanManager Flex aimed at small businesses, and contributing to the website design.",
-            "the problem": {
-                "desc": "HumanManager's clients faced several challenges:",
+            " ": "In 2021, HumanManager, a leading HR tech SaaS product, embarked on a transformative journey to modernize its platform. Used by banks, telecom companies, oil firms, and other large enterprises, the product had long been a reliable tool for managing payroll, leave, expenses, recruiting, and employee onboarding. However, the platform was showing its age—its outdated interface, lack of mobile accessibility, and one-size-fits-all approach no longer met the growing demands of its clients.\n\nThe challenge was clear: redesign HumanManager into a scalable, user-focused, and flexible solution. The redesign had to meet the complex needs of large enterprises, attract small businesses with tailored solutions, and empower staff with intuitive mobile access. As a UX designer and product researcher, I was tasked with not only improving the experience but also helping the company achieve its ambitious business goals of increasing market share and revenue.",
+            "The Business Goal: Scaling and Expanding": {
+                "desc": "The HumanManager project was driven by ambitious business objectives that extended beyond simply improving the platform’s user experience. These goals encompassed both immediate revenue targets and long-term strategic positioning within the HR technology market.",
                 "parts": {
-                    "": "Employees needed easier access to their dashboards on the go.",
-                    " ": "Small businesses required a tailored solution that met their unique HR needs.",
-                    "  ": "The website needed an updated design to improve user experience and engagement.",
-                }
-            },
-            "project goals": {
-                "desc": "",
-                "parts": {
-                    "Mobile App": "Design an intuitive, user-friendly mobile app to provide employees with seamless access to their dashboards anytime, anywhere.",
-                    "HumanManager Flex": "Develop a comprehensive solution tailored for small businesses, making HR processes more efficient and manageable.",
-                    "Website": "Enhance the website's design to improve navigation, user engagement, and overall user experience."
-                }
-            },
-            "the solution": {
-                "desc": "",
-                "parts": {
-                    "HumanManager mobile app": "Created a clean, responsive design for the mobile app, ensuring easy navigation and quick access to key features. Incorporated user feedback to refine the interface, making it more intuitive and user-friendly.",
-                    "HumanManager flex": "Designed an end-to-end solution tailored for small businesses, focusing on simplifying HR processes. Included features like streamlined payroll management, employee tracking, and automated workflows to increase efficiency.",
-                    "HumanManager enterprise": "Collaborated with the team to redesign the website, focusing on a modern, clean look that enhanced usability. Improved the information architecture, making it easier for users to find relevant content and resources."
+                    "Increase Revenue": "The primary financial goal was to grow revenue up to $10 million within the fiscal year. This would be achieved by:\n" +
+                        "i.  Expanding the enterprise customer base.\nii. Introducing a tailored solution for small businesses, opening a new revenue stream within an underserved segment.",
+                    "Enhance Retention": "The goal was to reduce customer churn and boost retention rates by addressing usability issues and ensuring the platform met diverse client needs.",
+                    "Expand Market Share": "The stakeholders aimed to establish the product as the go-to HR solution for both large enterprises and small businesses, increasing its presence across multiple industries.",
                 },
-                "images": [
-                    "solution01.png",
-                    "solution02.png",
-                    "solution04.png",
-                ]
+                " ": "To achieve these ambitious goals, I needed to communicate the product’s value through design: aligning user needs with business objectives, simplifying workflows for large enterprises, and introducing an entirely new solution for small businesses.",
             },
-            "final designs": {
+            "The Challenges: One Product, Diverse Needs": {
+                "desc": "HumanManager served over 40 industries with large workforces, but each organization had unique needs. A one-size-fits-all approach simply wasn’t working. Meanwhile, small businesses with fewer than 10 employees were left without any solution.\nWe identified three primary challenges:",
                 "image": [
-                    "Body.png",
-                    "Body-1.png",
-                    "Body-2.png",
-                    "Body-3.png",
-                    "Body-4.png",
+                    "challenge.png"
                 ]
             },
-            "challenges": {
+            "My role": {
+                "desc": "As the Lead UX Designer, I was responsible for  the design and maintenance of the HumanManager platform to meet the needs of large enterprises and small businesses alike. I conducted extensive user research with HR teams, staff, and small business owners to uncover pain points.\n\nMy role involved designing the white-labeled solution while designing a streamlined version for small businesses. I led the design and collaborated with developers to launch mobile apps for iOS and Android, ensuring a seamless experience for end-users.\n\nFurthermore, I created and documented a robust design system to maintain consistency across all versions of the product.",
+            },
+            "The Research: Understanding the Users": {
+                "desc": "To redesign  effectively, I began by conducting in-depth research to understand the needs of enterprise users, small businesses, and employees.",
+            },
+            "Methods used": {
                 "parts": {
-                    "": "Balancing diverse client requests and feedback while maintaining a cohesive design vision.",
-                    " ": "Ensuring the mobile app was both feature-rich and easy to use, accommodating various user needs and technical proficiencies.",
-                    "  ": "Creating a scalable solution for small businesses that could grow with their needs while remaining simple to use.",
+                    "Interviews:": "We conducted 50 interviews with HR managers, employees, and small business owners.",
+                    "Field Research:": "Observed small businesses in action to identify their HR pain points.",
+                    "Competitive Analysis:": "Studied HR tools used by small businesses to create a mental model of their expectations."
                 }
             },
-            "success metrics": "",
-            "results": {
-                "desc": "The product was launched in 3 markets in Europe and the United States with a total of 30k app download and a retention rate of 70%. The design were implemented in iOS and Android.",
+            "From Insights to Ideas: Crafting the Solution": {
+                "desc": "User Stories and Goals",
+                "image": [
+                    "goals.png"
+                ],
+                "conc": "These stories drove the design process, allowing us to align user needs with the business goals."
+            },
+            "Conceptualizing the Idea": {
+                "desc": "Armed with these insights, I collaborated with the product team to craft a clear design direction. This phase involved brainstorming workshops, sketching initial concepts, and refining ideas into actionable solutions.\n\nThe vision was bold but clear:",
+                "parts": {
+                    "For enterprises": "we would create a white-labeled product with customizable branding and features, ensuring every client felt the product was tailor-made for them.",
+                    "For small businesses": "we would design a lightweight, streamlined solution that catered to their specific needs without overwhelming them.",
+                    "For employees": "We would build mobile apps that made accessing HR tools fast and intuitive."
+                }
+            },
+            "Feature Prioritization": {
+                "desc": "We divided priorities between enterprise users and small businesses:",
                 "images": [
-                    "result01.png",
+                    "feature.png",
                 ]
+            },
+            "Evaluating Legacy Designs": {
+                "desc": "Before embarking on the redesign journey, it was essential to evaluate the existing screens of the Human Manager platform. These legacy interfaces were functional but reflected an outdated design language that no longer aligned with modern user expectations or industry standards.\nThe old screens presented several challenges:",
+                "images": [
+                    "map.png",
+                ]
+            },
+            "  ": {
+                "desc": "Including these old screens allowed us to highlight specific problem areas, helping stakeholders and team members visualize the gaps in usability and design. This assessment served as a vital starting point for identifying opportunities for improvement and prioritizing features that addressed user pain points.",
+                "images": [
+                    "slim.png",
+                ]
+            },
+            "Designing the solutions": {
+                "image": [
+                    "final-1.png",
+                    "final-2.png",
+                    "final-3.png",
+                ]
+            },
+            "The Impact: A Transformative Redesign": {
+                "desc": "The impact of the HumanManager redesign was profound, both for the business and its users."
+            },
+            "Business Success": {
+                "parts": {
+                    "Revenue Growth:": "By introducing white labeling and targeting small businesses, HumanManager surpassed its revenue goal, achieving $15M in annual revenue.",
+                    "Expanded Market Share:": "The lightweight small business solution onboarded 10,000 small businesses in its first year.",
+                    "Increased Retention:": "The white-labeled approach led to a 2.5x increase in enterprise clients, as companies appreciated the flexibility and customization options.",
+                }
+            },
+            "User Success": {
+                "parts": {
+                    "Mobile Accessibility:": "The iOS and Android apps received a 4.5-star rating on app stores, empowering employees to manage HR tasks on the go.",
+                    "User-Centric Innovation:": "Enterprise HR teams reported a significant reduction in training time, thanks to the intuitive new interface.",
+                    "Simplified Payroll for Small Businesses:": "Automated payroll features saved time and improved employee satisfaction for small business owners.",
+                }
+            },
+            "Key takeaways": {
+                "parts": {
+                    "Scalable Design is Powerful:": "The white-label solution proved that customization could be a competitive advantage.",
+                    "User-Centric Innovation:": "By focusing on users’ goals, we delivered solutions that resonated deeply with both enterprises and small businesses.",
+                    "Efficiency Through Systems:": "The design system accelerated development and maintained consistency across products.",
+                    "Impactful Collaboration:": "Working transparently with stakeholders and users ensured that the final product exceeded expectations.",
+                }
             },
             "url": {
                 "title": "View the website",
