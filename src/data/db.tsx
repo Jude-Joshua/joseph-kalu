@@ -649,8 +649,8 @@ const Data = {
             "From Research to Reality": {
                 "image": [
                     "final-1.png",
-                    "final-2.png",
-                    "final-3.png",
+                    "final-2.mp4",
+                    "final-3.mp4",
                 ]
             },
             "Evaluation and Iteration": {

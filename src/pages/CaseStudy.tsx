@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {useParams} from "react-router-dom";
 
 import ImageComponent from "../components/ImageComponent.tsx";
+import VideoComponent from "../components/VideoComponent.tsx";
 
 import Data from "../data/db.tsx";
 import PageDivider from "../components/PageDivider.tsx";
@@ -14,7 +15,6 @@ import {Keyboard, Navigation} from 'swiper/modules';
 interface ProjectDetails {
     [key: string]: string | ProjectDetails | string[];
 }
-
 
 const projectPassword = import.meta.env.VITE_PROJECT;
 
@@ -224,11 +224,20 @@ const CaseStudy: React.FC = () => {
                                                     <div className="main-div">
                                                         <div className="main-div-images">
                                                             {subValue.map((item, index) => (
-                                                                <ImageComponent
-                                                                    key={`${index + 1}`}
-                                                                    source={`/projects/${(project.projectName).toLowerCase()}/${item}`}
-                                                                    altText={`Image ${index + 1}`}
-                                                                />
+                                                                ['mp4', 'webm', 'ogg', 'mov'].includes(item.split('.').pop()?.toLowerCase() ?? '') ? (
+                                                                    <div className={`flex justify-center align-center video-holder ${index + 1}`}>
+                                                                        <VideoComponent
+                                                                            key={`${index + 1}`}
+                                                                            source={`/projects/${(project.projectName).toLowerCase()}/${item}`}
+                                                                        />
+                                                                    </div>
+                                                                ) : (
+                                                                    <ImageComponent
+                                                                        key={`${index + 1}`}
+                                                                        source={`/projects/${(project.projectName).toLowerCase()}/${item}`}
+                                                                        altText={`Image ${index + 1}`}
+                                                                    />
+                                                                )
                                                             ))}
                                                         </div>
                                                     </div>
