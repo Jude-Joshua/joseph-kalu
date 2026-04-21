@@ -1076,8 +1076,54 @@ export const projects: readonly Project[] = [
           images: ['final-cashier.png'],
         },
         {
-          title: 'Results & Impact',
-          images: ['results.png'],
+          title: 'Collaborating with Engineering',
+          desc: 'Collaborating with engineering to bridge the gap between design vision and technical constraints. A continuous iteration cycle for financial precision.',
+          parts: [
+            {
+              label: 'Design Proposal',
+              text: 'Translated research insights into detailed interaction specs for each financial flow. Created annotated prototypes covering transaction states, error handling, and edge cases. Documented expected responses and data dependencies for every screen.',
+            },
+            {
+              label: 'Engineering Review',
+              text: 'Engineers assessed feasibility against real-time constraints and database architecture. Flagged latency risks for live balance fetching across multi-currency accounts.',
+            },
+            {
+              label: 'Constraint Resolution',
+              text: 'Redesigned the funds transfer flow to use optimistic UI updates with background validation. Replaced synchronous balance checks with manual refresh trigger.',
+            },
+            {
+              label: 'Validated Handoff',
+              text: 'Delivered production-ready specs. Conducted joint QA walkthroughs to verify every state matched the design intent. Maintained a shared decision log documenting each trade-off and its rationale.',
+            },
+          ],
+          images: ['engineering.png'],
+        },
+        {
+          title: 'Impact',
+          desc: 'As the product gets accepted by merchants outside our target group, we are iterating the product to meet more needs and become the go-to payment gateway for merchants.',
+          bullets: [
+            'First week of launch saw 5 merchants waiting to be onboarded.',
+            'Average time to complete core transactions (send funds, issue cards) reduced from 4.2 to 3.3 minutes.',
+            'Users reached critical actions 40% faster due to resurfaced navigation hierarchy.',
+          ],
+          images: ['impact.png'],
+        },
+        {
+          title: 'Reflection',
+          parts: [
+            {
+              label: 'What Initially Failed',
+              text: 'Over-designed the transaction detail view with too many data fields visible at once, overwhelming operators who needed quick status checks. Underestimated multi-currency edge cases where simultaneous balance updates across wallets caused UI state conflicts and displayed stale data. Initial confirmation patterns were too subtle for high-stakes actions like fund transfers, leading users to repeat actions due to uncertainty about completion.',
+            },
+            {
+              label: 'What I Learned',
+              text: 'Currency rounding errors, pending transaction states, and failed payment retries are not exceptions but core scenarios that must be designed for upfront. Users equate visual precision (correct decimal places, explicit state labels) with platform reliability. Backend constraints shape UX — real-time balance APIs had latency; designing "optimistic UI" with clear loading and reconciliation states was essential. Operators think in workflows, not screens.',
+            },
+            {
+              label: 'Future Opportunities',
+              text: 'Enable scheduled exports and dashboards so operators can monitor cash flow without manual tracking. Provide compliance teams with searchable, time-stamped records of every financial action and approval chain. Proactive notifications for anomalous patterns, failed payments, or balance thresholds to reduce reactive troubleshooting. Tailor default views for different operator roles (finance manager vs. account admin) to surface the most relevant data immediately.',
+            },
+          ],
         },
       ],
     },
