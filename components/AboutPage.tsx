@@ -50,7 +50,7 @@ const moreAboutMe = [
 ]
 
 const CV_URL = 'https://drive.google.com/file/d/1xsn421vkK07uhVMOh7UwqqfIDlr8Knvk/view?usp=sharing'
-const EMAIL_URL = 'mailto:joseph.kalu@yolo.com'
+const EMAIL_URL = 'mailto:mrjosephkalu@gmail.com'
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
