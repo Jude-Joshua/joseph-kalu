@@ -826,4 +826,124 @@ export const projects: readonly Project[] = [
       ],
     },
   },
+  {
+    id: '05',
+    slug: 'pay-io',
+    category: 'Crypto · Fintech · Web & Mobile',
+    year: '2025',
+    name: 'Pay.io',
+    homepageMetric: '$200M+ in processed transactions',
+    metricValue: '$200M+',
+    metricLabel: 'in processed transactions',
+    decision: 'Designed the infrastructure layer for crypto payments.',
+    tension: 'Crypto wallets were built for traders, not businesses managing real money.',
+    tensionLines: [
+      'Businesses needed to move crypto like fiat — deposits, withdrawals, sweeps — at scale.',
+      'Existing dashboards buried critical actions behind complexity.',
+      'One wrong transaction could mean six figures lost.',
+    ],
+    constraint:
+      'The system had to feel as reliable as traditional banking while handling the volatility and speed of crypto.',
+    leverage: {
+      headline: [
+        'Built clarity into every transaction layer.',
+        'Designed for operators, not speculators.',
+      ],
+      body: 'When the money is real, the interface has to be invisible.',
+    },
+    result: {
+      metric: '$200M+',
+      descriptor: 'in crypto transactions processed',
+      timeframe: 'through the platform.',
+      mechanism:
+        'A dashboard that gave operators full visibility over hot wallets, sweep logic, and merchant settlements — reducing errors and support load.',
+    },
+    nextTeaser: null,
+    caseStudy: {
+      intro: [
+        'Pay.io is a crypto payment infrastructure platform that enables businesses to accept, manage, and settle digital currency transactions. The platform serves merchants, payment operators, and treasury teams who need real-time visibility into wallet balances, transaction flows, and settlement cycles.',
+        'I led the end-to-end product design — from research and information architecture through to the high-fidelity dashboard, mobile deposit flows, and the underlying design system.',
+      ],
+      sections: [
+        {
+          title: 'The Problem',
+          desc: 'Crypto payment platforms were designed with traders in mind — not the businesses that needed to process, reconcile, and settle funds daily. Operators were forced to navigate fragmented tools, unclear transaction states, and dashboards that prioritized market data over operational clarity.',
+          parts: [
+            {
+              label: 'Fragmented Workflows',
+              text: 'Operators had to switch between multiple tools to manage deposits, withdrawals, and merchant settlements.',
+            },
+            {
+              label: 'Lack of Visibility',
+              text: 'Hot wallet balances, sweep activity, and pending transactions were scattered across different views with no unified overview.',
+            },
+            {
+              label: 'High Error Risk',
+              text: 'Without clear transaction states and confirmation flows, manual errors in large-value crypto transfers were common.',
+            },
+          ],
+          images: ['problem.png'],
+        },
+        {
+          title: 'Research & Discovery',
+          desc: 'I conducted stakeholder interviews with payment operators, treasury managers, and merchant support teams to understand their daily workflows. The goal was to map the critical paths — what they checked first, what caused friction, and where errors happened most.',
+          images: ['research.png'],
+        },
+        {
+          title: 'Competitive Analysis',
+          desc: 'I audited existing crypto dashboards and traditional payment platforms to identify patterns, gaps, and opportunities. Most crypto platforms over-indexed on trading features while underserving operational needs like reconciliation, sweep management, and reporting.',
+          images: ['competitive.png'],
+        },
+        {
+          title: 'User Personas',
+          desc: 'Based on research findings, I defined three core personas that represented the primary users of the platform — each with distinct needs and workflows.',
+          images: ['personas.png'],
+        },
+        {
+          title: 'Information Architecture',
+          desc: 'I restructured the platform navigation around the operator\'s mental model: wallet management, transaction monitoring, merchant oversight, and reporting. Every screen was designed to answer the question "what needs my attention right now?"',
+          images: ['ia.png'],
+        },
+        {
+          title: 'Design System',
+          desc: 'I built a component library from the ground up — optimized for data-dense dashboard interfaces. The system included tokens for spacing, color, and typography, plus complex components like transaction tables, status badges, wallet cards, and chart modules.',
+          images: ['design-system.png'],
+        },
+        {
+          title: 'Wireframes',
+          desc: 'Low-fidelity explorations focused on layout hierarchy, information density, and the balance between overview and detail views. I iterated rapidly with engineering to validate technical feasibility.',
+          images: ['wireframes.png'],
+        },
+        {
+          title: 'High Fidelity Designs',
+          desc: 'The final designs brought together the dashboard, wallet management, transaction monitoring, deposit and withdrawal flows, and merchant settlement views — across web and mobile.',
+          images: ['final-1.png', 'final-2.png', 'final-3.png', 'final-4.png'],
+        },
+        {
+          title: 'Mobile Experience',
+          desc: 'The mobile app focused on the most critical on-the-go actions: checking wallet balances, initiating deposits via QR code, and monitoring recent transactions. The interface was stripped to essentials — designed for quick checks, not deep analysis.',
+          images: ['mobile.png'],
+        },
+        {
+          title: 'Results & Impact',
+          desc: 'The redesigned platform launched to operators managing over $200M in crypto transactions. Key outcomes included reduced support tickets for transaction status inquiries, faster settlement reconciliation, and a significant drop in manual transfer errors.',
+          images: ['results.png'],
+          parts: [
+            {
+              label: 'Reduced Errors',
+              text: 'Clear confirmation flows and transaction state indicators reduced manual transfer errors significantly.',
+            },
+            {
+              label: 'Faster Reconciliation',
+              text: 'Unified dashboard views cut the time operators spent on daily settlement reconciliation.',
+            },
+            {
+              label: 'Lower Support Load',
+              text: 'Self-serve transaction tracking reduced support tickets related to payment status inquiries.',
+            },
+          ],
+        },
+      ],
+    },
+  },
 ] as const

@@ -17,6 +17,8 @@ const extendedSubtext: Record<string, string> = {
     "A failed transaction wasn't an inconvenience. It was a livelihood problem. Designed the full payments experience for low-literacy, low-connectivity markets — three taps, zero ambiguity, engineered for the moment the signal drops.",
   'quit-app':
     "You don't get a second first session. Designed the onboarding, commitment device, and first-48-hour experience as one connected system — built to hold someone mid-craving, end-to-end across iOS and Android.",
+  'pay-io':
+    'Crypto wallets were built for traders, not businesses moving real money. Designed the full payment infrastructure dashboard — hot wallets, sweep logic, merchant settlements — built so operators could manage $200M+ without second-guessing a single transaction.',
 }
 
 function ProjectVisual({
