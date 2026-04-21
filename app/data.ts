@@ -832,9 +832,9 @@ export const projects: readonly Project[] = [
     category: 'Crypto · Fintech · Web & Mobile',
     year: '2025',
     name: 'Pay.io',
-    homepageMetric: '$200M+ in processed transactions',
-    metricValue: '$200M+',
-    metricLabel: 'in processed transactions',
+    homepageMetric: '$100B+ market opportunity',
+    metricValue: '$100B+',
+    metricLabel: 'market opportunity',
     decision: 'Designed the infrastructure layer for crypto payments.',
     tension: 'Crypto wallets were built for traders, not businesses managing real money.',
     tensionLines: [
@@ -843,7 +843,7 @@ export const projects: readonly Project[] = [
       'One wrong transaction could mean six figures lost.',
     ],
     constraint:
-      'The system had to feel as reliable as traditional banking while handling the volatility and speed of crypto.',
+      'This was a financial product where accuracy, trust, and clarity were critical.',
     leverage: {
       headline: [
         'Built clarity into every transaction layer.',
@@ -852,96 +852,124 @@ export const projects: readonly Project[] = [
       body: 'When the money is real, the interface has to be invisible.',
     },
     result: {
-      metric: '$200M+',
-      descriptor: 'in crypto transactions processed',
-      timeframe: 'through the platform.',
+      metric: '$100B+',
+      descriptor: 'iGaming market tapped',
+      timeframe: 'with crypto as the fastest-growing vertical.',
       mechanism:
-        'A dashboard that gave operators full visibility over hot wallets, sweep logic, and merchant settlements — reducing errors and support load.',
+        'End-to-end UX redesign of core financial workflows — giving operators full visibility over hot wallets, sweep logic, and merchant settlements.',
     },
     nextTeaser: null,
     caseStudy: {
       intro: [
-        'Pay.io is a crypto payment infrastructure platform that enables businesses to accept, manage, and settle digital currency transactions. The platform serves merchants, payment operators, and treasury teams who need real-time visibility into wallet balances, transaction flows, and settlement cycles.',
-        'I led the end-to-end product design — from research and information architecture through to the high-fidelity dashboard, mobile deposit flows, and the underlying design system.',
+        'Pay.io is a multi-currency business payments platform. As the Product Designer, I worked with a team of Product Manager, Engineers, QA and Compliance to deliver an end-to-end UX redesign of core financial workflows.',
+        '"This was a financial product where accuracy, trust, and clarity were critical."',
       ],
       sections: [
         {
-          title: 'The Problem',
-          desc: 'Crypto payment platforms were designed with traders in mind — not the businesses that needed to process, reconcile, and settle funds daily. Operators were forced to navigate fragmented tools, unclear transaction states, and dashboards that prioritized market data over operational clarity.',
+          title: 'The Business Opportunity: Tapping into a Billion Dollar Market',
+          desc: 'The global iGaming market sits around $100–103 billion in 2025–2026 and is heading toward $133–169 billion by 2029–2030. Crypto is the fastest-growing slice inside it.',
           parts: [
             {
-              label: 'Fragmented Workflows',
-              text: 'Operators had to switch between multiple tools to manage deposits, withdrawals, and merchant settlements.',
+              label: 'Crypto Gambling Revenue',
+              text: 'Crypto gambling gross gaming revenue (GGR) hit roughly $81 billion in 2025, with Q1 2025 alone seeing $26 billion in crypto bets. Some forecasts put the crypto-specific gambling vertical above $150 billion by the end of 2025/early 2026.',
             },
             {
-              label: 'Lack of Visibility',
-              text: 'Hot wallet balances, sweep activity, and pending transactions were scattered across different views with no unified overview.',
+              label: 'Explosive Growth',
+              text: 'Crypto iGaming grew at 38% CAGR from 2019–2024 and continues to outpace fiat-only operators.',
             },
             {
-              label: 'High Error Risk',
-              text: 'Without clear transaction states and confirmation flows, manual errors in large-value crypto transfers were common.',
+              label: 'Market Leaders',
+              text: 'A single crypto-first operator (Stake.com) reported $4.7 billion GGR in 2024 — bigger than many Vegas casino giants.',
+            },
+          ],
+          close: 'Crypto users already account for 20–30%+ of transactions on many platforms, and that share is rising fast because crypto players bet more, stay longer, and churn less.',
+          images: ['business.png'],
+        },
+        {
+          title: 'Understanding the Problem',
+          desc: 'Crypto payment is new and business operators could not clearly manage, track, or reconcile financial actions across deposits, withdrawals, and multi-currency balances — leading to transaction errors, delayed reconciliation, and eroding trust in the platform.',
+          parts: [
+            {
+              label: 'Compliance Requirements (KYC/AML)',
+              text: 'Mandatory identity verification flows for every business operator account. Anti-money laundering screening on all transactions above defined thresholds. Full audit trail requirements for regulatory reporting across jurisdictions.',
+            },
+            {
+              label: 'Technical API Limitations',
+              text: 'Real-time balance updates constrained by asynchronous blockchain confirmations. Multi-provider crypto payment routing introduced latency in transaction state syncing. Legacy reconciliation logic created discrepancies between displayed and actual balances.',
+            },
+            {
+              label: 'Security Expectations',
+              text: 'Operators expected visible confirmation of every fund movement with no silent failures. Strict access controls required for multi-user merchant console environments. PCI DSS compliance mandated specific data handling and display restrictions.',
+            },
+            {
+              label: 'Timeline & Scope Pressure',
+              text: '12-week delivery window to ship redesigned core transaction flows. Parallel workstreams with engineering on API v2 migration limited design iteration cycles. Phased rollout required backward compatibility with existing merchant integrations.',
             },
           ],
           images: ['problem.png'],
         },
         {
-          title: 'Research & Discovery',
-          desc: 'I conducted stakeholder interviews with payment operators, treasury managers, and merchant support teams to understand their daily workflows. The goal was to map the critical paths — what they checked first, what caused friction, and where errors happened most.',
-          images: ['research.png'],
-        },
-        {
-          title: 'Competitive Analysis',
-          desc: 'I audited existing crypto dashboards and traditional payment platforms to identify patterns, gaps, and opportunities. Most crypto platforms over-indexed on trading features while underserving operational needs like reconciliation, sweep management, and reporting.',
+          title: 'What Are the Competition Doing?',
+          desc: 'Providers focus on high-risk tolerance, fast settlements, broad coin support (especially stablecoins like USDT/USDC on TRON/Solana), low fees, non-custodial options, and compliance tools (AML/KYC where required). The market favors gateways that handle volatility hedging, instant payouts, and integration with casino platforms.',
+          parts: [
+            {
+              label: 'Trends Driving Competition',
+              text: 'Non-custodial + stablecoin/TRON/Solana focus (near-zero fees), instant fiat off-ramps. AML tools without blocking high-risk, and seamless casino integrations (e.g., one-click deposits).',
+            },
+            {
+              label: 'Threats',
+              text: 'Tightening regulations (MiCA EU, Curaçao updates) favor licensed players like CoinsPaid/BitPay. Volatility and chain congestion remain issues — top providers hedge/auto-convert.',
+            },
+            {
+              label: 'Opportunity Zones',
+              text: 'There\'s a window in non-custodial, stablecoin-optimized, or self-hosted models.',
+            },
+            {
+              label: 'In-house Advantage',
+              text: 'Hub88 — We have a network of traditional providers and suppliers to leverage and onboard into crypto.',
+            },
+          ],
           images: ['competitive.png'],
         },
         {
-          title: 'User Personas',
-          desc: 'Based on research findings, I defined three core personas that represented the primary users of the platform — each with distinct needs and workflows.',
+          title: 'Research: What Do I Need to Know',
+          desc: 'After getting insight from what competitors are doing, I needed to understand first-hand opportunities I can explore from our already existing clients and if this is a product they will adopt.',
+          parts: [
+            {
+              label: 'Sketch + AI',
+              text: 'I did some lo-fi sketches and got the flow done with Figma Make. Features explored: Multi-currency support, Non-custodial by default, Auto-Sweep, Fiat on-ramp and off-ramp, Reports, and Transaction management.',
+            },
+          ],
+          images: ['research.png'],
+        },
+        {
+          title: 'User Types',
+          desc: 'The platform serves three core user types: Casino & iGaming operators, Business operators, and Merchants managing crypto deposits, withdrawals, and multi-currency fund movements through the Pay.io Merchant Console.',
           images: ['personas.png'],
         },
         {
           title: 'Information Architecture',
-          desc: 'I restructured the platform navigation around the operator\'s mental model: wallet management, transaction monitoring, merchant oversight, and reporting. Every screen was designed to answer the question "what needs my attention right now?"',
           images: ['ia.png'],
         },
         {
           title: 'Design System',
-          desc: 'I built a component library from the ground up — optimized for data-dense dashboard interfaces. The system included tokens for spacing, color, and typography, plus complex components like transaction tables, status badges, wallet cards, and chart modules.',
           images: ['design-system.png'],
         },
         {
           title: 'Wireframes',
-          desc: 'Low-fidelity explorations focused on layout hierarchy, information density, and the balance between overview and detail views. I iterated rapidly with engineering to validate technical feasibility.',
           images: ['wireframes.png'],
         },
         {
           title: 'High Fidelity Designs',
-          desc: 'The final designs brought together the dashboard, wallet management, transaction monitoring, deposit and withdrawal flows, and merchant settlement views — across web and mobile.',
           images: ['final-1.png', 'final-2.png', 'final-3.png', 'final-4.png'],
         },
         {
           title: 'Mobile Experience',
-          desc: 'The mobile app focused on the most critical on-the-go actions: checking wallet balances, initiating deposits via QR code, and monitoring recent transactions. The interface was stripped to essentials — designed for quick checks, not deep analysis.',
           images: ['mobile.png'],
         },
         {
           title: 'Results & Impact',
-          desc: 'The redesigned platform launched to operators managing over $200M in crypto transactions. Key outcomes included reduced support tickets for transaction status inquiries, faster settlement reconciliation, and a significant drop in manual transfer errors.',
           images: ['results.png'],
-          parts: [
-            {
-              label: 'Reduced Errors',
-              text: 'Clear confirmation flows and transaction state indicators reduced manual transfer errors significantly.',
-            },
-            {
-              label: 'Faster Reconciliation',
-              text: 'Unified dashboard views cut the time operators spent on daily settlement reconciliation.',
-            },
-            {
-              label: 'Lower Support Load',
-              text: 'Self-serve transaction tracking reduced support tickets related to payment status inquiries.',
-            },
-          ],
         },
       ],
     },
