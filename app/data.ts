@@ -932,12 +932,32 @@ export const projects: readonly Project[] = [
           images: ['competitive.png'],
         },
         {
-          title: 'Research: What Do I Need to Know',
-          desc: 'After getting insight from what competitors are doing, I needed to understand first-hand opportunities I can explore from our already existing clients and if this is a product they will adopt.',
+          title: 'Research: Insights from the Field',
+          desc: "Core research finding: Fintech users don't want more features; they want fewer steps, clearer feedback, and absolute confidence in every financial action they take.",
           parts: [
             {
-              label: 'Sketch + AI',
-              text: 'I did some lo-fi sketches and got the flow done with Figma Make. Features explored: Multi-currency support, Non-custodial by default, Auto-Sweep, Fiat on-ramp and off-ramp, Reports, and Transaction management.',
+              label: 'Phase 1 — Research Methods',
+              text: 'Conducted 6 semi-structured interviews with business operators and finance managers using Loop11.com. Focused on daily workflows: payments, transaction management, balance monitoring, and reporting. Identified recurring pain points around transaction visibility and multi-step actions.',
+            },
+            {
+              label: 'Phase 2 — Key Insights',
+              text: '"Execute, don\'t explore": users arrive with a specific task and want the shortest path to completion. 78% of sessions focused on just 4 core actions: check balance, send & receive payment, manage assets, review transactions. Users rarely navigated to secondary features unless prompted by a specific business need.',
+            },
+            {
+              label: 'Phase 3 — Design Strategy',
+              text: 'Precision-first UI: surface exact balances, clear transaction states, and unambiguous status labels. Task-oriented architecture: restructure navigation around the 3 core actions users perform daily. Immediate feedback loops: every action triggers a visible confirmation or status update.',
+            },
+            {
+              label: 'Behavioral Analytics',
+              text: 'Analyzed session recordings and heatmaps across core financial flows. Tracked task completion rates, drop-off points, and navigation patterns. Mapped feature usage frequency to identify underused vs. critical paths.',
+            },
+            {
+              label: 'Clarity Signals',
+              text: 'Users abandoned flows when transaction states were ambiguous (pending, processing, failed). Trust eroded when numerical formatting was inconsistent across currencies. Operators expected real-time feedback on every financial action taken.',
+            },
+            {
+              label: 'Design Principles',
+              text: 'Reduce cognitive load by eliminating unnecessary feature exposure on primary screens. Prioritize numerical legibility with consistent formatting, hierarchy, and spacing. Design for trust through transparency: no hidden states, no silent failures.',
             },
           ],
           images: ['research.png'],
@@ -948,19 +968,58 @@ export const projects: readonly Project[] = [
           images: ['personas.png'],
         },
         {
-          title: 'Information Architecture',
-          images: ['ia.png'],
+          title: 'Mapping a New Information Architecture',
+          desc: 'The platform is split into two main interfaces: Merchant Console (asset control, transaction management, reports) and Cashier UI (withdrawals, transaction history, deposits). Navigation was restructured around how business operators actually think and work.',
+          parts: [
+            {
+              label: 'Surface Critical Actions First',
+              text: 'Balances and pending transactions are visible immediately upon login, eliminating the need to navigate deeper.',
+            },
+            {
+              label: 'Group by Intent, Not Feature',
+              text: '"Managing" covers oversight and configuration; "Executing" covers active financial operations, matching how business operators think.',
+            },
+            {
+              label: 'Clarify Transaction States',
+              text: 'Every transaction displays a clear, real-time status (Pending, Processing, Completed, Failed) to eliminate ambiguity.',
+            },
+            {
+              label: 'Reduce Cognitive Load',
+              text: 'Flattened hierarchy from 4 navigation levels to 2, ensuring any action is reachable within two taps.',
+            },
+          ],
+          images: ['ia.png', 'ia-2.png'],
         },
         {
-          title: 'Design System',
+          title: 'A Scalable Design System',
+          desc: "Unified system powering Pay.io's Cashier, Dashboard, and API interfaces. Built from Design Tokens (color & typography, spacing & dimensions, effects) → Core Components (actions, forms & selection, content display, indicators & status, containers, feedback & navigation) → Component Variants (state patterns, currency formats, headers, navigation bars, pagination, steppers, cards, etc.).",
+          parts: [
+            {
+              label: 'Reusable Components',
+              text: 'Standardized across Cashier, Dashboard, and management interfaces.',
+            },
+            {
+              label: 'Token-Driven Theming',
+              text: 'Ensures consistent color, typography (optimized for numerical legibility), and spacing across all product surfaces.',
+            },
+            {
+              label: 'Multi-Currency Formatting',
+              text: 'Variants handle symbol placement, decimal precision, and locale-specific display patterns.',
+            },
+            {
+              label: 'State-Specific Variants',
+              text: 'For every interactive element: default, hover, active, disabled, error, and loading states.',
+            },
+            {
+              label: 'Compliance-Ready Patterns',
+              text: 'Embed KYC and AML visual cues directly into component behavior, not as afterthoughts.',
+            },
+          ],
           images: ['design-system.png'],
         },
         {
-          title: 'Wireframes',
-          images: ['wireframes.png'],
-        },
-        {
-          title: 'High Fidelity Designs',
+          title: 'High Fidelity Design',
+          desc: 'A simple onboarding process to get users to experience the platform. Enable assets: Merchants get to experience firsthand the multi-currency crypto enablement. Assets that they want their users to transact with are added and relevant networks are enabled.',
           images: ['final-1.png', 'final-2.png', 'final-3.png', 'final-4.png'],
         },
         {
