@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #F2F2EE;
+  --fg: #0A0A0A;
+  --muted: #6B6B68;
+  --ghost: #A8A8A4;
+  --subtle: #DCDCD7;
+  --border: #E3E3DE;
+  --surface: #FFFFFF;
+  --ink: #0E0E0C;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Fixed decorative backdrop — dotted grid (pixels.studio-style, light mode) */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    radial-gradient(rgba(10, 10, 10, 0.09) 1px, transparent 1.4px);
+  background-size: 22px 22px;
+  background-position: 0 0;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.85) 70%, rgba(0,0,0,0.5) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.85) 70%, rgba(0,0,0,0.5) 100%);
+}
+
+@media (min-width: 768px) {
+  body::before {
+    background-size: 28px 28px;
+  }
+}
+
+/* Ensure app content sits above the decorative layer */
+main,
+header {
+  position: relative;
+  z-index: 1;
+}
+
+/* Hide scrollbar but keep functionality */
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+::selection {
+  background: #0A0A0A;
+  color: #F2F2EE;
+}
