@@ -1018,13 +1018,62 @@ export const projects: readonly Project[] = [
           images: ['design-system.png'],
         },
         {
-          title: 'High Fidelity Design',
+          title: 'High Fidelity Design — Onboarding',
           desc: 'A simple onboarding process to get users to experience the platform. Enable assets: Merchants get to experience firsthand the multi-currency crypto enablement. Assets that they want their users to transact with are added and relevant networks are enabled.',
-          images: ['final-1.png', 'final-2.png', 'final-3.png', 'final-4.png'],
+          images: ['final-onboarding.png'],
         },
         {
-          title: 'Mobile Experience',
-          images: ['mobile.png'],
+          title: 'High Fidelity Design — Homepage',
+          desc: 'Merchants can see their wallet balance, wallet activity and recent transactions.',
+          parts: [
+            {
+              label: 'Hot Wallet Balance',
+              text: 'Merchants can view their direct user deposits, transfer it to custodial wallet and deposit into it.',
+            },
+            {
+              label: 'Hot Wallet Activity',
+              text: 'Merchants will be able to monitor wallet activity across various timeframes.',
+            },
+            {
+              label: 'Asset Holdings',
+              text: 'A simple view for merchants to see their enabled assets allocation. Here they can see how much each asset holds as against the total amount in their wallet.',
+            },
+            {
+              label: 'Recent Transactions',
+              text: 'Merchants can track user transactions across assets.',
+            },
+          ],
+          images: ['final-homepage.png'],
+        },
+        {
+          title: 'High Fidelity Design — Report',
+          desc: 'Merchants will be able to view user activity, financial report, payment performance and wallet.',
+          images: ['final-report.png'],
+        },
+        {
+          title: 'High Fidelity Design — Transaction Management',
+          desc: 'Merchants can manage the transaction of cashier users, admins and withdrawal requests.',
+          parts: [
+            {
+              label: 'Withdrawal Request',
+              text: 'Merchants should have the control to manage withdrawal manually within a certain threshold.',
+            },
+            {
+              label: 'User Transaction',
+              text: 'Here, merchant can manually retry failed transactions and monitor user transactions.',
+            },
+          ],
+          images: ['final-transactions.png'],
+        },
+        {
+          title: 'High Fidelity Design — Asset Management',
+          desc: 'Merchants will be able to enable/disable assets, deposit and transfer to treasury wallet, set up treasury wallet and withdraw from the platform. They can also set withdrawal limits.',
+          images: ['final-assets.png'],
+        },
+        {
+          title: 'High Fidelity Design — Cashier UI',
+          desc: 'This is the interface that the end user can use to deposit and withdraw crypto from their account.',
+          images: ['final-cashier.png'],
         },
         {
           title: 'Results & Impact',
