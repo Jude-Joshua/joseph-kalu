@@ -9,6 +9,8 @@ import { projects } from '@/app/data'
 const ease = [0.16, 1, 0.3, 1]
 
 const extendedSubtext: Record<string, string> = {
+  inktrail:
+    'Every knowledge worker I interviewed had the same problem — their work lived across five different apps. I designed a full AI-native workspace from zero — document editor, visual canvas, meeting transcription, and one-click publishing on a single continuous surface — then collaborated with engineers to ship it. AI generates real, editable files — not chat messages you copy-paste somewhere else.',
   coinhaven:
     'Everyone was building marketplaces. Nobody was building trust. Designed and shipped the full product — from provenance systems and creator verification down to the marketplace flows — built to earn belief in a market drowning in noise.',
   humanmanager:
